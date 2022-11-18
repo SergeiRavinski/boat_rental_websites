@@ -25,6 +25,10 @@ p {
 	display: inline;
 }
 
+.word--visible--displayLastTime {
+	color: rgb(85, 119, 242);
+}
+
 button {
 	margin: 2rem;
 	padding: 1rem;
@@ -32,14 +36,14 @@ button {
 
 .word--visible {
 	animation-name: fade;
-	animation-duration: 1s;
+	animation-duration: 1.5s;
 }
 
 @keyframes fade {
 	from 	
 	{opacity: 0;};
 	to 
-	{opacity: 1,5;}
+	{opacity: 1;}
 }
 
 

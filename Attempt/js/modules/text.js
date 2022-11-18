@@ -8,7 +8,6 @@ export default function Text() {
 	function changeWord(event) {
 		increaseCurrentWordIndex();
 		updateWordHtml();
-		//toggleAllWords();
 	}
 
 	function increaseCurrentWordIndex() {
@@ -26,8 +25,9 @@ export default function Text() {
 	function updateWordHtml() {
 		if (currentWordIndex === -1) {
 			for (let index = 0; index < myWords.length; index += 1) {
-				myWords[index].classList.add('word--visible');
+				myWords[index].classList.add('word--visible--displayLastTime');
 			}
+			
 		} else {
 			for (let index = 0; index < myWords.length; index += 1) {
 				myWords[index].classList.remove('word--visible');
