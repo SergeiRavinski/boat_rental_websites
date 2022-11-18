@@ -18,7 +18,8 @@ export default function Text() {
 
 		else {
 			currentWordIndex = -1;
-			clearInterval(changeWordInterval);
+			clearInterval(changeWordInterval);	
+			//console.log(currentWordIndex)
 		}
 	}
 
