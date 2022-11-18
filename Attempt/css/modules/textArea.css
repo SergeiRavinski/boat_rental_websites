@@ -1,0 +1,52 @@
+
+.textArea {
+	display: flex;
+	flex-flow: column;
+	font-size: 1.5rem;
+	margin: 2rem;
+	width: 20rem;
+}
+
+h3 {
+	margin: 1rem;
+}
+
+p {
+	margin: 1rem;	
+}
+
+.word {
+	font-size: 1.5rem;
+}
+
+.word--visible {
+	color: rgb(85, 119, 242);
+	font-size: 1.5rem;
+	display: inline;
+}
+
+button {
+	margin: 2rem;
+	padding: 1rem;
+}
+
+.word--visible {
+	animation-name: fade;
+	animation-duration: 1s;
+}
+
+@keyframes fade {
+	from 	
+	{opacity: 0;};
+	to 
+	{opacity: 1,5;}
+}
+
+
+
+
+
+
+
+
+
