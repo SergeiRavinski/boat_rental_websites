@@ -36,7 +36,7 @@ button {
 
 .word--visible {
 	animation-name: fade;
-	animation-duration: 1.5s;
+	animation-duration: 1.3s;
 }
 
 @keyframes fade {

@@ -3,7 +3,7 @@ export default function Text() {
 	const myWords = document.querySelectorAll('.word');
 
 	let currentWordIndex = 0;
-	let changeWordInterval = setInterval(changeWord, 1500);
+	let changeWordInterval = setInterval(changeWord, 1300);
 
 	function changeWord(event) {
 		increaseCurrentWordIndex();
