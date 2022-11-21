@@ -1,4 +1,78 @@
 header {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	color: #003755;
+	margin: 3rem;
+}
+
+#logo {
+	font-size: 2rem;
+	display: flex;
+	flex-direction: row;
+	white-space: nowrap;
+}
+
+#logo__sailboat {
+	width: 1.5rem;
+	height: 2rem;
+}
+
+#choose__date--location {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: solid 1px #003755;
+	border-radius: 1rem;
+	height: 1.8rem;
+	min-width: 10rem;
+	align-self: center;
+	justify-content: center;
+	margin-left: 0.4rem;
+	margin-right: 0.4rem;
+}
+
+input {
+	cursor: pointer;
+	width: 5rem;
+	height: 1.6rem;
+	margin-left: 0.3rem;
+	margin-right: 0.3rem;
+	border: none;
+	font-size: 0.7rem;
+}
+
+#input__left {
+	border-radius: 0.5rem 0 0 0.5rem;
+	margin-right: 0.8rem;
+}
+
+#input__right {
+	margin-left: 0.8rem;
+}
+
+#image__date {
+	width: 1rem;
+	width: 1rem;
+	margin: 0.4rem;
+}
+
+#image__location {
+	width: 1rem;
+	width: 1rem;
+	margin: 0.4rem;
+}
+
+.button__hamburgermenu {
+	cursor: pointer;
+}
+
+.button__wishlist {
+	font-size: 1.5rem;
+	margin-right: 0.8rem;
+}
+
+.wishlist__hamburgermenu {
+	display: flex;
+	flex-direction: row;
 }
