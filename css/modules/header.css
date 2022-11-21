@@ -3,7 +3,7 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	color: #003755;
-	margin: 3rem;
+	margin: 3rem 3rem 0.5rem 3rem;
 }
 
 #logo {
@@ -40,6 +40,7 @@ input {
 	margin-right: 0.3rem;
 	border: none;
 	font-size: 0.7rem;
+	color: #003755;
 }
 
 #input__left {
@@ -69,10 +70,18 @@ input {
 
 .button__wishlist {
 	font-size: 1.5rem;
-	margin-right: 0.8rem;
+	margin-right: 1rem;
+	cursor: pointer;
 }
 
 .wishlist__hamburgermenu {
 	display: flex;
 	flex-direction: row;
+}
+
+.underline {
+	height: 0.1rem;
+	background-color: #003755;
+	opacity: 0.5;
+	margin: 0 3rem 0.5rem 3rem;
 }
