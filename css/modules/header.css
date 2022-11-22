@@ -78,12 +78,6 @@ input {
 	cursor: pointer;
 }
 
-.wishlist__hamburgermenu {
-	/*display: flex;
-	flex-direction: row;*/
-	
-}
-
 .underline {
 	height: 0.15vh;
 	background-color: #003755;
