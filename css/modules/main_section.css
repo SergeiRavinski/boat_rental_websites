@@ -19,7 +19,7 @@ main {
 }
 
 .section__main--text {
-	min-width: 300px;
+
 	margin: 15% 40% 0 0;
 }
 
@@ -40,9 +40,36 @@ p {
 	width: 80%;
 }
 
+.boats {
+	color: white;
+}
+
 .section__main--underline {
 	height: 0.1rem;
 	background-color: #003755;
 	opacity: 0.5;
 	margin: 2rem 0 2rem 0;
 }
+
+.boats {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.first__boat--jaktar {
+	text-align: justify;
+	width: 25vw;
+	height: 25vh;
+}
+
+.first__boat--jaktar--button--slideshow {
+	background: url(../../assets/first_boat_jaktar/Jaktar1.jpeg) center / cover no-repeat;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.6rem;
+}
+
+/*.first__boat--jaktar--slideshow, .second__boat--apoxar--slideshow, .third__boat--hallberg--rassy--slideshow {
+
+}*/
