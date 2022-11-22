@@ -1,0 +1,28 @@
+.hamburger__menu {
+	background-color: #33647F;
+	width: 25%;
+	height: 93.4%;
+	position: absolute;
+	top: 7vh;
+	right: 0;
+	z-index: 40;
+	color: white;
+	box-shadow: 0.5vw 0.5vw 1.5vw #041c29;
+	display: none;
+}
+
+.hamburger__menu--text {
+	margin: 4vh 1vw 1vh 3vw;
+	
+}
+
+#title__menu {
+	font-size: 4vh;
+	line-height: 10vh;
+}
+
+ul {
+	font-size: 3vh;
+	line-height: 5vh;
+}
+
