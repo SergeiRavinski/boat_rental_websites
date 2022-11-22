@@ -3,19 +3,19 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	color: #003755;
-	margin: 2rem 3rem 0.5rem 3rem;
+	margin: 2vh 5vw 0.3vh 5vw;
 }
 
 #logo {
-	font-size: 2rem;
-	display: flex;
-	flex-direction: row;
+	font-size: 3vmin;
+	/*display: flex;*/
+	/*flex-direction: row;*/
 	white-space: nowrap;
 }
 
 #logo__sailboat {
-	width: 1.5rem;
-	height: 2rem;
+	width: 3vmin;
+	height: 3vmin;
 }
 
 #choose__date--location {
@@ -24,8 +24,7 @@ header {
 	justify-content: space-between;
 	border: solid 1px #003755;
 	border-radius: 1rem;
-	height: 1.8rem;
-	min-width: 10rem;
+	height: 3vh;
 	align-self: center;
 	justify-content: center;
 	margin-left: 0.4rem;
@@ -34,33 +33,33 @@ header {
 
 input {
 	cursor: pointer;
-	width: 5rem;
-	height: 1.6rem;
+	width: 6.5vw;
+	height: 2.6vh;
 	margin-left: 0.3rem;
 	margin-right: 0.3rem;
 	border: none;
-	font-size: 0.7rem;
+	font-size: 0.8vw;
 	color: #003755;
 }
 
 #input__left {
 	border-radius: 0.5rem 0 0 0.5rem;
-	margin-right: 0.8rem;
+	margin-right: 0.5vw;
 }
 
 #input__right {
-	margin-left: 0.8rem;
+	margin-left: 0.5vw;
 }
 
 #image__date {
-	width: 1rem;
-	width: 1rem;
+	width: 1.5vw;
+	width: 1.5vh;
 	margin: 0.4rem;
 }
 
 #image__location {
-	width: 1rem;
-	width: 1rem;
+	width: 1.5vw;
+	width: 1.5vh;
 	margin: 0.4rem;
 }
 
@@ -68,20 +67,26 @@ input {
 	cursor: pointer;
 }
 
+#button__menu--image {
+	width: 2vw;
+	height: 2vh;
+}
+
 .button__wishlist {
-	font-size: 1.5rem;
+	font-size: 3vmin;
 	margin-right: 1rem;
 	cursor: pointer;
 }
 
 .wishlist__hamburgermenu {
-	display: flex;
-	flex-direction: row;
+	/*display: flex;
+	flex-direction: row;*/
+	
 }
 
 .underline {
-	height: 0.1rem;
+	height: 0.15vh;
 	background-color: #003755;
 	opacity: 0.5;
-	margin: 0 3rem 0.5rem 3rem;
+	margin: 0 5vw 0.7vh 5vw;
 }

@@ -2,7 +2,7 @@ main {
 	background: url(../../assets/Background_main.jpg) center / cover no-repeat;
 	/*opacity: 0.8;*/
 	max-width: 100%;
-	height: 91.5vh;
+	height: 93.5vh;
 	object-fit: cover;
 	/*object-position: center;*/
 	display: flex;
