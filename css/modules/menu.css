@@ -9,7 +9,7 @@
 	color: white;
 	box-shadow: 0.5vw 0.5vw 1.5vw #041c29;
 	text-shadow: 0.1vw 0.1vw 1vw #041c29;
-	display: none;
+	/*display: none;*/
 }
 
 .hamburger__menu--text {

@@ -67,6 +67,18 @@
 	margin-bottom: 0.7vh;
 }
 
+.first__boat--jaktar--wishlist--active {
+	display: none;
+}
+
+.second__boat--apoxar--wishlist--active {
+	display: none;
+}
+
+.third__boat--hallbergrassy--wishlist--active {
+	display: none;
+}
+
 /*Like button*/
 
 #like__button--wishlist {
