@@ -64,11 +64,11 @@ p {
 
 /*first boat Jaktar*/
 
-.first__boat--jaktar {
+.first__boat--jaktar, .second__boat--apoxar, .third__boat--hallbergrassy {
 	text-align: justify;
 }
 
-.first__boat--jaktar--slides {
+.first__boat--jaktar--slides, .second__boat--apoxar--slides, .third__boat--hallbergrassy--slides {
 	width: 25vw;
 	height: 25vh;
 	border-radius: 0.5rem;	
@@ -80,13 +80,13 @@ p {
 	/*background: center cover no-repeat;*/
 }
 
-.first__boat--jaktar--slides--visible {
+.first__boat--jaktar--slides--visible, .second__boat--apoxar--slides--visible, .third__boat--hallbergrassy--slides--visible {
 	display: block;
 }
 
 /*dots*/
 
-.first__boat--jaktar--dots {
+.first__boat--jaktar--dots, .second__boat--apoxar--dots, .third__boat--hallbergrassy--dots {
 	position: absolute;
 	bottom: 0.8vh;
 	left: 40%;
@@ -138,7 +138,7 @@ p {
 	transform: translateY(-50%);
 }
 
-.first__boat--jaktar--elements {
+.first__boat--jaktar--elements, .second__boat--apoxar--elements, .third__boat--hallbergrassy--elements {
 	position: relative;
 	margin-bottom: 0.7vh;
 }
@@ -148,7 +148,7 @@ p {
 	height: 2.7vh;
 }
 
-.first__boat--jaktar--description {
+.first__boat--jaktar--description, .second__boat--apoxar--description, .third__boat--hallbergrassy--description {
 	text-shadow: 2px 2px 5px #041c29;
 }
 
