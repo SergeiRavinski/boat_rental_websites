@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
 /*background*/
 
 main {
@@ -59,10 +66,8 @@ p {
 	flex-direction: row;
 	justify-content: space-between;
 	color: white;
-	/*height: 30vh;*/
+	height: 30vh;
 }
-
-/*first boat Jaktar*/
 
 .first__boat--jaktar, .second__boat--apoxar, .third__boat--hallbergrassy {
 	text-align: justify;
@@ -89,7 +94,8 @@ p {
 .first__boat--jaktar--dots, .second__boat--apoxar--dots, .third__boat--hallbergrassy--dots {
 	position: absolute;
 	bottom: 0.8vh;
-	left: 40%;
+	left: 50%;
+	transform: translateX(-50%);
 	z-index: 30;
 }
 
@@ -149,7 +155,7 @@ p {
 }
 
 .first__boat--jaktar--description, .second__boat--apoxar--description, .third__boat--hallbergrassy--description {
-	text-shadow: 2px 2px 5px #041c29;
+	text-shadow: 0.2vw 0.2vw 0.4vw #041c29;
 }
 
 /*second underline*/
@@ -191,4 +197,9 @@ button:hover, button:active {
 	transition-timing-function: ease-in-out;
 	filter: drop-shadow(0.03vw 0.03vw 0.8vw #6b8899);
 }
+
+/*breakepoints*/
+
+@media screen and (min-width: 768px) {
+}	
 
