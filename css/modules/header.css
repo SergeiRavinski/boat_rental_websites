@@ -97,5 +97,53 @@ input {
 
 /*breakepoints*/
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 390px) {
+	/*header*/
+
+	header {
+		align-items: center;
+		margin: 2vh 5vw 0.1vh 5vw;
+	}
+
+	/*section with date and location*/
+
+	#choose__date--location {
+		height: 1.5vh;
+	}
+
+	input {
+		cursor: pointer;
+		width: 15vw;
+		height: 1vh;
+		margin-left: 0.5vw;
+		margin-right: 0.5vw;
+		font-size: 1.7vw;
+	}
+
+	#button__menu--image {
+		width: 3vw;
+		height: 3vh;
+		margin-bottom: -0.9vh;
+	}
+
+	/*button wishlist*/
+
+	.button__wishlist {
+		margin: 0 1vw 0.6vh 0;
+	}
+
+	/*underline*/
+
+	.underline {
+		height: 0.10vh;
+		margin: 0 5vw 0.4vh 5vw;
+	}
+
+	#image__date {
+		display: none;
+	}
+	
+	#image__location {
+		display: none;
+	}
 }	
