@@ -4,7 +4,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	color: #003755;
+	color: var(--fontcolor);
 	margin: 2vh 5vw 0.3vh 5vw;
 }
 
@@ -26,7 +26,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border: solid 1px #003755;
+	border: solid 1px var(--fontcolor);
 	border-radius: 1rem;
 	height: 3vh;
 	align-self: center;
@@ -43,7 +43,7 @@ input {
 	margin-right: 0.3rem;
 	border: none;
 	font-size: 0.8vw;
-	color: #003755;
+	color: var(--fontcolor);
 }
 
 #input__left {
@@ -89,7 +89,7 @@ input {
 /*underline*/
 
 .underline {
-	height: 0.15vh;
+	height: var(--underlineHeightDesktop);
 	background-color: #003755;
 	opacity: 0.5;
 	margin: 0 5vw 0.7vh 5vw;
@@ -135,7 +135,7 @@ input {
 	/*underline*/
 
 	.underline {
-		height: 0.10vh;
+		height: var(--underlineHeightMobile);
 		margin: 0 5vw 0.4vh 5vw;
 	}
 

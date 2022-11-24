@@ -1,0 +1,10 @@
+:root {
+	--fontcolor: #003755;
+	--alternativeColor: white;
+	--underlineHeightDesktop: 0.15vh;
+	--underlineHeightWishlist: 0.1vh;
+	--underlineHeightTablet: 0.10vh;
+	--underlineHeightMobile: 0.10vh;
+	--boxShadowColor: #041c29;
+	--hoverShadowColor: drop-shadow(0.01vw 0.01vw 0.4vw #6b8899);
+}

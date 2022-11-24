@@ -9,18 +9,18 @@ body {
 
 main {
 	background: url(../../assets/Background_main.jpg) center / cover no-repeat;
-	/*opacity: 0.7;*/
 	max-width: 100%;
 	height: 93.9vh;
-	/*object-fit: contain;*/
 	display: flex;
 	justify-content: center;
 	position: relative;
+	/*opacity: 0.8;*/
+	/*object-fit: contain;*/
 }
 
 .section__main {
 	width: 80vw;
-	color: #003755;
+	color: var(--fontcolor);
 }
 
 /*text*/
@@ -57,8 +57,8 @@ p {
 /*first underline*/
 
 .section__main--underline--first {
-	height: 0.15vh;
-	background-color: #ffffff;
+	height: var(--underlineHeightDesktop);
+	background-color: var(--alternativeColor);
 	opacity: 0.7;
 	margin: 2.5vh 0 2.5vh 0;
 }
@@ -69,7 +69,7 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	color: white;
+	color: var(--alternativeColor);
 	height: 30vh;
 }
 
@@ -82,7 +82,7 @@ p {
 	height: 25vh;
 	border-radius: 0.5rem;	
 	object-fit: cover;
-	box-shadow: 0.1vw 0.1vw 0.8vw #041c29;
+	box-shadow: 0.1vw 0.1vw 0.8vw var(--boxShadowColor);
 	display: none;
 	/*background: center cover no-repeat;*/
 }
@@ -115,7 +115,7 @@ p {
 
 .dot-active {
 	background-color: rgb(0, 0, 0);
-	border: solid 0.02em white;
+	border: solid 0.02em var(--fontcolor);
 }
 
 #like__button {
@@ -184,14 +184,14 @@ p {
 }
 
 .first__boat--jaktar--description, .second__boat--axopar--description, .third__boat--hallbergrassy--description {
-	text-shadow: 0.2vw 0.2vw 0.4vw #041c29;
+	text-shadow: 0.2vw 0.2vw 0.4vw var(--boxShadowColor);
 }
 
 /*second underline*/
 
 .section__main--underline--second {
-	height: 0.15vh;
-	background-color: #ffffff;
+	height: var(--underlineHeightDesktop);
+	background-color: var(--alternativeColor);
 	opacity: 0.7;
 	margin: 2.5vh 0 3vh 0;
 }
@@ -219,7 +219,7 @@ p {
 
 #footer {
 	font-size: 0.8vw;
-	color: white;
+	color: var(--alternativeColor);
 	margin-top: 0.5vh 0 0.5vh 0;
 }
 
@@ -229,7 +229,7 @@ button:hover, button:active {
 	transform: scale(1.010);
 	transition-duration: 300ms;
 	transition-timing-function: ease-in-out;
-	filter: drop-shadow(0.01vw 0.01vw 0.4vw #6b8899);
+	filter: var(--hoverShadowColor);
 }
 
 /*breakepoints*/
@@ -266,15 +266,15 @@ button:hover, button:active {
 	/*Underline*/
 	
 	.section__main--underline--first {
-		height: 0.10vh;
-		background-color: #ffffff;
+		height: var(--underlineHeightTablet);
+		background-color: var(--alternativeColor);
 		opacity: 0.5;
 		margin: 1vh 0 1vh 0;
 	}
 
 	.section__main--underline--second {
-		height: 0.10vh;
-		background-color: #ffffff;
+		height: var(--underlineHeightTablet);
+		background-color: var(--alternativeColor);
 		opacity: 0.5;
 		margin: 1vh 0 1vh 0;
 	}
@@ -285,7 +285,7 @@ button:hover, button:active {
 		display: flex;
 		flex-flow: column;
 		/*flex-wrap: nowrap;*/
-		color: white;
+		color: var(--alternativeColor);
 		width: 50vw;
 		height: 69vh;
 		margin: auto;
@@ -300,7 +300,7 @@ button:hover, button:active {
 		height: 20vh;
 		border-radius: 0.3em;	
 		object-fit: cover;
-		box-shadow: 0.5vw 0.5vw 1.5vw #041c29;
+		box-shadow: 0.5vw 0.5vw 1.5vw var(--boxShadowColor);
 		display: none;
 		/*background: center cover no-repeat;*/
 	}
@@ -376,7 +376,7 @@ button:hover, button:active {
 		display: flex;
 		flex-flow: column;
 		/*flex-wrap: nowrap;*/
-		color: #003755;
+		color: var(--fontcolor);
 		width: 100%;
 		height: 100%;
 		margin: auto;
@@ -439,7 +439,7 @@ button:hover, button:active {
 
 	.social__media--links {
 		justify-content: center;
-		color: #041c29;
+		color: var(--boxShadowColor);
 		gap: 3vw;
 		margin: 7vh 0 3vh 0;
 	}
