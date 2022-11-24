@@ -53,7 +53,7 @@
 	width: 100%;
 }
 
-.first__boat--jaktar--wishlist, .second__boat--apoxar--wishlist, .third__boat--hallbergrassy--wishlist {
+.first__boat--jaktar--wishlist, .second__boat--axopar--wishlist, .third__boat--hallbergrassy--wishlist {
 	width: 100%;
 	height: 100%;
 	border-radius: 0.2em;	
@@ -62,7 +62,7 @@
 	text-align: justify;
 }
 
-.first__boat--jaktar--elements--wishlist, .second__boat--apoxar--elements--wishlist, .third__boat--hallbergrassy--elements--wishlist {
+.first__boat--jaktar--elements--wishlist, .second__boat--axopar--elements--wishlist, .third__boat--hallbergrassy--elements--wishlist {
 	position: relative;
 	margin-bottom: 0.7vh;
 }
@@ -71,7 +71,7 @@
 	display: none;
 }
 
-.second__boat--apoxar--wishlist--active {
+.second__boat--axopar--wishlist--active {
 	display: none;
 }
 
@@ -96,7 +96,7 @@
 
 /*Description*/
 
-.first__boat--jaktar--description--wishlist, .second__boat--apoxar--description--wishlist, .third__boat--hallbergrassy--description--wishlist {
+.first__boat--jaktar--description--wishlist, .second__boat--axopar--description--wishlist, .third__boat--hallbergrassy--description--wishlist {
 	text-shadow: 0.1vw 0.1vw 0.2vw #041c29;
 }
 
