@@ -115,7 +115,7 @@ p {
 
 .dot-active {
 	background-color: rgb(0, 0, 0);
-	border: solid 0.02em var(--fontcolor);
+	border: solid 0.02em var(--alternativeColor);
 }
 
 #like__button {
