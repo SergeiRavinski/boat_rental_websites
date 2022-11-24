@@ -101,5 +101,98 @@
 
 /*breakepoints*/
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+	.wishlist {
+		width: 50%;
+	}
+
+	.wishlist__elements {
+		margin: 1vh 10vw 1vh 10vw;
+	}
+	
+	#title__wishlist {
+		font-size: 2.5vh;
+		line-height: 5vh;
+	}
+	
+	.wishlist__description {
+		font-size: 0.7vw;
+	}
+	
+	/*first underline*/
+	
+	.section__main--underline--first--wishlist {
+		height: var(--underlineHeightWishlist);
+		background-color: var(--alternativeColor);
+		opacity: 0.5;
+		margin: 0.5vh 0 1vh 0;
+	}
+	
+	/*second underline*/
+	
+	.section__main--underline--second--wishlist {
+		height: var(--underlineHeightWishlist);
+		background-color: var(--alternativeColor);
+		opacity: 0.5;
+		margin: 1vh 0 1.5vh 0;
+	}
+	
+	/*section with boats*/
+	
+	.boats--wishlist {
+		display: flex;
+		flex-direction: column;
+		color: var(--alternativeColor);
+		width: 100%;
+	}
+	
+	.first__boat--jaktar--wishlist, .second__boat--axopar--wishlist, .third__boat--hallbergrassy--wishlist {
+		width: 100%;
+		height: 100%;
+		border-radius: 0.2em;	
+		object-fit: contain;
+		box-shadow: 0.1vw 0.1vw 0.3vw var(--boxShadowColor);
+		text-align: justify;
+	}
+	
+	.first__boat--jaktar--elements--wishlist, .second__boat--axopar--elements--wishlist, .third__boat--hallbergrassy--elements--wishlist {
+		position: relative;
+		margin-bottom: 0.7vh;
+	}
+	
+	#image__like--wishlist {
+		width: 2vw;
+		height: 2vh;
+	}
+}	
+
+@media screen and (max-width: 390px) {
+	.wishlist {
+		width: 100%;
+	}
+
+	.wishlist__elements {
+		margin: 1vh 15vw 1vh 15vw;
+	}
+	
+	#title__wishlist {
+		font-size: 2vh;
+		line-height: 4vh;
+	}
+	
+	.wishlist__description {
+		font-size: 2.5vw;
+	}
+	
+	#image__like--wishlist {
+		width: 4vw;
+		height: 4vh;
+	}
+
+	#like__button--wishlist {
+		top: 12%;
+		right: 3%;
+		z-index: 20;
+		transform: translateY(-50%);
+	}
 }	

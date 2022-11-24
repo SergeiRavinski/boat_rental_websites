@@ -14,7 +14,6 @@
 
 .hamburger__menu--text {
 	margin: 4vh 1vw 1vh 3vw;
-	
 }
 
 #title__menu {
@@ -27,3 +26,38 @@ ul {
 	line-height: 5vh;
 }
 
+@media screen and (max-width: 768px) {
+	.hamburger__menu {
+		width: 50%;
+	}
+	
+	#title__menu {
+		font-size: 3vh;
+		line-height: 8vh;
+	}
+	
+	ul {
+		font-size: 2vh;
+		line-height: 4vh;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.hamburger__menu {
+		width: 100%;
+		height: 27%;
+	}
+
+	.hamburger__menu--text {
+		margin: 1.5vh 2vw 1vh 5vw;
+	}
+	
+	#title__menu {
+		font-size: 2.5vh;
+		line-height: 6vh;
+	}
+	
+	ul {
+		font-size: 1.8vh;
+	}
+}
