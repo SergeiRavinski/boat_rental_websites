@@ -12,6 +12,10 @@
 	display: none;
 }
 
+.hamburger__menu--visible {
+	display: block;
+}
+
 .hamburger__menu--text {
 	margin: 4vh 1vw 1vh 3vw;
 }
