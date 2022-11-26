@@ -1,37 +1,15 @@
 
-.textArea {
-	display: flex;
-	flex-flow: column;
-	font-size: 1.5rem;
-	margin: 2rem;
-	width: 20rem;
-}
-
-h3 {
-	margin: 1rem;
-}
-
-p {
-	margin: 1rem;	
-}
-
 .word {
-	font-size: 1.5rem;
+	/*font-size: 1.5rem;*/
 }
 
 .word--visible {
-	color: rgb(85, 119, 242);
-	font-size: 1.5rem;
+	color: rgb(255, 255, 255);
 	display: inline;
 }
 
 .word--visible--displayLastTime {
-	color: rgb(85, 119, 242);
-}
-
-button {
-	margin: 2rem;
-	padding: 1rem;
+	color: rgb(209, 229, 255);
 }
 
 .word--visible {
