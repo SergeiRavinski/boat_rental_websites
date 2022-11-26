@@ -118,12 +118,14 @@ p {
 	border: solid 0.02em var(--alternativeColor);
 }
 
-#like__button {
+#like__button--jaktar, #like__button--axopar, #like__button--hallbergrassy {
 	position: absolute;
 	top: 10%;
 	right: 0.7vw;
-	z-index: 20;
+	z-index: 30;
 	transform: translateY(-50%);
+	width: 2vw;
+	height: 2vh;
 }
 
 /*like images*/
@@ -171,6 +173,8 @@ p {
 	right: 0.3vw;
 	z-index: 20;
 	transform: translateY(-50%);
+	width: 2.7vw;
+	height: 2.7vh;
 }
 
 .first__boat--jaktar--elements, .second__boat--axopar--elements, .third__boat--hallbergrassy--elements {
@@ -415,7 +419,7 @@ button:hover, button:active {
 
 	/*like images*/
 
-	#like__button {
+	#like__button--jaktar, #like__button--axopar, #like__button--hallbergrassy{
 		right: 3%;
 	}
 
