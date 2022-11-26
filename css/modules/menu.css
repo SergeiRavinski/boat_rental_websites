@@ -14,6 +14,9 @@
 
 .hamburger__menu--visible {
 	display: block;
+	z-index: 50;
+	animation-name: fade;
+	animation-duration: 0.7s;
 }
 
 .hamburger__menu--text {
@@ -28,6 +31,15 @@
 ul {
 	font-size: 3vh;
 	line-height: 5vh;
+}
+
+/*Animation*/
+
+@keyframes fade {
+	from 	
+	{opacity: 0;};
+	to 
+	{opacity: 1;}
 }
 
 @media screen and (max-width: 768px) {
