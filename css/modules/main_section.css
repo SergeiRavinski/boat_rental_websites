@@ -126,7 +126,15 @@ p {
 	transform: translateY(-50%);
 	width: 2vw;
 	height: 2vh;
+	cursor: pointer;
 }
+
+/*#like__button--jaktar:hover, #like__button--axopar:hover, #like__button--hallbergrassy:hover {
+	padding: 1px;
+	transition-duration: 300ms;
+	transition-timing-function: ease-in-out;
+	filter: drop-shadow(5px 5px 10px blue);
+}*/
 
 /*like images*/
 
@@ -165,6 +173,7 @@ p {
 	left: 0.3vw;
 	z-index: 20;
 	transform: translateY(-50%);
+	cursor: pointer;
 }
 
 #next__button {
@@ -175,6 +184,7 @@ p {
 	transform: translateY(-50%);
 	width: 2.7vw;
 	height: 2.7vh;
+	cursor: pointer;
 }
 
 .first__boat--jaktar--elements, .second__boat--axopar--elements, .third__boat--hallbergrassy--elements {
