@@ -129,13 +129,6 @@ p {
 	cursor: pointer;
 }
 
-/*#like__button--jaktar:hover, #like__button--axopar:hover, #like__button--hallbergrassy:hover {
-	padding: 1px;
-	transition-duration: 300ms;
-	transition-timing-function: ease-in-out;
-	filter: drop-shadow(5px 5px 10px blue);
-}*/
-
 /*like images*/
 
 .image__like--jaktar, .image__like--axopar, .image__like--hallbergrassy {
@@ -153,6 +146,11 @@ p {
 
 .image__like--hallbergrassy {
 	/*display: none;*/
+}
+
+.image__like--red--jaktar, .image__like--red--axopar, .image__like--red--hallbergrassy {
+	width: 2vw;
+	height: 2vh;
 }
 
 .image__like--red--jaktar {

@@ -6,17 +6,23 @@ export default function AddToWishlist() {
 	let addedHallbergRassyToWishlist = false;
 
 	//query selectors
+	const buttonLikeJaktar = document.querySelector('#like__button--jaktar');
+	const buttonLikeAxopar = document.querySelector('#like__button--axopar');
+	const buttonLikeHallbergRassy = document.querySelector('#like__button--hallbergrassy');
+
 	const boatJaktar = document.querySelector('.first__boat--jaktar--wishlist--active');
 	const boatAxopar = document.querySelector('.second__boat--axopar--wishlist--active');
 	const boatHallbergRassy = document.querySelector('.third__boat--hallbergrassy--wishlist--active');
 
+	//images like
 	const likeBoatJaktar = document.querySelector('.image__like--jaktar');
 	const likeBoatAxopar = document.querySelector('.image__like--axopar');
 	const likeBoatHallbergRassy = document.querySelector('.image__like--hallbergrassy');
 
-	const buttonLikeJaktar = document.querySelector('#like__button--jaktar');
-	const buttonLikeAxopar = document.querySelector('#like__button--axopar');
-	const buttonLikeHallbergRassy = document.querySelector('#like__button--hallbergrassy');
+	//images red like
+	const likeRedBoatJaktar = document.querySelector('.image__like--red--jaktar');
+	const likeRedBoatAxopar = document.querySelector('.image__like--red--axopar');
+	const likeRedBoatHallbergRassy = document.querySelector('.image__like--red--hallbergrassy');
 
 	//event listeners 
 	buttonLikeJaktar.addEventListener('click', handleButtonLikeJaktar);
@@ -39,9 +45,13 @@ export default function AddToWishlist() {
 
 		if (addedJaktarToWishlist === false) {
 			boatJaktar.classList.add('first__boat--jaktar--wishlist--active');
+			likeRedBoatJaktar.classList.remove('image__like--red--jaktar');
+			likeBoatJaktar.classList.add('image__like--jaktar');
 		} 
 		else {
 			boatJaktar.classList.remove('first__boat--jaktar--wishlist--active');
+			likeBoatJaktar.classList.remove('image__like--jaktar');
+			likeRedBoatJaktar.classList.add('image__like--red--jaktar');
 		}
 	}
 
