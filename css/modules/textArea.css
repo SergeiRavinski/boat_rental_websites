@@ -1,7 +1,4 @@
 
-.word {
-	/*font-size: 1.5rem;*/
-}
 
 .word--visible {
 	color: rgb(255, 255, 255);
@@ -24,6 +21,15 @@
 	{opacity: 1;}
 }
 
+@media screen and (max-width: 390px) {
+	.word--visible {
+		color: rgb(50, 117, 52);
+	}
+	
+	.word--visible--displayLastTime {
+		color: rgb(48, 68, 48);
+	}
+}	
 
 
 

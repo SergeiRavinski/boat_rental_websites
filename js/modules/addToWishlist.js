@@ -23,7 +23,6 @@ export default function AddToWishlist() {
 	buttonLikeAxopar.addEventListener('click', handleButtonLikeAxopar);
 	buttonLikeHallbergRassy.addEventListener('click', handleButtonLikeHallbergRassy);
 	
-
 	//event handlers 
 
 	//Add first boat Jaktar	
