@@ -421,6 +421,8 @@ button:hover, button:active {
 
 	#like__button--jaktar, #like__button--axopar, #like__button--hallbergrassy{
 		right: 3%;
+		width: 5.5vw;
+		height: 5.5vh;
 	}
 
 	.image__like--jaktar, .image__like--axopar, .image__like--hallbergrassy {
@@ -434,6 +436,8 @@ button:hover, button:active {
 	
 	#next__button {
 		right: 1vw;
+		width: 6vw;
+		height: 6vh;
 	}
 	
 	#image__arrow--left, #image__arrow--right {
