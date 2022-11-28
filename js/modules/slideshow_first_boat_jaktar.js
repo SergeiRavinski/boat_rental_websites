@@ -1,12 +1,11 @@
 export default function SlideshowFirstBoatJaktar() { 
-	//changed name for export
 
 	//variables
-	let currentIndex = 0;
+	let currentSlideIndex = 0;
 
 	//query selectors
-	const previousButton = document.querySelector('#previous__button');
-	const nextButton = document.querySelector('#next__button');
+	const previousButton = document.querySelector('#previous__button-jaktar');
+	const nextButton = document.querySelector('#next__button-jaktar');
 	const boatJaktarSlides = document.querySelectorAll('.first__boat--jaktar--slides');
 	const dotsJaktar = document.querySelectorAll('.dot__jaktar');
 
@@ -17,48 +16,46 @@ export default function SlideshowFirstBoatJaktar() {
 	//event handlers 
 	function handlePreviousButton(event) {
 		decreaseCurrentIndex();
-		updateSlides();
-		updateDots();
+		renderHTML();
 	}
 
 	function handleNextButton(event) {
 		increaseCurrentIndex();
-		updateSlides();
-		updateDots();
+		renderHTML();
 	}
 
 	//functions
 	function decreaseCurrentIndex() {
-		//if (currentIndex <= boatJaktarSlides.length) {
-		//	currentIndex -= 1;
-		//}
-		//else {
-		//	currentIndex = boatJaktarSlides.length;
-		//}
+
+		if (currentSlideIndex > 0) {
+			currentSlideIndex -= 1;
+	  } else {
+		  currentSlideIndex = boatJaktarSlides.length -1;
+	  }
 	}
 
 	function increaseCurrentIndex() {
 
-		if (currentIndex > boatJaktarSlides.length -1) {
-			currentIndex += 1;
-	  } else {
-		  currentIndex = 0;
-	  }
+		if (currentSlideIndex < boatJaktarSlides.length -1) {
+			currentSlideIndex += 1;
+		} else {
+			currentSlideIndex = 0;
+		}
 	}
 
-	function updateSlides() {
+	function renderHTML() {
 		
-		for (index = 0; index < boatJaktarSlides.length; index += 1) {
-			boatJaktarSlides[index].classList.remove('first__boat--jaktar--slides');
+		for (let index = 0; index < boatJaktarSlides.length; index += 1) {
+			boatJaktarSlides[index].classList.remove('first__boat--jaktar--slides--visible');	
+		}
+
+		for (let index = 0; index < dotsJaktar.length; index += 1) {
+			dotsJaktar[index].classList.remove('dot__jaktar--active');
 		}
 	
-		boatJaktarSlides[currentIndex].classList.add('first__boat--jaktar--slides--visible');
-		
+		boatJaktarSlides[currentSlideIndex].classList.add('first__boat--jaktar--slides--visible');
+		dotsJaktar[currentSlideIndex].classList.add('dot__jaktar--active');	
 	}	
-
-	function updateDots() {
-
-	}
 }
 
 

@@ -84,7 +84,6 @@ p {
 	object-fit: cover;
 	box-shadow: 0.1vw 0.1vw 0.8vw var(--boxShadowColor);
 	display: none;
-	/*background: center cover no-repeat;*/
 }
 
 .first__boat--jaktar--slides--visible, .second__boat--axopar--slides--visible, .third__boat--hallbergrassy--slides--visible {
@@ -167,7 +166,7 @@ p {
 	display: none;
 }
 
-#previous__button {
+#previous__button-jaktar, #previous__button-axopar, #previous__button-hallbergrassy {
 	position: absolute;
 	top: 50%;
 	left: 0.3vw;
@@ -176,7 +175,7 @@ p {
 	cursor: pointer;
 }
 
-#next__button {
+#next__button-jaktar, #next__button-axopar, #next__button-hallbergrassy {
 	position: absolute;
 	top: 50%;
 	right: 0.3vw;
