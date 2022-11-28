@@ -102,7 +102,7 @@ p {
 	z-index: 30;
 }
 
-.dot {
+.dot__jaktar, .dot__axopar, .dot__hallbergrassy {
 	display: inline-block;
 	background-color: rgb(255, 255, 255);
 	width: 0.5em;
@@ -113,7 +113,7 @@ p {
 	z-index: 20;
 }
 
-.dot-active {
+.dot__jaktar--active, .dot__axopar--active, .dot__hallbergrassy--active {
 	background-color: rgb(0, 0, 0);
 	border: solid 0.02em var(--alternativeColor);
 }
@@ -127,6 +127,8 @@ p {
 	width: 2vw;
 	height: 2vh;
 	cursor: pointer;
+	display: flex;
+	flex-direction: row;
 }
 
 /*like images*/

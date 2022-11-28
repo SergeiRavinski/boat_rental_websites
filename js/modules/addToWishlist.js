@@ -43,15 +43,16 @@ export default function AddToWishlist() {
 
 	function addJaktar() {
 
-		if (addedJaktarToWishlist === false) {
-			boatJaktar.classList.add('first__boat--jaktar--wishlist--active');
+		if (addedJaktarToWishlist === true) {
+			boatJaktar.classList.remove('first__boat--jaktar--wishlist--active');
 			likeRedBoatJaktar.classList.remove('image__like--red--jaktar');
 			likeBoatJaktar.classList.add('image__like--jaktar');
 		} 
+
 		else {
-			boatJaktar.classList.remove('first__boat--jaktar--wishlist--active');
-			likeBoatJaktar.classList.remove('image__like--jaktar');
+			boatJaktar.classList.add('first__boat--jaktar--wishlist--active');
 			likeRedBoatJaktar.classList.add('image__like--red--jaktar');
+			likeBoatJaktar.classList.remove('image__like--jaktar');
 		}
 	}
 
@@ -68,12 +69,12 @@ export default function AddToWishlist() {
 
 	function addAxopar() {
 
-		if (addedAxoparToWishlist === false) {
+		if (addedAxoparToWishlist === true) {
 
-			boatAxopar.classList.add('second__boat--axopar--wishlist--active');
+			boatAxopar.classList.remove('second__boat--axopar--wishlist--active');
 		} 
 		else {
-			boatAxopar.classList.remove('second__boat--axopar--wishlist--active');
+			boatAxopar.classList.add('second__boat--axopar--wishlist--active');
 		}
 	}
 
@@ -90,12 +91,12 @@ export default function AddToWishlist() {
 
 	function addHallbergRassy() {
 
-		if (addedHallbergRassyToWishlist === false) {
+		if (addedHallbergRassyToWishlist === true) {
 
-			boatHallbergRassy.classList.add('third__boat--hallbergrassy--wishlist--active');
+			boatHallbergRassy.classList.remove('third__boat--hallbergrassy--wishlist--active');
 		} 
 		else {
-			boatHallbergRassy.classList.remove('third__boat--hallbergrassy--wishlist--active');
+			boatHallbergRassy.classList.add('third__boat--hallbergrassy--wishlist--active');
 		}
 	}
 }	
