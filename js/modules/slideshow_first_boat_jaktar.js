@@ -1,4 +1,5 @@
-export default function SlidesgowFirstBoatJaktar() {
+export default function SlideshowFirstBoatJaktar() { 
+	//changed name for export
 
 	//variables
 	let currentIndex = 0;
