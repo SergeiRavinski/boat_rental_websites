@@ -45,14 +45,14 @@ export default function Wishlist() {
 
 		if (addedJaktarToWishlist === true) {
 			boatJaktar.classList.remove('aside__first-boat-jaktar-wishlist--active');
-			likeRedBoatJaktar.classList.remove('main__image-like-red-jaktar');
-			likeBoatJaktar.classList.add('main__image-like-jaktar');
+			likeRedBoatJaktar.classList.remove('main__image-like-red-jaktar--active');
+			likeBoatJaktar.classList.add('main__image-like-jaktar--active');
 		} 
 
 		else {
 			boatJaktar.classList.add('aside__first-boat-jaktar-wishlist--active');
-			likeRedBoatJaktar.classList.add('main__image-like-red-jaktar');
-			likeBoatJaktar.classList.remove('main__image-like-jaktar');
+			likeRedBoatJaktar.classList.add('main__image-like-red-jaktar--active');
+			likeBoatJaktar.classList.remove('main__image-like-jaktar--active');
 		}
 	}
 
