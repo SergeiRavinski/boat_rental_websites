@@ -10,19 +10,19 @@ header {
 
 /*logo*/
 
-.logo {
+.header__logo {
 	font-size: 3vmin;
 	white-space: nowrap;
 }
 
-.logo__sailboat {
+.header__logo-sailboat {
 	width: 3vmin;
 	height: 3vmin;
 }
 
 /*section with date and location*/
 
-.choose__date--location {
+.header__date-location-input {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -46,22 +46,22 @@ input {
 	color: var(--fontcolor);
 }
 
-.input__left {
+.header__date-input {
 	border-radius: 0.5rem 0 0 0.5rem;
 	margin-right: 0.5vw;
 }
 
-.input__right {
+.header__location-input {
 	margin-left: 0.5vw;
 }
 
-.image__date {
+.header__image-date {
 	width: 1.5vw;
 	width: 1.5vh;
 	margin: 0.4rem;
 }
 
-.image__location {
+.header__image-location {
 	width: 1.5vw;
 	width: 1.5vh;
 	margin: 0.4rem;
@@ -69,18 +69,18 @@ input {
 
 /*button hamburger menu*/
 
-.button__hamburgermenu {
+.header__button-hamburgermenu {
 	cursor: pointer;
 }
 
-.button__menu--image {
+.header__button-menu-image {
 	width: 2vw;
 	height: 2vh;
 }
 
 /*button wishlist*/
 
-.button__wishlist {
+.header__button-wishlist {
 	font-size: 3vmin;
 	margin-right: 1rem;
 	cursor: pointer;
@@ -97,7 +97,7 @@ input {
 
 /*Hamburger menu*/
 
-.hamburger__menu {
+.aside__hamburger-menu {
 	background-color: #33647F;
 	width: 25%;
 	height: 100%;
@@ -117,11 +117,11 @@ input {
 	animation-duration: 0.7s;
 }
 
-.hamburger__menu--text {
+.aside__hamburger-menu-text {
 	margin: 4vh 1vw 1vh 3vw;
 }
 
-.title__menu {
+.aside__title-menu {
 	font-size: 4vh;
 	line-height: 10vh;
 }
@@ -143,11 +143,11 @@ ul {
 /*breakepoints*/
 
 @media screen and (max-width: 768px) {
-	.hamburger__menu {
+	.aside__hamburger-menu {
 		width: 50%;
 	}
 	
-	.title__menu {
+	.aside__title-menu {
 		font-size: 3vh;
 		line-height: 8vh;
 	}
@@ -168,7 +168,7 @@ ul {
 
 	/*section with date and location*/
 
-	.choose__date--location {
+	.header__date-location-input {
 		height: 1.5vh;
 	}
 
@@ -181,7 +181,7 @@ ul {
 		font-size: 1.7vw;
 	}
 
-	.button__menu--image {
+	.header__button-menu-image {
 		width: 3vw;
 		height: 3vh;
 		margin-bottom: -0.9vh;
@@ -189,7 +189,7 @@ ul {
 
 	/*button wishlist*/
 
-	.button__wishlist {
+	.header__button-wishlist {
 		margin: 0 1vw 0.6vh 0;
 	}
 
@@ -200,26 +200,26 @@ ul {
 		margin: 0 5vw 0.4vh 5vw;
 	}
 
-	.image__date {
+	.header__image-date {
 		display: none;
 	}
 	
-	.image__location {
+	.header__image-location {
 		display: none;
 	}
 
 	/*hamburger menu*/
 
-	.hamburger__menu {
+	.aside__hamburger-menu {
 		width: 100%;
 		height: 27%;
 	}
 
-	.hamburger__menu--text {
+	.aside__hamburger-menu-text {
 		margin: 1.5vh 2vw 1vh 5vw;
 	}
 	
-	.title__menu {
+	.aside__title-menu {
 		font-size: 2.5vh;
 		line-height: 6vh;
 	}

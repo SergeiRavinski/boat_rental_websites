@@ -18,14 +18,14 @@ main {
 	/*object-fit: contain;*/
 }
 
-.section__main {
+.main__main-section {
 	width: 80vw;
 	color: var(--fontcolor);
 }
 
 /*text*/
 
-.section__main--text {
+.main__text {
 	margin: 15% 40% 7% 0;
 }
 
@@ -38,7 +38,7 @@ h3 {
 	font-size: 1.3vw;
 }
 
-.second__titel {
+.main__second-titel {
 	line-height: 5vh;
 }
 
@@ -56,7 +56,7 @@ p {
 
 /*first underline*/
 
-.section__main--underline--first {
+.main__first-underline {
 	height: var(--underlineHeightDesktop);
 	background-color: var(--alternativeColor);
 	opacity: 0.7;
@@ -65,7 +65,7 @@ p {
 
 /*section with boats*/
 
-.boats {
+.main__boats {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -73,11 +73,11 @@ p {
 	height: 30vh;
 }
 
-.first__boat--jaktar, .second__boat--axopar, .third__boat--hallbergrassy {
+.main__first-boat-jaktar, .main__second-boat-axopar, .main__third-boat-hallbergrassy {
 	text-align: justify;
 }
 
-.first__boat--jaktar--slides, .second__boat--axopar--slides, .third__boat--hallbergrassy--slides {
+.main__first-boat-jaktar-slides, .main__second-boat-axopar-slides, .main__third-boat-hallbergrassy-slides {
 	width: 25vw;
 	height: 25vh;
 	border-radius: 0.5rem;	
@@ -86,14 +86,14 @@ p {
 	display: none;
 }
 
-.first__boat--jaktar--slides--visible, .second__boat--axopar--slides--visible, .third__boat--hallbergrassy--slides--visible {
+.main__first-boat-jaktar-slides--visible, .main__second-boat-axopar-slides--visible, .main__third-boat-hallbergrassy-slides--visible {
 	display: block;
 	object-fit: cover;
 }
 
 /*dots*/
 
-.first__boat--jaktar--dots, .second__boat--axopar--dots, .third__boat--hallbergrassy--dots {
+.main__first-boat-jaktar-dots, .main__second-boat-axopar-dots, .main__third-boat-hallbergrassy-dots {
 	position: absolute;
 	bottom: 0.8vh;
 	left: 50%;
@@ -101,7 +101,7 @@ p {
 	z-index: 30;
 }
 
-.dot__jaktar, .dot__axopar, .dot__hallbergrassy {
+.main__dot-jaktar, .main__dot-axopar, .main__dot-hallbergrassy {
 	display: inline-block;
 	background-color: rgb(255, 255, 255);
 	width: 0.5em;
@@ -112,12 +112,12 @@ p {
 	z-index: 20;
 }
 
-.dot__jaktar--active, .dot__axopar--active, .dot__hallbergrassy--active {
+.main__dot-jaktar--active, .main__dot-axopar--active, .main__dot-hallbergrassy--active {
 	background-color: rgb(0, 0, 0);
 	border: solid 0.02em var(--alternativeColor);
 }
 
-.like__button--jaktar, .like__button--axopar, .like__button--hallbergrassy {
+.main__button-like-jaktar, .main__button-like-axopar, .main__button-like-hallbergrassy {
 	position: absolute;
 	top: 10%;
 	right: 0.7vw;
@@ -132,41 +132,41 @@ p {
 
 /*like images*/
 
-.image__like--jaktar, .image__like--axopar, .image__like--hallbergrassy {
+.main__image-like-jaktar, .main__image-like-axopar, .main__image-like-hallbergrassy {
 	width: 2vw;
 	height: 2vh;
 }
 
-.image__like--jaktar {
+.main__image-like-jaktar {
 	/*display: none;*/
 }
 
-.image__like--axopar {
+.main__image-like-axopar {
 	/*display: none;*/
 }
 
-.image__like--hallbergrassy {
+.main__image-like-hallbergrassy {
 	/*display: none;*/
 }
 
-.image__like--red--jaktar, .image__like--red--axopar, .image__like--red--hallbergrassy {
+.main__image-like-red-jaktar, .main__image-like-red-axopar, .main__image-like-red-hallbergrassy {
 	width: 2vw;
 	height: 2vh;
 }
 
-.image__like--red--jaktar {
+.main__image-like-red-jaktar {
 	display: none;
 }
 
-.image__like--red--axopar {
+.main__image-like-red-axopar {
 	display: none;
 }
 
-.image__like--red--hallbergrassy {
+.main__image-like-red-hallbergrassy {
 	display: none;
 }
 
-.previous__button-jaktar, .previous__button-axopar, .previous__button-hallbergrassy {
+.main__previous-button-jaktar, .main__previous-button-axopar, .main__previous-button-hallbergrassy {
 	position: absolute;
 	top: 50%;
 	left: 0.3vw;
@@ -175,7 +175,7 @@ p {
 	cursor: pointer;
 }
 
-.next__button-jaktar, .next__button-axopar, .next__button-hallbergrassy {
+.main__next-button-jaktar, .main__next-button-axopar, .main__next-button-hallbergrassy {
 	position: absolute;
 	top: 50%;
 	right: 0.3vw;
@@ -184,23 +184,23 @@ p {
 	cursor: pointer;
 }
 
-.first__boat--jaktar--elements, .second__boat--axopar--elements, .third__boat--hallbergrassy--elements {
+.main__first-boat-jaktar-elements, .main__second-boat-axopar-elements, .main__third-boat-hallbergrassy-elements {
 	position: relative;
 	margin-bottom: 0.7vh;
 }
 
-.image__arrow--left, .image__arrow--right {
+.main__image-arrow-left, .main__image-arrow-right {
 	width: 2.7vw;
 	height: 2.7vh;
 }
 
-.first__boat--jaktar--description, .second__boat--axopar--description, .third__boat--hallbergrassy--description {
+.main__first-boat-jaktar-description, .main__second-boat-axopar-description, .main__third-boat-hallbergrassy-description {
 	text-shadow: 0.2vw 0.2vw 0.4vw var(--boxShadowColor);
 }
 
 /*second underline*/
 
-.section__main--underline--second {
+.main__first-underline {
 	height: var(--underlineHeightDesktop);
 	background-color: var(--alternativeColor);
 	opacity: 0.7;
@@ -209,18 +209,18 @@ p {
 
 /*social media links*/
 
-.social__media--links {
+.main__social-media-links {
 	display: flex;
 	flex-direction: row;
 	justify-content: end;
 	gap: 1vw;
 }
 
-.button__instagram--mobile, .button__facebook--mobile {
+.main__button-instagram-mobile, .main__button-facebook-mobile {
 	display: none;
 }
 
-.button__instagram, .button__facebook {
+.main__button-instagram, .main__button-facebook {
 	width: 3vh;
 	height: 3vh;
 	cursor: pointer;
@@ -228,7 +228,7 @@ p {
 
 /*footer*/
 
-.footer {
+.footer__text {
 	font-size: 0.8vw;
 	color: var(--alternativeColor);
 	margin-top: 0.5vh 0 0.5vh 0;
@@ -249,7 +249,7 @@ button:hover, button:active {
 	
 	/*text*/
 	
-	.section__main--text {
+	.main__text {
 		margin: 5% 35% 3% 0;
 	}
 	
@@ -262,7 +262,7 @@ button:hover, button:active {
 		font-size: 1.3vw;
 	}
 	
-	.second__titel {
+	.main__second-titel {
 		line-height: 3vh;
 	}
 	
@@ -276,14 +276,14 @@ button:hover, button:active {
 	
 	/*Underline*/
 	
-	.section__main--underline--first {
+	.main__first-underline {
 		height: var(--underlineHeightTablet);
 		background-color: var(--alternativeColor);
 		opacity: 0.5;
 		margin: 1vh 0 1vh 0;
 	}
 
-	.section__main--underline--second {
+	.main__first-underline {
 		height: var(--underlineHeightTablet);
 		background-color: var(--alternativeColor);
 		opacity: 0.5;
@@ -292,7 +292,7 @@ button:hover, button:active {
 	
 	/*section with boats*/
 	
-	.boats {
+	.main__boats {
 		display: flex;
 		flex-flow: column;
 		/*flex-wrap: nowrap;*/
@@ -302,11 +302,11 @@ button:hover, button:active {
 		margin: auto;
 	}
 	
-	.first__boat--jaktar, .second__boat--axopar, .third__boat--hallbergrassy {
+	.main__first-boat-jaktar, .main__second-boat-axopar, .main__third-boat-hallbergrassy {
 		text-align: justify;		
 	}
 	
-	.first__boat--jaktar--slides, .second__boat--axopar--slides, .third__boat--hallbergrassy--slides {
+	.main__first-boat-jaktar-slides, .main__second-boat-axopar-slides, .main__third-boat-hallbergrassy-slides {
 		min-width: 50vw;
 		height: 20vh;
 		border-radius: 0.3em;	
@@ -316,17 +316,17 @@ button:hover, button:active {
 		/*background: center cover no-repeat;*/
 	}
 	
-	.first__boat--jaktar--slides--visible, .second__boat--axopar--slides--visible, .third__boat--hallbergrassy--slides--visible {
+	.main__first-boat-jaktar-slides--visible, .main__second-boat-axopar-slides--visible, .main__third-boat-hallbergrassy-slides--visible {
 		display: flex;
 		object-fit: cover;
 		flex-direction: column;
 	}
 	
-	.first__boat--jaktar--description, .second__boat--axopar--description, .third__boat--hallbergrassy--description {
+	.main__first-boat-jaktar-description, .main__second-boat-axopar-description, .main__third-boat-hallbergrassy-description {
 		margin: 0 0 0.3vh 0;
 	}
 	
-	.button__instagram, .button__facebook {
+	.main__button-instagram, .main__button-facebook {
 		width: 2.5vh;
 		height: 2.5vh;
 	}
@@ -334,7 +334,7 @@ button:hover, button:active {
 
 @media screen and (max-width: 390px) {
 
-	.section__main {
+	.main__main-section {
 		width: 90vw;
 	}
 
@@ -345,7 +345,7 @@ button:hover, button:active {
 		
 	/*text*/
 	
-	.section__main--text {
+	.main__text {
 		margin: 2% 25% 2% 0;
 	}
 	
@@ -357,7 +357,7 @@ button:hover, button:active {
 		font-size: 2vw;
 	}
 	
-	.second__titel {
+	.main__second-titel {
 		line-height: 1.5vh;
 	}
 	
@@ -371,19 +371,19 @@ button:hover, button:active {
 	
 	/*Underline*/
 	
-	.section__main--underline--first {
+	.main__first-underline {
 		background-color: #003755;
 		margin: 0.5vh 0 0.5vh 0;
 	}
 
-	.section__main--underline--second {
+	.main__first-underline {
 		background-color: #003755;
 		margin: 0.5vh 0 0.5vh 0;
 	}
 	
 	/*section with boats*/
 	
-	.boats {
+	.main__boats {
 		display: flex;
 		flex-flow: column;
 		/*flex-wrap: nowrap;*/
@@ -393,11 +393,11 @@ button:hover, button:active {
 		margin: auto;
 	}
 	
-	.first__boat--jaktar, .second__boat--axopar, .third__boat--hallbergrassy {
+	.main__first-boat-jaktar, .main__second-boat-axopar, .main__third-boat-hallbergrassy {
 		text-align: justify;		
 	}
 	
-	.first__boat--jaktar--slides, .second__boat--axopar--slides, .third__boat--hallbergrassy--slides {
+	.main__first-boat-jaktar-slides, .main__second-boat-axopar-slides, .main__third-boat-hallbergrassy-slides {
 		width: 100%;
 		height: 30vh;
 		box-shadow: none;
@@ -405,34 +405,34 @@ button:hover, button:active {
 		/*background: center cover no-repeat;*/
 	}
 	
-	.first__boat--jaktar--slides--visible, .second__boat--axopar--slides--visible, .third__boat--hallbergrassy--slides--visible {
+	.main__first-boat-jaktar-slides--visible, .main__second-boat-axopar-slides--visible, .main__third-boat-hallbergrassy-slides--visible {
 		display: flex;
 		flex-direction: column;
 	}
 	
-	.first__boat--jaktar--description, .second__boat--axopar--description, .third__boat--hallbergrassy--description {
+	.main__first-boat-jaktar-description, .main__second-boat-axopar-description, .main__third-boat-hallbergrassy-description {
 		margin: 0 0 0.3vh 0;
 		text-shadow: none;
 	}
 
-	.first__boat--jaktar--description h4, .second__boat--axopar--description h4, .third__boat--hallbergrassy--description h4 {
+	.main__first-boat-jaktar-description h4, .main__second-boat-axopar-description h4, .main__third-boat-hallbergrassy-description h4 {
 		font-size: 3vw;
 		margin-top: -1vh;
 	}
 
-	.first__boat--jaktar--description h5, .second__boat--axopar--description h5, .third__boat--hallbergrassy--description h5 {
+	.main__first-boat-jaktar-description h5, .main__second-boat-axopar-description h5, .main__third-boat-hallbergrassy-description h5 {
 		font-size: 2vw;
 	}
 
 	/*like images*/
 
-	.like__button--jaktar, .like__button--axopar, .like__button--hallbergrassy{
+	.main__button-like-jaktar, .main__button-like-axopar, .main__button-like-hallbergrassy {
 		right: 3%;
 		width: 5.5vw;
 		height: 5.5vh;
 	}
 
-	.image__like--jaktar, .image__like--axopar, .image__like--hallbergrassy {
+	.main__image-like-jaktar, .main__image-like-axopar, .main__image-like-hallbergrassy {
 		width: 5.5vw;
 		height: 5.5vh;
 	}
@@ -449,32 +449,33 @@ button:hover, button:active {
 		height: 6vh;
 	}
 	
-	.image__arrow--left, .image__arrow--right {
+	.main__image-arrow-left, .main__image-arrow-right {
 		width: 6vw;
 		height: 6vh;
 	}
 
-	.social__media--links {
+	.main__social-media-links {
 		justify-content: center;
 		color: var(--boxShadowColor);
 		gap: 3vw;
 		margin: 7vh 0 3vh 0;
 	}
 
-	.button__instagram, .button__facebook {
+	.main__button-instagram, .main__button-facebook {
 		display: none;
 	}
 
-	.button__instagram--mobile, .button__facebook--mobile {
+	.main__button-instagram-mobile, .main__button-facebook-mobile {
 		display: block;
 	}
 
-	.button__instagram, .button__facebook {
+	.main__button-instagram-mobile, .main__button-facebook-mobile {
 		width: 2.5vh;
 		height: 2.5vh;
+		margin-bottom: 2vh;
 	}
 
-	footer {
+	.footer__text {
 		display: none;
 	}
 }	

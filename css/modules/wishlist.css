@@ -1,4 +1,4 @@
-.wishlist {
+.aside__wishlist {
 	background-color: #33647F;
 	width: 25%;
 	height: 100%;
@@ -19,22 +19,22 @@
 	animation-duration: 0.7s;
 }
 
-.wishlist__elements {
+.aside__wishlist-elements {
 	margin: 1vh 4vw 1vh 4vw;
 }
 
-.title__wishlist {
+.aside__title-wishlist {
 	font-size: 3vh;
 	line-height: 7vh;
 }
 
-.wishlist__description {
+.aside__wishlist-description {
 	font-size: 0.7vw;
 }
 
 /*first underline*/
 
-.section__main--underline--first--wishlist {
+.aside__underline-first-wishlist {
 	height: var(--underlineHeightWishlist);
 	background-color: var(--alternativeColor);
 	opacity: 0.5;
@@ -43,7 +43,7 @@
 
 /*second underline*/
 
-.section__main--underline--second--wishlist {
+.aside__underline-second-wishlist {
 	height: var(--underlineHeightWishlist);
 	background-color: var(--alternativeColor);
 	opacity: 0.5;
@@ -52,14 +52,14 @@
 
 /*section with boats*/
 
-.boats--wishlist {
+.aside__boats-wishlist {
 	display: flex;
 	flex-direction: column;
 	color: var(--alternativeColor);
 	width: 100%;
 }
 
-.first__boat--jaktar--wishlist, .second__boat--axopar--wishlist, .third__boat--hallbergrassy--wishlist {
+.aside__first-boat-jaktar-wishlist, .aside__second-boat-axopar-wishlist, .aside__third-boat-hallbergrassy-wishlist {
 	width: 100%;
 	height: 100%;
 	border-radius: 0.2em;	
@@ -68,26 +68,26 @@
 	text-align: justify;
 }
 
-.first__boat--jaktar--elements--wishlist, .second__boat--axopar--elements--wishlist, .third__boat--hallbergrassy--elements--wishlist {
+.aside__first-boat-jaktar-elements-wishlist, .aside__second-boat-axopar-elements-wishlist, .aside__third-boat-hallbergrassy-elements-wishlist {
 	position: relative;
 	margin-bottom: 0.7vh;
 }
 
-.first__boat--jaktar--wishlist--active {
+.aside__first-boat-jaktar-wishlist--active {
 	display: none;
 }
 
-.second__boat--axopar--wishlist--active {
+.aside__second-boat-axopar-wishlist--active {
 	display: none;
 }
 
-.third__boat--hallbergrassy--wishlist--active {
+.aside__third-boat-hallbergrassy-wishlist--active {
 	display: none;
 }
 
 /*Like button*/
 
-.like__button--wishlist {
+.aside__like-button-wishlist {
 	position: absolute;
 	top: 10%;
 	right: 0.7vw;
@@ -95,14 +95,14 @@
 	transform: translateY(-50%);
 }
 
-.image__like--wishlist {
+.aside__image-like-wishlist {
 	width: 1.5vw;
 	height: 1.5vh;
 }
 
 /*Description*/
 
-.first__boat--jaktar--description--wishlist, .second__boat--axopar--description--wishlist, .third__boat--hallbergrassy--description--wishlist {
+.aside__first-boat-jaktar-description-wishlist, .aside__second-boat-axopar-description-wishlist, .aside__third-boat-hallbergrassy-description-wishlist {
 	text-shadow: 0.1vw 0.1vw 0.2vw var(--boxShadowColor);
 }
 
@@ -118,26 +118,26 @@
 /*breakepoints*/
 
 @media screen and (max-width: 768px) {
-	.wishlist {
+	.aside__wishlist {
 		width: 50%;
 	}
 
-	.wishlist__elements {
+	.aside__wishlist-elements {
 		margin: 1vh 10vw 1vh 10vw;
 	}
 	
-	.title__wishlist {
+	.aside__title-wishlist {
 		font-size: 2.5vh;
 		line-height: 5vh;
 	}
 	
-	.wishlist__description {
+	.aside__wishlist-description {
 		font-size: 0.7vw;
 	}
 	
 	/*first underline*/
 	
-	.section__main--underline--first--wishlist {
+	.aside__underline-first-wishlist {
 		height: var(--underlineHeightWishlist);
 		background-color: var(--alternativeColor);
 		opacity: 0.5;
@@ -146,7 +146,7 @@
 	
 	/*second underline*/
 	
-	.section__main--underline--second--wishlist {
+	.aside__underline-second-wishlist {
 		height: var(--underlineHeightWishlist);
 		background-color: var(--alternativeColor);
 		opacity: 0.5;
@@ -155,14 +155,14 @@
 	
 	/*section with boats*/
 	
-	.boats--wishlist {
+	.aside__boats-wishlist {
 		display: flex;
 		flex-direction: column;
 		color: var(--alternativeColor);
 		width: 100%;
 	}
 	
-	.first__boat--jaktar--wishlist, .second__boat--axopar--wishlist, .third__boat--hallbergrassy--wishlist {
+	.aside__first-boat-jaktar-wishlist, .aside__second-boat-axopar-wishlist, .aside__third-boat-hallbergrassy-wishlist {
 		width: 100%;
 		height: 100%;
 		border-radius: 0.2em;	
@@ -171,41 +171,41 @@
 		text-align: justify;
 	}
 	
-	.first__boat--jaktar--elements--wishlist, .second__boat--axopar--elements--wishlist, .third__boat--hallbergrassy--elements--wishlist {
+	.aside__first-boat-jaktar-elements-wishlist, .aside__second-boat-axopar-elements-wishlist, .aside__third-boat-hallbergrassy-elements-wishlist {
 		position: relative;
 		margin-bottom: 0.7vh;
 	}
 	
-	.image__like--wishlist {
+	.aside__image-like-wishlist {
 		width: 2vw;
 		height: 2vh;
 	}
 }	
 
 @media screen and (max-width: 390px) {
-	.wishlist {
+	.aside__wishlist {
 		width: 100%;
 	}
 
-	.wishlist__elements {
+	.aside__wishlist-elements {
 		margin: 1vh 15vw 1vh 15vw;
 	}
 	
-	.title__wishlist {
+	.aside__title-wishlist {
 		font-size: 2vh;
 		line-height: 4vh;
 	}
 	
-	.wishlist__description {
+	.aside__wishlist-description {
 		font-size: 2.5vw;
 	}
 	
-	.image__like--wishlist {
+	.aside__image-like-wishlist {
 		width: 4vw;
 		height: 4vh;
 	}
 
-	.like__button--wishlist {
+	.aside__like-button-wishlist {
 		top: 12%;
 		right: 3%;
 		z-index: 20;

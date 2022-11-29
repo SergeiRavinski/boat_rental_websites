@@ -6,9 +6,9 @@ export default function Header() {
 	//let inactiveWishlist = true;
 
 	//query selectors
-	const wishlistButton = document.querySelector('.button__wishlist');
-	const wishlist = document.querySelector('.wishlist');
-	//const headerMenu = document.querySelector('.hamburger__menu');
+	const wishlistButton = document.querySelector('.header__button-wishlist');
+	const wishlist = document.querySelector('.aside__wishlist');
+	//const headerMenu = document.querySelector('.aside__hamburger-menu');
 
 	//event listener
 	wishlistButton.addEventListener('click', handleButtonWishlist);
@@ -32,10 +32,10 @@ export default function Header() {
 	////close the menu if it's opened
 	//function closePreviousWindow() {
 	//	if (inactiveWishlist === false) {
-	//		wishlist.classList.add('hamburger__menu');
+	//		wishlist.classList.add('aside__hamburger-menu');
 	//	}
 	//	else {
-	//		wishlist.classList.remove('hamburger__menu');
+	//		wishlist.classList.remove('aside__hamburger-menu');
 	//	}
 	//}
 
@@ -46,9 +46,9 @@ export default function Header() {
 	let inactivePreviousWindow = true; 
 
 	//query selectors
-	const menuButton = document.querySelector('.button__hamburgermenu');
-	const headerMenu = document.querySelector('.hamburger__menu');
-	const wishlistClosed = document.querySelector('.wishlist');
+	const menuButton = document.querySelector('.header__button-hamburgermenu');
+	const headerMenu = document.querySelector('.aside__hamburger-menu');
+	const wishlistClosed = document.querySelector('.aside__wishlist');
 
 	//event listeners 
 	menuButton.addEventListener('click', handleButtonMenu);
@@ -82,10 +82,10 @@ export default function Header() {
 	//close the wishlist if it's opened
 	function closePreviousWindow() {
 		if (inactivePreviousWindow === true) {
-			wishlist.classList.add('wishlist');
+			wishlist.classList.add('aside__wishlist');
 		}
 		else {
-			wishlist.classList.remove('wishlist');
+			wishlist.classList.remove('aside__wishlist');
 		}
 	}
 }	
@@ -99,7 +99,7 @@ export default function Header() {
 
 	////query selectors
 	//const menuButton = document.querySelector('.button__hamburgermenu');
-	//const headerMenu = document.querySelector('.hamburger__menu');
+	//const headerMenu = document.querySelector('.aside__hamburger-menu');
 	//const wishlist = document.querySelector('.wishlist');
 
 	////const wishListButton = document.querySelector('.button__hamburgermenu');

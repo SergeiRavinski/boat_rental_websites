@@ -6,23 +6,23 @@ export default function Wishlist() {
 	let addedHallbergRassyToWishlist = false;
 
 	//query selectors
-	const buttonLikeJaktar = document.querySelector('.like__button--jaktar');
-	const buttonLikeAxopar = document.querySelector('.like__button--axopar');
-	const buttonLikeHallbergRassy = document.querySelector('.like__button--hallbergrassy');
+	const buttonLikeJaktar = document.querySelector('.main__button-like-jaktar');
+	const buttonLikeAxopar = document.querySelector('.main__button-like-axopar');
+	const buttonLikeHallbergRassy = document.querySelector('.main__button-like-hallbergrassy');
 
-	const boatJaktar = document.querySelector('.first__boat--jaktar--wishlist--active');
-	const boatAxopar = document.querySelector('.second__boat--axopar--wishlist--active');
-	const boatHallbergRassy = document.querySelector('.third__boat--hallbergrassy--wishlist--active');
+	const boatJaktar = document.querySelector('.aside__first-boat-jaktar-wishlist--active');
+	const boatAxopar = document.querySelector('.aside__second-boat-axopar-wishlist--active');
+	const boatHallbergRassy = document.querySelector('.aside__third-boat-hallbergrassy-wishlist--active');
 
 	//images like
-	const likeBoatJaktar = document.querySelector('.image__like--jaktar');
-	const likeBoatAxopar = document.querySelector('.image__like--axopar');
-	const likeBoatHallbergRassy = document.querySelector('.image__like--hallbergrassy');
+	const likeBoatJaktar = document.querySelector('.main__image-like-jaktar');
+	const likeBoatAxopar = document.querySelector('.main__image-like-axopar');
+	const likeBoatHallbergRassy = document.querySelector('.main__image-like-hallbergrassy');
 
 	//images red like
-	const likeRedBoatJaktar = document.querySelector('.image__like--red--jaktar');
-	const likeRedBoatAxopar = document.querySelector('.image__like--red--axopar');
-	const likeRedBoatHallbergRassy = document.querySelector('.image__like--red--hallbergrassy');
+	const likeRedBoatJaktar = document.querySelector('.main__image-like-red-jaktar');
+	const likeRedBoatAxopar = document.querySelector('.main__image-like-red-axopar');
+	const likeRedBoatHallbergRassy = document.querySelector('.main__image-like-red-hallbergrassy');
 
 	//event listeners 
 	buttonLikeJaktar.addEventListener('click', handleButtonLikeJaktar);
@@ -44,15 +44,15 @@ export default function Wishlist() {
 	function addJaktar() {
 
 		if (addedJaktarToWishlist === true) {
-			boatJaktar.classList.remove('first__boat--jaktar--wishlist--active');
-			likeRedBoatJaktar.classList.remove('image__like--red--jaktar');
-			likeBoatJaktar.classList.add('image__like--jaktar');
+			boatJaktar.classList.remove('aside__first-boat-jaktar-wishlist--active');
+			likeRedBoatJaktar.classList.remove('main__image-like-red-jaktar');
+			likeBoatJaktar.classList.add('main__image-like-jaktar');
 		} 
 
 		else {
-			boatJaktar.classList.add('first__boat--jaktar--wishlist--active');
-			likeRedBoatJaktar.classList.add('image__like--red--jaktar');
-			likeBoatJaktar.classList.remove('image__like--jaktar');
+			boatJaktar.classList.add('aside__first-boat-jaktar-wishlist--active');
+			likeRedBoatJaktar.classList.add('main__image-like-red-jaktar');
+			likeBoatJaktar.classList.remove('main__image-like-jaktar');
 		}
 	}
 
@@ -71,10 +71,10 @@ export default function Wishlist() {
 
 		if (addedAxoparToWishlist === true) {
 
-			boatAxopar.classList.remove('second__boat--axopar--wishlist--active');
+			boatAxopar.classList.remove('aside__second-boat-axopar-wishlist--active');
 		} 
 		else {
-			boatAxopar.classList.add('second__boat--axopar--wishlist--active');
+			boatAxopar.classList.add('aside__second-boat-axopar-wishlist--active');
 		}
 	}
 
@@ -93,10 +93,10 @@ export default function Wishlist() {
 
 		if (addedHallbergRassyToWishlist === true) {
 
-			boatHallbergRassy.classList.remove('third__boat--hallbergrassy--wishlist--active');
+			boatHallbergRassy.classList.remove('aside__third-boat-hallbergrassy-wishlist--active');
 		} 
 		else {
-			boatHallbergRassy.classList.add('third__boat--hallbergrassy--wishlist--active');
+			boatHallbergRassy.classList.add('aside__third-boat-hallbergrassy-wishlist--active');
 		}
 	}
 }	

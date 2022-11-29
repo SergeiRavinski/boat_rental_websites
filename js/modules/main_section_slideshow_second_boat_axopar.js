@@ -4,10 +4,10 @@ export default function SlideshowSecondBoatAxopar() {
 	let currentSlideIndexAxopar = 0;
 
 	//query selectors
-	const previousButtonAxopar = document.querySelector('.previous__button-axopar');
-	const nextButtonAxopar = document.querySelector('.next__button-axopar');
-	const boatAxoparSlides = document.querySelectorAll('.second__boat--axopar--slides');
-	const dotsAxopar = document.querySelectorAll('.dot__axopar');
+	const previousButtonAxopar = document.querySelector('.main__previous-button-axopar');
+	const nextButtonAxopar = document.querySelector('.main__next-button-axopar');
+	const boatAxoparSlides = document.querySelectorAll('.main__second-boat-axopar-slides');
+	const dotsAxopar = document.querySelectorAll('.main__dot-axopar');
 
 	//event listeners 
 	previousButtonAxopar.addEventListener('click', handlePreviousButtonAxopar);
@@ -46,14 +46,14 @@ export default function SlideshowSecondBoatAxopar() {
 	function renderHTMLAxopar() {
 		
 		for (let indexAxopar = 0; indexAxopar < boatAxoparSlides.length; indexAxopar += 1) {
-			boatAxoparSlides[indexAxopar].classList.remove('second__boat--axopar--slides--visible');	
+			boatAxoparSlides[indexAxopar].classList.remove('main__second-boat-axopar-slides--visible');	
 		}
 
 		for (let indexAxopar = 0; indexAxopar < dotsAxopar.length; indexAxopar += 1) {
-			dotsAxopar[indexAxopar].classList.remove('dot__axopar--active');
+			dotsAxopar[indexAxopar].classList.remove('main__dot-axopar--active');
 		}
 	
-		boatAxoparSlides[currentSlideIndexAxopar].classList.add('second__boat--axopar--slides--visible');
-		dotsAxopar[currentSlideIndexAxopar].classList.add('dot__axopar--active');	
+		boatAxoparSlides[currentSlideIndexAxopar].classList.add('main__second-boat-axopar-slides--visible');
+		dotsAxopar[currentSlideIndexAxopar].classList.add('main__dot-axopar--active');	
 	}	
 }

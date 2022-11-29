@@ -1,6 +1,6 @@
 export default function TextWithAnimation() {
 	//variables
-	const myWords = document.querySelectorAll('.word');
+	const myWords = document.querySelectorAll('.main__word');
 
 	let currentWordIndex = 0;
 	let changeWordInterval = setInterval(changeWord, 1300);
@@ -31,10 +31,10 @@ export default function TextWithAnimation() {
 			
 		} else {
 			for (let index = 0; index < myWords.length; index += 1) {
-				myWords[index].classList.remove('word--visible');
+				myWords[index].classList.remove('main__word--visible');
 			}
 
-			myWords[currentWordIndex].classList.add('word--visible');
+			myWords[currentWordIndex].classList.add('main__word--visible');
 		}
 	}	
 }

@@ -1,4 +1,4 @@
-.word--visible {
+.main__word--visible {
 	color: rgb(255, 255, 255);
 	display: inline;
 }
@@ -7,7 +7,7 @@
 	color: rgb(209, 229, 255);
 }
 
-.word--visible {
+.main__word--visible {
 	animation-name: fade;
 	animation-duration: 1.3s;
 }
@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 390px) {
-	.word--visible {
+	.main__word--visible {
 		color: rgb(50, 117, 52);
 	}
 	

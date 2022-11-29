@@ -13,33 +13,57 @@
 		<!--
 			
 		B__E--M
-
-		modules/header.css
-		modules/header.js
 	
 		header__logo
 		header__date-location-select
 		header__hamburger-button
 		header__wishlist-menu-button
 	
+
+		/*
+	"BEM"
+	-> block__element--modifier
+
+		.navigation 								//block
+		.navigation__search-input 			 	//block__element
+		.navigation__search-input--hover		//block__element--modifier
+
+		.navigation--dark-mode					//block--modifier
+		.navigation--visible						//block--modifier
+		.navigation--hidden						//block--modifier
+
+
+		/*
+		"Utility classes"
+		-> Tailwind
+
+		.bottom-gap
+		.large-font
+		.bold-font
+
+		-----
+
+		"BEM"
+		-> block__module--modifier
+*/	
 		-->
 
 		<!--header-->
-		<header>
+		<header class="header">
 
-			<span class="logo">
-				<img class="logo__sailboat" src="./assets/svg/logo.svg" alt="Logo SR Baatutleie">
+			<span class="header__logo">
+				<img class="header__logo-sailboat" src="./assets/svg/logo.svg" alt="Logo SR Baatutleie">
 				SR Båtutleie
 			</span>
 
-			<section class="choose__date--location">
-				<input class="input__left" type="date" placeholder="Dato"><img class="image__date" src="./assets/svg/date.svg">
-				<input class="input__right" type="text" placeholder="Sted"><img class="image__location" src="./assets/svg/globe.svg">
+			<section class="header__date-location-input">
+				<input class="header__date-input" type="date" placeholder="Dato"><img class="header__image-date" src="./assets/svg/date.svg">
+				<input class="header__location-input" type="text" placeholder="Sted"><img class="header__image-location" src="./assets/svg/globe.svg">
 			</section>	
 
-			<section class="wishlist__hamburgermenu" >
-				<button class="button__wishlist">Ønskeliste</button>
-				<button class="button__hamburgermenu"><img class="button__menu--image" src="./assets/svg/menu.svg" alt="Image menu"></button>
+			<section class="header__wishlist-hamburgermenu" >
+				<button class="header__button-wishlist">Ønskeliste</button>
+				<button class="header__button-hamburgermenu"><img class="header__button-menu-image" src="./assets/svg/menu.svg" alt="Image menu"></button>
 			</section>
 
 		</header>
@@ -47,61 +71,61 @@
 
 		<!--Main section-->
 		<main>
-			<section class="section__main">
-				<div class="section__main--text">
-					<h1>Realiser <span class="word word--visible">båtdrømmen</span></h1>
-					<h3 class="second__titel">Dagen <span class="word">i dag</span> kan være den første dagen <span class="word">i ditt</span> <span class="word">nye</span> <span class="word">båtliv!</span></h3>
+			<section class="main__main-section">
+				<div class="main__text">
+					<h1>Realiser <span class="main__word main__word--visible">båtdrømmen</span></h1>
+					<h3 class="main__second-titel">Dagen <span class="main__word">i dag</span> kan være den første dagen <span class="main__word">i ditt</span> <span class="main__word">nye</span> <span class="main__word">båtliv!</span></h3>
 					<p>Vi seiler fra øy til fjell for å oppleve, se og lære. Vi leker oss i vinden, i vannet, 
 						på fjorden, i skjærgården, og i høyden i fjellene. Vi kombinerer seiling med fjell- og toppturer, 
 						kajakkpadling, fiske, musikk, mat, festivaler, skikjøring, brevandring og mye mer!</p>
 				</div>
 
 				<!--First underline-->
-				<div class="section__main--underline--first"></div>
+				<div class="main__first-underline"></div>
 
 				<!--Boats section with slideshow-->			
-				<div class="boats">
+				<div class="main__boats">
 
 					<!--first boat-->
-					<div class="first__boat--jaktar">
-						<div class="first__boat--jaktar--elements">
+					<div class="main__first-boat-jaktar">
+						<div class="main__first-boat-jaktar-elements">
 
-							<a href="https://jaktar.com"><button class="first__boat--jaktar--button--slideshow">
-								<img class="first__boat--jaktar--slides first__boat--jaktar--slides--visible" src="./assets/first_boat_jaktar/Jaktar1.jpeg" alt="Boat Jaktar first image">
-								<img class="first__boat--jaktar--slides" src="./assets/first_boat_jaktar/Jaktar2.jpeg" alt="Boat Jaktar second image">
-								<img class="first__boat--jaktar--slides" src="./assets/first_boat_jaktar/Jaktar3.jpeg" alt="Boat Jaktar third image">
-								<img class="first__boat--jaktar--slides" src="./assets/first_boat_jaktar/Jaktar4.jpeg" alt="Boat Jaktar fourth image">
-								<img class="first__boat--jaktar--slides" src="./assets/first_boat_jaktar/Jaktar5.jpeg" alt="Boat Jaktar fifth image">
+							<a href="https://jaktar.com"><button class="main__first-boat-jaktar-button-slideshow">
+								<img class="main__first-boat-jaktar-slides main__first-boat-jaktar-slides--visible" src="./assets/first_boat_jaktar/Jaktar1.jpeg" alt="Boat Jaktar first image">
+								<img class="main__first-boat-jaktar-slides" src="./assets/first_boat_jaktar/Jaktar2.jpeg" alt="Boat Jaktar second image">
+								<img class="main__first-boat-jaktar-slides" src="./assets/first_boat_jaktar/Jaktar3.jpeg" alt="Boat Jaktar third image">
+								<img class="main__first-boat-jaktar-slides" src="./assets/first_boat_jaktar/Jaktar4.jpeg" alt="Boat Jaktar fourth image">
+								<img class="main__first-boat-jaktar-slides" src="./assets/first_boat_jaktar/Jaktar5.jpeg" alt="Boat Jaktar fifth image">
 								
 							</button></a>
 
 							<!--The like button-->
-							<button class="like__button--jaktar">
-								<img class="image__like--jaktar" src="./assets/svg/like.svg" alt="Image like">
-								<img class="image__like--red--jaktar" src="./assets/svg/heart-red.svg" alt="Image like red">
+							<button class="main__button-like-jaktar">
+								<img class="main__image-like-jaktar main__image-like-jaktar--visible" src="./assets/svg/like.svg" alt="Image like">
+								<img class="main__image-like-red-jaktar main__image-like-red-jaktar--visible" src="./assets/svg/heart-red.svg" alt="Image like red">
 							</button>
 
 							<!-- The previous and next buttons -->
-							<button class="previous__button-jaktar">
-								<img class="image__arrow--left" src="./assets/svg/Left_arrow 1.svg" alt="Image previous button">
+							<button class="main__previous-button-jaktar">
+								<img class="main__image-arrow-left" src="./assets/svg/Left_arrow 1.svg" alt="Image previous button">
 							</button>
-							<button class="next__button-jaktar">
-								<img class="image__arrow--right" src="./assets/svg/Group-4.svg" alt="Image next button">
+							<button class="main__next-button-jaktar">
+								<img class="main__image-arrow-right" src="./assets/svg/Group-4.svg" alt="Image next button">
 							</button>
 
 							<!-- The dots-->
-							<div class="first__boat--jaktar--dots">
-								<span class="dot__jaktar dot__jaktar--active"></span>
-								<span class="dot__jaktar"></span>
-								<span class="dot__jaktar"></span>
-								<span class="dot__jaktar"></span>
-								<span class="dot__jaktar"></span>
+							<div class="main__first-boat-jaktar-dots">
+								<span class="main__dot-jaktar main__dot-jaktar--active"></span>
+								<span class="main__dot-jaktar"></span>
+								<span class="main__dot-jaktar"></span>
+								<span class="main__dot-jaktar"></span>
+								<span class="main__dot-jaktar"></span>
 							</div>
 							
 						</div>
 
 						<!--First boat description-->
-						<div class="first__boat--jaktar--description">
+						<div class="main__first-boat-jaktar-description">
 							<h4>Jaktar js-30</h4>
 							<h5>Pris: 3000 kr per dag</h5>
 						</div>	
@@ -109,44 +133,44 @@
 					</div>
 
 					<!--second boat-->
-					<div class="second__boat--axopar">
-						<div class="second__boat--axopar--elements">
-							<a href="https://www.axopar.com"><button class="second__boat--axopar--button--slideshow">
-								<img class="second__boat--axopar--slides second__boat--axopar--slides--visible" src="./assets/second_boat_axopar/Axopar1.jpeg" alt="Boat Axopar first image">
-								<img class="second__boat--axopar--slides" src="./assets/second_boat_axopar/Axopar2.jpeg" alt="Boat Axopar second image">
-								<img class="second__boat--axopar--slides" src="./assets/second_boat_axopar/Axopar3.jpeg" alt="Boat Axopar third image">
-								<img class="second__boat--axopar--slides" src="./assets/second_boat_axopar/Axopar4.jpeg" alt="Boat Axopar fourth image">
-								<img class="second__boat--axopar--slides" src="./assets/second_boat_axopar/Axopar5.jpeg" alt="Boat Axopar fifth image">
+					<div class="main__second-boat-axopar">
+						<div class="main__second-boat-axopar-elements">
+							<a href="https://www.axopar.com"><button class="main__second-boat-axopar-button-slideshow">
+								<img class="main__second-boat-axopar-slides main__second-boat-axopar-slides--visible" src="./assets/second_boat_axopar/Axopar1.jpeg" alt="Boat Axopar first image">
+								<img class="main__second-boat-axopar-slides" src="./assets/second_boat_axopar/Axopar2.jpeg" alt="Boat Axopar second image">
+								<img class="main__second-boat-axopar-slides" src="./assets/second_boat_axopar/Axopar3.jpeg" alt="Boat Axopar third image">
+								<img class="main__second-boat-axopar-slides" src="./assets/second_boat_axopar/Axopar4.jpeg" alt="Boat Axopar fourth image">
+								<img class="main__second-boat-axopar-slides" src="./assets/second_boat_axopar/Axopar5.jpeg" alt="Boat Axopar fifth image">
 								
 							</button></a>
 
 							<!--The like button-->
-							<button class="like__button--axopar">
-								<img class="image__like--axopar" src="./assets/svg/like.svg" alt="Image like">
-								<img class="image__like--red--axopar" src="./assets/svg/heart-red.svg" alt="Image like red">
+							<button class="main__button-like-axopar">
+								<img class="main__image-like-axopar" src="./assets/svg/like.svg" alt="Image like">
+								<img class="main__image-like-red-axopar" src="./assets/svg/heart-red.svg" alt="Image like red">
 							</button>
 
 							<!-- The previous and next buttons -->
-							<button class="previous__button-axopar">
-								<img class="image__arrow--left" src="./assets/svg/Left_arrow 1.svg" alt="Image previous button">
+							<button class="main__previous-button-axopar">
+								<img class="main__image-arrow-left" src="./assets/svg/Left_arrow 1.svg" alt="Image previous button">
 							</button>
-							<button class="next__button-axopar">
-								<img class="image__arrow--right" src="./assets/svg/Group-4.svg" alt="Image next button">
+							<button class="main__next-button-axopar">
+								<img class="main__image-arrow-right" src="./assets/svg/Group-4.svg" alt="Image next button">
 							</button>
 
 							<!-- The dots-->
-							<div class="second__boat--axopar--dots">
-								<span class="dot__axopar dot__axopar--active"></span>
-								<span class="dot__axopar"></span>
-								<span class="dot__axopar"></span>
-								<span class="dot__axopar"></span>
-								<span class="dot__axopar"></span>
+							<div class="main__second-boat-axopar-dots">
+								<span class="main__dot-axopar main__dot-axopar--active"></span>
+								<span class="main__dot-axopar"></span>
+								<span class="main__dot-axopar"></span>
+								<span class="main__dot-axopar"></span>
+								<span class="main__dot-axopar"></span>
 							</div>
 
 						</div>
 
 						<!--Second boat description-->
-						<div class="second__boat--axopar--description">
+						<div class="main__second-boat-axopar-description">
 							<h4>Axopar 37</h4>
 							<h5>Pris: 3500 kr per dag</h5>
 						</div>		
@@ -154,44 +178,44 @@
 					</div>
 
 					<!--third boat-->
-					<div class="third__boat--hallbergrassy">
-						<div class="third__boat--hallbergrassy--elements">
-							<a href="https://www.hallberg-rassy.com"><button class="third__boat--hallbergrassy--button--slideshow">
-								<img class="third__boat--hallbergrassy--slides third__boat--hallbergrassy--slides--visible" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy1.jpg" alt="Boat Hallberg-Rasy first image">
-								<img class="third__boat--hallbergrassy--slides" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy2.jpg" alt="Boat Hallberg-Rasy second image">
-								<img class="third__boat--hallbergrassy--slides" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy3.jpg" alt="Boat Hallberg-Rasy third image">
-								<img class="third__boat--hallbergrassy--slides" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy4.jpg" alt="Boat Hallberg-Rasy fourth image">
-								<img class="third__boat--hallbergrassy--slides" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy5.jpg" alt="Boat Hallberg-Rasy fifth image">
+					<div class="main__third-boat-hallbergrassy">
+						<div class="main__third-boat-hallbergrassy-elements">
+							<a href="https://www.hallberg-rassy.com"><button class="main__third-boat-hallbergrassy-button-slideshow">
+								<img class="main__third-boat-hallbergrassy-slides main__third-boat-hallbergrassy-slides--visible" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy1.jpg" alt="Boat Hallberg-Rasy first image">
+								<img class="main__third-boat-hallbergrassy-slides" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy2.jpg" alt="Boat Hallberg-Rasy second image">
+								<img class="main__third-boat-hallbergrassy-slides" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy3.jpg" alt="Boat Hallberg-Rasy third image">
+								<img class="main__third-boat-hallbergrassy-slides" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy4.jpg" alt="Boat Hallberg-Rasy fourth image">
+								<img class="main__third-boat-hallbergrassy-slides" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy5.jpg" alt="Boat Hallberg-Rasy fifth image">
 								
 							</button></a>
 
 							<!--The like button-->
-							<button class="like__button--hallbergrassy">
-								<img class="image__like--hallbergrassy" src="./assets/svg/like.svg	" alt="Image like">
-								<img class="image__like--red--hallbergrassy" src="./assets/svg/heart-red.svg" alt="Image like red">
+							<button class="main__button-like-hallbergrassy">
+								<img class="main__image-like-hallbergrassy" src="./assets/svg/like.svg	" alt="Image like">
+								<img class="main__image-like-red-hallbergrassy" src="./assets/svg/heart-red.svg" alt="Image like red">
 							</button>
 
 							<!--The previous and next buttons-->
-							<button class="previous__button-hallbergrassy">
-								<img class="image__arrow--left" src="./assets/svg/Left_arrow 1.svg" alt="Image previous button">
+							<button class="main__previous-button-hallbergrassy">
+								<img class="main__image-arrow-left" src="./assets/svg/Left_arrow 1.svg" alt="Image previous button">
 							</button>
-							<button class="next__button-hallbergrassy">
-								<img class="image__arrow--right" src="./assets/svg/Group-4.svg" alt="Image next button">
+							<button class="main__next-button-hallbergrassy">
+								<img class="main__image-arrow-right" src="./assets/svg/Group-4.svg" alt="Image next button">
 							</button>
 
 							<!--The dots-->
-							<div class="third__boat--hallbergrassy--dots">
-								<span class="dot__hallbergrassy dot__hallbergrassy--active"></span>
-								<span class="dot__hallbergrassy"></span>
-								<span class="dot__hallbergrassy"></span>
-								<span class="dot__hallbergrassy"></span>
-								<span class="dot__hallbergrassy"></span>
+							<div class="main__third-boat-hallbergrassy-dots">
+								<span class="main__dot-hallbergrassy main__dot-hallbergrassy--active"></span>
+								<span class="main__dot-hallbergrassy"></span>
+								<span class="main__dot-hallbergrassy"></span>
+								<span class="main__dot-hallbergrassy"></span>
+								<span class="main__dot-hallbergrassy"></span>
 							</div>
 
 						</div>
 
 						<!--Third boat description-->
-						<div class="third__boat--hallbergrassy--description">
+						<div class="main__third-boat-hallbergrassy-description">
 							<h4>Hallberg-Rassy 40</h4>
 							<h5>Pris: 5000 kr per dag</h5>
 						</div>	
@@ -201,31 +225,31 @@
 				</div>
 
 				<!--Second underline-->
-				<div class="section__main--underline--second"></div>
+				<div class="main__first-underline"></div>
 				
 				<!--Social media-->
-				<section class="social__media--links">
+				<section class="main__social-media-links">
 					<a href="https://www.instagram.com">
-						<button class="button__instagram"><img class="button__instagram" src="./assets/svg/instagram__white.svg" alt="Image instagram"></button>
-						<button class="button__instagram--mobile"><img class="button__instagram" src="./assets/svg/instagram_mobile_version.svg" alt="Image instagram"></button>
+						<button class="main__button-instagram"><img class="main__button-instagram" src="./assets/svg/instagram__white.svg" alt="Image instagram"></button>
+						<button class="main__button-instagram-mobile"><img class="main__button-instagram-mobile" src="./assets/svg/instagram_mobile_version.svg" alt="Image instagram"></button>
 					</a>	
 					<a href="https://www.facebook.com">
-						<button class="button__facebook"><img class="button__facebook" src="./assets/svg/facebook_white.svg" alt="Image facebook"></button>
-						<button class="button__facebook--mobile"><img class="button__facebook" src="./assets/svg/facebook_mobile_version.svg" alt="Image facebook"></button>
+						<button class="main__button-facebook"><img class="main__button-facebook" src="./assets/svg/facebook_white.svg" alt="Image facebook"></button>
+						<button class="main__button-facebook-mobile"><img class="main__button-facebook-mobile" src="./assets/svg/facebook_mobile_version.svg" alt="Image facebook"></button>
 					</a>	
 				</section>
 
 				<!--Footer-->	
 				<footer>
-					<h4 class="footer">
+					<h4 class="footer__text">
 						© 2022 SR båtutleie. All rights reserved
 					</h4>
 				</footer>	
 
 				<!--Hamburger menu-->
-				<aside class="hamburger__menu">
-					<div class="hamburger__menu--text">
-						<h1 class="title__menu">Menu</h1>
+				<aside class="aside__hamburger-menu">
+					<div class="aside__hamburger-menu-text">
+						<h1 class="aside__title-menu">Menu</h1>
 						<ul>Om oss</ul>
 						<ul>Modeller</ul>
 						<ul>Nyheter</ul>
@@ -234,99 +258,99 @@
 				</aside>
 
 				<!--Wishlist-->
-				<aside class="wishlist">
-					<div class="wishlist__elements">
-						<h1 class="title__wishlist">Ønskeliste</h1>
+				<aside class="aside__wishlist">
+					<div class="aside__wishlist-elements">
+						<h1 class="aside__title-wishlist">Ønskeliste</h1>
 						
-						<div class="boats--wishlist">	
+						<div class="aside__boats-wishlist">	
 
 							<!--First boat wishlist-->
 
-							<div class="first__boat--jaktar--wishlist--active">
+							<div class="aside__first-boat-jaktar-wishlist--active">
 
 								<!--Underline-->
-								<div class="section__main--underline--first--wishlist"></div>
+								<div class="aside__underline-first-wishlist"></div>
 
-								<div class="first__boat--jaktar--elements--wishlist">
-									<a href="https://jaktar.com"><button class="first__boat--jaktar--button--wishlist">
-										<img class="first__boat--jaktar--wishlist first__boat--jaktar--visible" src="./assets/first_boat_jaktar/Jaktar1.jpeg" alt="Image of the boat Jaktar">
+								<div class="aside__first-boat-jaktar-elements-wishlist">
+									<a href="https://jaktar.com"><button class="aside__first-boat-jaktar-button-wishlist">
+										<img class="aside__first-boat-jaktar-wishlist aside__first-boat-jaktar--visible" src="./assets/first_boat_jaktar/Jaktar1.jpeg" alt="Image of the boat Jaktar">
 
 										<!--The like button wishlist-->
-										<button class="like__button--wishlist">
-											<img class="image__like--wishlist" src="./assets/svg/heart-red.svg" alt="Image like">
+										<button class="aside__like-button-wishlist">
+											<img class="aside__image-like-wishlist" src="./assets/svg/heart-red.svg" alt="Image like">
 										</button>
 										
 									</button></a>
 								</div>
 
 								<!--First boat description wishlist-->
-								<div class="first__boat--jaktar--description--wishlist">
-									<h3 class="wishlist__description">Jaktar js-30</h3>
-									<h4 class="wishlist__description">Pris: 3000 kr per dag</h5>
+								<div class="aside__first-boat-jaktar-description-wishlist">
+									<h3 class="aside__wishlist-description">Jaktar js-30</h3>
+									<h4 class="aside__wishlist-description">Pris: 3000 kr per dag</h5>
 								</div>
 								
 								<!--Underline-->
-								<div class="section__main--underline--second--wishlist"></div>
+								<div class="aside__underline-second-wishlist"></div>
 
 							</div>
 
 							<!--Second boat wishlist-->
 
-							<div class="second__boat--axopar--wishlist--active">
+							<div class="aside__second-boat-axopar-wishlist--active">
 
 								<!--Underline-->
-								<div class="section__main--underline--first--wishlist"></div>
+								<div class="aside__underline-first-wishlist"></div>
 
-								<div class="second__boat--axopar--elements--wishlist">
-									<a href="https://www.axopar.com"><button class="second__boat--axopar--button--wishlist">
-										<img class="second__boat--axopar--wishlist second__boat--axopar--visible" src="./assets/second_boat_axopar/Axopar1.jpeg" alt="Image of the boat Axopar">
+								<div class="aside__second-boat-axopar-elements-wishlist">
+									<a href="https://www.axopar.com"><button class="aside__second-boat-axopar-button-wishlist">
+										<img class="aside__second-boat-axopar-wishlist aside__second-boat-axopar--visible" src="./assets/second_boat_axopar/Axopar1.jpeg" alt="Image of the boat Axopar">
 
 										<!--The like button wishlist-->
-										<button class="like__button--wishlist">
-											<img class="image__like--wishlist" src="./assets/svg/heart-red.svg" alt="Image like">
+										<button class="aside__like-button-wishlist">
+											<img class="aside__image-like-wishlist" src="./assets/svg/heart-red.svg" alt="Image like">
 										</button>
 				
 									</button></a>
 								</div>
 
 								<!--Second boat description wishlist-->
-								<div class="second__boat--axopar--description--wishlist">
-									<h3 class="wishlist__description">Axopar 37</h3>
-									<h4 class="wishlist__description">Pris: 3500 kr per dag</h5>
+								<div class="aside__second-boat-axopar-description-wishlist">
+									<h3 class="aside__wishlist-description">Axopar 37</h3>
+									<h4 class="aside__wishlist-description">Pris: 3500 kr per dag</h5>
 								</div>	
 								
 								<!--Underline-->
-								<div class="section__main--underline--first--wishlist"></div>
+								<div class="aside__underline-first-wishlist"></div>
 
 							</div>
 
 							<!--Third boat wishlist-->
 
-							<div class="third__boat--hallbergrassy--wishlist--active">
+							<div class="aside__third-boat-hallbergrassy-wishlist--active">
 
 								<!--Underline-->
-								<div class="section__main--underline--first--wishlist"></div>
+								<div class="aside__underline-first-wishlist"></div>
 
-								<div class="third__boat--hallbergrassy--elements--wishlist">
-									<a href="https://www.hallberg-rassy.com"><button class="third__boat--hallbergrassy--button--wishlist">
-										<img class="third__boat--hallbergrassy--wishlist third__boat--hallbergrassy--visible" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy1.jpg" alt="Image of the boat Hallberg-Rassy">
+								<div class="aside__third-boat-hallbergrassy-elements-wishlist">
+									<a href="https://www.hallberg-rassy.com"><button class="aside__third-boat-hallbergrassy-button-wishlist">
+										<img class="aside__third-boat-hallbergrassy-wishlist aside__third-boat-hallbergrassy--visible" src="./assets/third_boat_hallberg_rassy/Hallberg-Rassy1.jpg" alt="Image of the boat Hallberg-Rassy">
 
 										<!--The like button wishlist-->
-										<button class="like__button--wishlist">
-											<img class="image__like--wishlist" src="./assets/svg/heart-red.svg" alt="Image like">
+										<button class="aside__like-button-wishlist">
+											<img class="aside__image-like-wishlist" src="./assets/svg/heart-red.svg" alt="Image like">
 										</button>
 										
 									</button></a>
 								</div>
 
 								<!--Third boat description wishlist-->
-								<div class="third__boat--hallbergrassy--description--wishlist">
-									<h3 class="wishlist__description">Hallberg-Rassy 40</h3>
-									<h4 class="wishlist__description">Pris: 5000 kr per dag</h5>
+								<div class="aside__third-boat-hallbergrassy-description-wishlist">
+									<h3 class="aside__wishlist-description">Hallberg-Rassy 40</h3>
+									<h4 class="aside__wishlist-description">Pris: 5000 kr per dag</h5>
 								</div>	
 
 								<!--Underline-->
-								<div class="section__main--underline--second--wishlist"></div>
+								<div class="aside__underline-second-wishlist"></div>
 
 							</div>
 						</div>
