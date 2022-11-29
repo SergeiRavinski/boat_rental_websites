@@ -1,4 +1,45 @@
-export default function HamburgerMenu() {
+export default function Header() {
+
+	//Wishlist
+	
+	//variables
+	//let inactiveWishlist = true;
+
+	//query selectors
+	const wishlistButton = document.querySelector('.button__wishlist');
+	const wishlist = document.querySelector('.wishlist');
+	//const headerMenu = document.querySelector('.hamburger__menu');
+
+	//event listener
+	wishlistButton.addEventListener('click', handleButtonWishlist);
+
+	//handlers
+	function handleButtonWishlist(event) {
+		toggleWishlist();
+		//changeVisibilityOfPreviousWindow()
+		//closePreviousWindow();
+	}
+
+	//functions
+	function toggleWishlist() {
+		wishlist.classList.toggle('wishlist--visible');
+	}
+
+	//function changeVisibilityOfPreviousWindow() {
+	//	inactiveWishlist = !inactiveWishlist; 
+	//}
+
+	////close the menu if it's opened
+	//function closePreviousWindow() {
+	//	if (inactiveWishlist === false) {
+	//		wishlist.classList.add('hamburger__menu');
+	//	}
+	//	else {
+	//		wishlist.classList.remove('hamburger__menu');
+	//	}
+	//}
+
+	//Hamburger menu
 
 	//variables
 	let visibleMenu = false;
@@ -7,7 +48,7 @@ export default function HamburgerMenu() {
 	//query selectors
 	const menuButton = document.querySelector('.button__hamburgermenu');
 	const headerMenu = document.querySelector('.hamburger__menu');
-	const wishlist = document.querySelector('.wishlist');
+	const wishlistClosed = document.querySelector('.wishlist');
 
 	//event listeners 
 	menuButton.addEventListener('click', handleButtonMenu);
@@ -47,12 +88,11 @@ export default function HamburgerMenu() {
 			wishlist.classList.remove('wishlist');
 		}
 	}
-}
+}	
 
 
 
-
-	////variables / model
+////variables / model
 	//let visibleMenu = true;
 	//let visibleWishlist = false;
 	//let inactivePreviousWindow = true; 

@@ -1,4 +1,4 @@
-export default function Text() {
+export default function TextWithAnimation() {
 	//variables
 	const myWords = document.querySelectorAll('.word');
 

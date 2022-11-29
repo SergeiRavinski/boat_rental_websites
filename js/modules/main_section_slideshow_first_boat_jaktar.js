@@ -4,8 +4,8 @@ export default function SlideshowFirstBoatJaktar() {
 	let currentSlideIndex = 0;
 
 	//query selectors
-	const previousButton = document.querySelector('#previous__button-jaktar');
-	const nextButton = document.querySelector('#next__button-jaktar');
+	const previousButton = document.querySelector('.previous__button-jaktar');
+	const nextButton = document.querySelector('.next__button-jaktar');
 	const boatJaktarSlides = document.querySelectorAll('.first__boat--jaktar--slides');
 	const dotsJaktar = document.querySelectorAll('.dot__jaktar');
 

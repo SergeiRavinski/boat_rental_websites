@@ -10,19 +10,19 @@ header {
 
 /*logo*/
 
-#logo {
+.logo {
 	font-size: 3vmin;
 	white-space: nowrap;
 }
 
-#logo__sailboat {
+.logo__sailboat {
 	width: 3vmin;
 	height: 3vmin;
 }
 
 /*section with date and location*/
 
-#choose__date--location {
+.choose__date--location {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -46,22 +46,22 @@ input {
 	color: var(--fontcolor);
 }
 
-#input__left {
+.input__left {
 	border-radius: 0.5rem 0 0 0.5rem;
 	margin-right: 0.5vw;
 }
 
-#input__right {
+.input__right {
 	margin-left: 0.5vw;
 }
 
-#image__date {
+.image__date {
 	width: 1.5vw;
 	width: 1.5vh;
 	margin: 0.4rem;
 }
 
-#image__location {
+.image__location {
 	width: 1.5vw;
 	width: 1.5vh;
 	margin: 0.4rem;
@@ -73,7 +73,7 @@ input {
 	cursor: pointer;
 }
 
-#button__menu--image {
+.button__menu--image {
 	width: 2vw;
 	height: 2vh;
 }
@@ -95,7 +95,68 @@ input {
 	margin: 0 5vw 0.7vh 5vw;
 }
 
+/*Hamburger menu*/
+
+.hamburger__menu {
+	background-color: #33647F;
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: var(--alternativeColor);
+	box-shadow: 0.5vw 0.5vw 1.5vw var(--boxShadowColor);
+	text-shadow: 0.1vw 0.1vw 1vw var(--boxShadowColor);
+	display: none;
+}
+
+.hamburger__menu--visible {
+	display: block;
+	z-index: 50;
+	animation-name: fade;
+	animation-duration: 0.7s;
+}
+
+.hamburger__menu--text {
+	margin: 4vh 1vw 1vh 3vw;
+}
+
+.title__menu {
+	font-size: 4vh;
+	line-height: 10vh;
+}
+
+ul {
+	font-size: 3vh;
+	line-height: 5vh;
+}
+
+/*Animation*/
+
+@keyframes fade {
+	from 	
+	{opacity: 0;};
+	to 
+	{opacity: 1;}
+}
+
 /*breakepoints*/
+
+@media screen and (max-width: 768px) {
+	.hamburger__menu {
+		width: 50%;
+	}
+	
+	.title__menu {
+		font-size: 3vh;
+		line-height: 8vh;
+	}
+	
+	ul {
+		font-size: 2vh;
+		line-height: 4vh;
+	}
+}
 
 @media screen and (max-width: 390px) {
 	/*header*/
@@ -107,7 +168,7 @@ input {
 
 	/*section with date and location*/
 
-	#choose__date--location {
+	.choose__date--location {
 		height: 1.5vh;
 	}
 
@@ -120,7 +181,7 @@ input {
 		font-size: 1.7vw;
 	}
 
-	#button__menu--image {
+	.button__menu--image {
 		width: 3vw;
 		height: 3vh;
 		margin-bottom: -0.9vh;
@@ -139,11 +200,31 @@ input {
 		margin: 0 5vw 0.4vh 5vw;
 	}
 
-	#image__date {
+	.image__date {
 		display: none;
 	}
 	
-	#image__location {
+	.image__location {
 		display: none;
+	}
+
+	/*hamburger menu*/
+
+	.hamburger__menu {
+		width: 100%;
+		height: 27%;
+	}
+
+	.hamburger__menu--text {
+		margin: 1.5vh 2vw 1vh 5vw;
+	}
+	
+	.title__menu {
+		font-size: 2.5vh;
+		line-height: 6vh;
+	}
+	
+	ul {
+		font-size: 1.8vh;
 	}
 }	

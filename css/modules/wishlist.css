@@ -23,7 +23,7 @@
 	margin: 1vh 4vw 1vh 4vw;
 }
 
-#title__wishlist {
+.title__wishlist {
 	font-size: 3vh;
 	line-height: 7vh;
 }
@@ -87,7 +87,7 @@
 
 /*Like button*/
 
-#like__button--wishlist {
+.like__button--wishlist {
 	position: absolute;
 	top: 10%;
 	right: 0.7vw;
@@ -95,7 +95,7 @@
 	transform: translateY(-50%);
 }
 
-#image__like--wishlist {
+.image__like--wishlist {
 	width: 1.5vw;
 	height: 1.5vh;
 }
@@ -126,7 +126,7 @@
 		margin: 1vh 10vw 1vh 10vw;
 	}
 	
-	#title__wishlist {
+	.title__wishlist {
 		font-size: 2.5vh;
 		line-height: 5vh;
 	}
@@ -176,7 +176,7 @@
 		margin-bottom: 0.7vh;
 	}
 	
-	#image__like--wishlist {
+	.image__like--wishlist {
 		width: 2vw;
 		height: 2vh;
 	}
@@ -191,7 +191,7 @@
 		margin: 1vh 15vw 1vh 15vw;
 	}
 	
-	#title__wishlist {
+	.title__wishlist {
 		font-size: 2vh;
 		line-height: 4vh;
 	}
@@ -200,12 +200,12 @@
 		font-size: 2.5vw;
 	}
 	
-	#image__like--wishlist {
+	.image__like--wishlist {
 		width: 4vw;
 		height: 4vh;
 	}
 
-	#like__button--wishlist {
+	.like__button--wishlist {
 		top: 12%;
 		right: 3%;
 		z-index: 20;

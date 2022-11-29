@@ -38,7 +38,7 @@ h3 {
 	font-size: 1.3vw;
 }
 
-#second__titel {
+.second__titel {
 	line-height: 5vh;
 }
 
@@ -117,7 +117,7 @@ p {
 	border: solid 0.02em var(--alternativeColor);
 }
 
-#like__button--jaktar, #like__button--axopar, #like__button--hallbergrassy {
+.like__button--jaktar, .like__button--axopar, .like__button--hallbergrassy {
 	position: absolute;
 	top: 10%;
 	right: 0.7vw;
@@ -166,7 +166,7 @@ p {
 	display: none;
 }
 
-#previous__button-jaktar, #previous__button-axopar, #previous__button-hallbergrassy {
+.previous__button-jaktar, .previous__button-axopar, .previous__button-hallbergrassy {
 	position: absolute;
 	top: 50%;
 	left: 0.3vw;
@@ -175,14 +175,12 @@ p {
 	cursor: pointer;
 }
 
-#next__button-jaktar, #next__button-axopar, #next__button-hallbergrassy {
+.next__button-jaktar, .next__button-axopar, .next__button-hallbergrassy {
 	position: absolute;
 	top: 50%;
 	right: 0.3vw;
 	z-index: 20;
 	transform: translateY(-50%);
-	width: 2.7vw;
-	height: 2.7vh;
 	cursor: pointer;
 }
 
@@ -191,7 +189,7 @@ p {
 	margin-bottom: 0.7vh;
 }
 
-#image__arrow--left, #image__arrow--right {
+.image__arrow--left, .image__arrow--right {
 	width: 2.7vw;
 	height: 2.7vh;
 }
@@ -222,7 +220,7 @@ p {
 	display: none;
 }
 
-#button__instagram, #button__facebook {
+.button__instagram, .button__facebook {
 	width: 3vh;
 	height: 3vh;
 	cursor: pointer;
@@ -230,7 +228,7 @@ p {
 
 /*footer*/
 
-#footer {
+.footer {
 	font-size: 0.8vw;
 	color: var(--alternativeColor);
 	margin-top: 0.5vh 0 0.5vh 0;
@@ -239,7 +237,7 @@ p {
 /*buttons*/
 
 button:hover, button:active {
-	transform: scale(1.010);
+	/*transform: scale(1.002);*/
 	transition-duration: 300ms;
 	transition-timing-function: ease-in-out;
 	filter: var(--hoverShadowColor);
@@ -264,7 +262,7 @@ button:hover, button:active {
 		font-size: 1.3vw;
 	}
 	
-	#second__titel {
+	.second__titel {
 		line-height: 3vh;
 	}
 	
@@ -328,7 +326,7 @@ button:hover, button:active {
 		margin: 0 0 0.3vh 0;
 	}
 	
-	#button__instagram, #button__facebook {
+	.button__instagram, .button__facebook {
 		width: 2.5vh;
 		height: 2.5vh;
 	}
@@ -359,7 +357,7 @@ button:hover, button:active {
 		font-size: 2vw;
 	}
 	
-	#second__titel {
+	.second__titel {
 		line-height: 1.5vh;
 	}
 	
@@ -428,7 +426,7 @@ button:hover, button:active {
 
 	/*like images*/
 
-	#like__button--jaktar, #like__button--axopar, #like__button--hallbergrassy{
+	.like__button--jaktar, .like__button--axopar, .like__button--hallbergrassy{
 		right: 3%;
 		width: 5.5vw;
 		height: 5.5vh;
@@ -439,17 +437,19 @@ button:hover, button:active {
 		height: 5.5vh;
 	}
 
-	#previous__button {
+	.previous__button {
 		left: 1vw;
+		width: 6vw;
+		height: 6vh;
 	}
 	
-	#next__button {
+	.next__button {
 		right: 1vw;
 		width: 6vw;
 		height: 6vh;
 	}
 	
-	#image__arrow--left, #image__arrow--right {
+	.image__arrow--left, .image__arrow--right {
 		width: 6vw;
 		height: 6vh;
 	}
@@ -469,7 +469,7 @@ button:hover, button:active {
 		display: block;
 	}
 
-	#button__instagram, #button__facebook {
+	.button__instagram, .button__facebook {
 		width: 2.5vh;
 		height: 2.5vh;
 	}

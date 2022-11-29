@@ -4,8 +4,8 @@ export default function SlideshowSecondBoatAxopar() {
 	let currentSlideIndexAxopar = 0;
 
 	//query selectors
-	const previousButtonAxopar = document.querySelector('#previous__button-axopar');
-	const nextButtonAxopar = document.querySelector('#next__button-axopar');
+	const previousButtonAxopar = document.querySelector('.previous__button-axopar');
+	const nextButtonAxopar = document.querySelector('.next__button-axopar');
 	const boatAxoparSlides = document.querySelectorAll('.second__boat--axopar--slides');
 	const dotsAxopar = document.querySelectorAll('.dot__axopar');
 

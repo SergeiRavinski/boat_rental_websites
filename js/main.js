@@ -1,15 +1,13 @@
-import HamburgerMenu from './modules/hamburgerMenu.js';
+import Header from './modules/header.js';
+import TextWithAnimation from './modules/text_with_animation.js';
 import Wishlist from './modules/wishlist.js';
-import Text from './modules/text.js';
-import AddToWishlist from './modules/addToWishlist.js';
-import SlideshowFirstBoatJaktar from './modules/slideshow_first_boat_jaktar.js';
-import SlideshowSecondBoatAxopar from './modules/slideshow_second_boat_axopar.js';
-import SlideshowFirstBoatHallbergRassy from './modules/slideshow_third_boat_hallbergrassy.js';
+import SlideshowFirstBoatJaktar from './modules/main_section_slideshow_first_boat_jaktar.js';
+import SlideshowSecondBoatAxopar from './modules/main_section_slideshow_second_boat_axopar.js';
+import SlideshowFirstBoatHallbergRassy from './modules/main_section_slideshow_third_boat_hallbergrassy.js';
 
-HamburgerMenu();
+Header();
+TextWithAnimation();
 Wishlist();
-Text();
-AddToWishlist();
 SlideshowFirstBoatJaktar();
 SlideshowSecondBoatAxopar();
 SlideshowFirstBoatHallbergRassy()

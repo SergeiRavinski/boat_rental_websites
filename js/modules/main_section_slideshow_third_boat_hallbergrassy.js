@@ -4,8 +4,8 @@ export default function SlideshowFirstBoatHallbergRassy() {
 	let currentSlideIndexHallbergRassy = 0;
 
 	//query selectors
-	const previousButtonHallbergRassy = document.querySelector('#previous__button-hallbergrassy');
-	const nextButtonHallbergRassy = document.querySelector('#next__button-hallbergrassy');
+	const previousButtonHallbergRassy = document.querySelector('.previous__button-hallbergrassy');
+	const nextButtonHallbergRassy = document.querySelector('.next__button-hallbergrassy');
 	const boatHallbergRassySlides = document.querySelectorAll('.third__boat--hallbergrassy--slides');
 	const dotsHallbergRassy = document.querySelectorAll('.dot__hallbergrassy');
 
