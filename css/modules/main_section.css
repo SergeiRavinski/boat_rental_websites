@@ -130,9 +130,6 @@ p {
 	flex-direction: row;
 }
 
-
-
-
 /*like images*/
 
 .main__image-like-jaktar, .main__image-like-axopar, .main__image-like-hallbergrassy {
@@ -169,9 +166,6 @@ p {
 	display: none;
 }
 
-
-
-
 .main__previous-button-jaktar, .main__previous-button-axopar, .main__previous-button-hallbergrassy {
 	position: absolute;
 	top: 50%;
@@ -179,6 +173,9 @@ p {
 	z-index: 20;
 	transform: translateY(-50%);
 	cursor: pointer;
+	display: none;
+	animation-name: fade;
+	animation-duration: 0.5s;
 }
 
 .main__next-button-jaktar, .main__next-button-axopar, .main__next-button-hallbergrassy {
@@ -188,6 +185,9 @@ p {
 	z-index: 20;
 	transform: translateY(-50%);
 	cursor: pointer;
+	display: none;
+	animation-name: fade;
+	animation-duration: 0.5s;
 }
 
 .main__first-boat-jaktar-elements, .main__second-boat-axopar-elements, .main__third-boat-hallbergrassy-elements {
@@ -247,6 +247,14 @@ button:hover, button:active {
 	transition-duration: 300ms;
 	transition-timing-function: ease-in-out;
 	filter: var(--hoverShadowColor);
+}
+
+/*keyframes*/
+@keyframes fade {
+	from 	
+	{opacity: 0.4;};
+	to 
+	{opacity: 1;}
 }
 
 /*breakepoints*/
