@@ -1,9 +1,9 @@
 export default function Wishlist() {
 	
 	//variables
-	let addedJaktarToWishlist = false;
-	let addedAxoparToWishlist = false;
-	let addedHallbergRassyToWishlist = false;
+	let addedJaktarToWishlist = true;
+	let addedAxoparToWishlist = true;
+	let addedHallbergRassyToWishlist = true;
 
 	//query selectors
 	const buttonLikeJaktar = document.querySelector('.main__button-like-jaktar');
@@ -44,15 +44,15 @@ export default function Wishlist() {
 	function renderHTMLAddJaktar() {
 
 		if (addedJaktarToWishlist === true) {
-			boatJaktar.classList.remove('aside__first-boat-jaktar-wishlist--active');
-			likeRedBoatJaktar.classList.remove('main__image-like-red-jaktar--active');
-			likeBoatJaktar.classList.add('main__image-like-jaktar--active');
+			boatJaktar.classList.add('aside__first-boat-jaktar-wishlist--active');
+			likeRedBoatJaktar.style.display = 'none';
+			likeBoatJaktar.style.display = 'block';
 		} 
 
 		else {
-			boatJaktar.classList.add('aside__first-boat-jaktar-wishlist--active');
-			likeRedBoatJaktar.classList.add('main__image-like-red-jaktar--active');
-			likeBoatJaktar.classList.remove('main__image-like-jaktar--active');
+			boatJaktar.classList.remove('aside__first-boat-jaktar-wishlist--active');
+			likeRedBoatJaktar.style.display = 'block';
+			likeBoatJaktar.style.display = 'none';
 		}
 	}
 
@@ -70,11 +70,14 @@ export default function Wishlist() {
 	function renderHTMLAddAxopar() {
 
 		if (addedAxoparToWishlist === true) {
-
-			boatAxopar.classList.remove('aside__second-boat-axopar-wishlist--active');
+			boatAxopar.classList.add('aside__second-boat-axopar-wishlist--active');
+			likeRedBoatAxopar.style.display = 'none';
+			likeBoatAxopar.style.display = 'block';
 		} 
 		else {
-			boatAxopar.classList.add('aside__second-boat-axopar-wishlist--active');
+			boatAxopar.classList.remove('aside__second-boat-axopar-wishlist--active');
+			likeRedBoatAxopar.style.display = 'block';
+			likeBoatAxopar.style.display = 'none';
 		}
 	}
 
@@ -92,11 +95,14 @@ export default function Wishlist() {
 	function renderHTMLAddHallbergRassy() {
 
 		if (addedHallbergRassyToWishlist === true) {
-
-			boatHallbergRassy.classList.remove('aside__third-boat-hallbergrassy-wishlist--active');
+			boatHallbergRassy.classList.add('aside__third-boat-hallbergrassy-wishlist--active');
+			likeRedBoatHallbergRassy.style.display = 'none';
+			likeBoatHallbergRassy.style.display = 'block';
 		} 
 		else {
-			boatHallbergRassy.classList.add('aside__third-boat-hallbergrassy-wishlist--active');
+			boatHallbergRassy.classList.remove('aside__third-boat-hallbergrassy-wishlist--active');
+			likeRedBoatHallbergRassy.style.display = 'block';
+			likeBoatHallbergRassy.style.display = 'none';
 		}
 	}
 }	

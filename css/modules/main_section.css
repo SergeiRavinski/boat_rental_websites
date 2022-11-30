@@ -130,6 +130,9 @@ p {
 	flex-direction: row;
 }
 
+
+
+
 /*like images*/
 
 .main__image-like-jaktar, .main__image-like-axopar, .main__image-like-hallbergrassy {
@@ -165,6 +168,9 @@ p {
 .main__image-like-red-hallbergrassy {
 	display: none;
 }
+
+
+
 
 .main__previous-button-jaktar, .main__previous-button-axopar, .main__previous-button-hallbergrassy {
 	position: absolute;

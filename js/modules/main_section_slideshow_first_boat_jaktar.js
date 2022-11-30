@@ -34,6 +34,7 @@ export default function SlideshowFirstBoatJaktar() {
 	  }
 	}
 
+	//function to increase current index
 	function increaseCurrentIndex() {
 
 		if (currentSlideIndex < boatJaktarSlides.length -1) {
@@ -43,6 +44,7 @@ export default function SlideshowFirstBoatJaktar() {
 		}
 	}
 
+	//render function
 	function renderHTMLJaktar() {
 		
 		for (let index = 0; index < boatJaktarSlides.length; index += 1) {

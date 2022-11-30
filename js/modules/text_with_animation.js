@@ -1,9 +1,11 @@
 export default function TextWithAnimation() {
+	
 	//variables
-	const myWords = document.querySelectorAll('.main__word');
-
 	let currentWordIndex = 0;
 	let changeWordInterval = setInterval(changeWord, 1300);
+
+	//query selectors
+	const myWords = document.querySelectorAll('.main__word');
 
 	function changeWord(event) {
 		increaseCurrentWordIndex();
@@ -21,6 +23,7 @@ export default function TextWithAnimation() {
 		}
 	}
 
+	//render function
 	function renderHTMLText() {
 		if (currentWordIndex === -1) {
 			for (let index = 0; index < myWords.length; index += 1) {
