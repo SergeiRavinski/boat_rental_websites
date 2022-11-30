@@ -443,6 +443,11 @@ button:hover, button:active {
 		height: 5.5vh;
 	}
 
+	.main__image-like-red-jaktar, .main__image-like-red-axopar, .main__image-like-red-hallbergrassy {
+		width: 5.5vw;
+		height: 5.5vh;
+	}
+
 	.previous__button {
 		left: 1vw;
 		width: 6vw;

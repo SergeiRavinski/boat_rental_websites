@@ -96,6 +96,12 @@
 }
 
 .aside__image-like-jaktar-wishlist, .aside__image-like-axopar-wishlist, .aside__image-like-hallbergrassy-wishlist {
+	/*width: 2.5vw;
+	height: 2.5vh;
+	cursor: pointer;*/
+}
+
+.aside__image-like-red-jaktar-wishlist, .aside__image-like-red-axopar-wishlist, .aside__image-like-red-hallbergrassy-wishlist {
 	width: 1.5vw;
 	height: 1.5vh;
 	cursor: pointer;
@@ -177,10 +183,11 @@
 		margin-bottom: 0.7vh;
 	}
 	
-	.aside__image-like-wishlist {
+	.aside__image-like-jaktar-wishlist, .aside__image-like-axopar-wishlist, .aside__image-like-hallbergrassy-wishlist {
 		width: 2vw;
 		height: 2vh;
 	}
+
 }	
 
 @media screen and (max-width: 390px) {
@@ -201,12 +208,17 @@
 		font-size: 2.5vw;
 	}
 	
-	.aside__image-like-wishlist {
+	.aside__image-like-jaktar-wishlist, .aside__image-like-axopar-wishlist, .aside__image-like-hallbergrassy-wishlist {
 		width: 4vw;
 		height: 4vh;
 	}
 
-	.aside__like-button-wishlist {
+	.aside__image-like-red-jaktar-wishlist, .aside__image-like-red-axopar-wishlist, .aside__image-like-red-hallbergrassy-wishlist {
+		width: 4vw;
+		height: 4vh;
+	}
+
+	.aside__like-button-jaktar-wishlist, .aside__like-button-axopar-wishlist, .aside__like-button-hallbergrassy-wishlist {
 		top: 12%;
 		right: 3%;
 		z-index: 20;
