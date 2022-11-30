@@ -31,17 +31,17 @@ export default function Wishlist() {
 	
 	//event handlers 
 
-	//Add first boat Jaktar	
+	//Add the first boat Jaktar	
 	function handleButtonLikeJaktar(event) {
 		visibilityJaktar();
-		addJaktar();
+		renderHTMLAddJaktar();
 	}
 
 	function visibilityJaktar() {
 		addedJaktarToWishlist = !addedJaktarToWishlist; 
 	}
 
-	function addJaktar() {
+	function renderHTMLAddJaktar() {
 
 		if (addedJaktarToWishlist === true) {
 			boatJaktar.classList.remove('aside__first-boat-jaktar-wishlist--active');
@@ -56,18 +56,18 @@ export default function Wishlist() {
 		}
 	}
 
-	//Add second boat Axopar
+	//Add the second boat Axopar
 
 	function handleButtonLikeAxopar(event) {
 		visibilityAxopar();
-		addAxopar();
+		renderHTMLAddAxopar();
 	}
 
 	function visibilityAxopar() {
 		addedAxoparToWishlist = !addedAxoparToWishlist; 
 	}
 
-	function addAxopar() {
+	function renderHTMLAddAxopar() {
 
 		if (addedAxoparToWishlist === true) {
 
@@ -78,18 +78,18 @@ export default function Wishlist() {
 		}
 	}
 
-	//Add third boat Hallberg-Rassy
+	//Add the third boat Hallberg-Rassy
 
 	function handleButtonLikeHallbergRassy(event) {
 		visibilityHallbergRassy();
-		addHallbergRassy();
+		renderHTMLAddHallbergRassy();
 	}
 
 	function visibilityHallbergRassy() {
 		addedHallbergRassyToWishlist = !addedHallbergRassyToWishlist; 
 	}
 
-	function addHallbergRassy() {
+	function renderHTMLAddHallbergRassy() {
 
 		if (addedHallbergRassyToWishlist === true) {
 

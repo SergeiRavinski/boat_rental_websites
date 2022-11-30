@@ -16,12 +16,12 @@ export default function SlideshowFirstBoatJaktar() {
 	//event handlers 
 	function handlePreviousButton(event) {
 		decreaseCurrentIndex();
-		renderHTML();
+		renderHTMLJaktar();
 	}
 
 	function handleNextButton(event) {
 		increaseCurrentIndex();
-		renderHTML();
+		renderHTMLJaktar();
 	}
 
 	//functions
@@ -43,7 +43,7 @@ export default function SlideshowFirstBoatJaktar() {
 		}
 	}
 
-	function renderHTML() {
+	function renderHTMLJaktar() {
 		
 		for (let index = 0; index < boatJaktarSlides.length; index += 1) {
 			boatJaktarSlides[index].classList.remove('main__first-boat-jaktar-slides--visible');	

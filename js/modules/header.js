@@ -3,7 +3,8 @@ export default function Header() {
 	//Wishlist
 	
 	//variables
-	//let inactiveWishlist = true;
+	let visibleMenu = false;
+	let visibleWishlist = true;
 
 	//query selectors
 	const wishlistButton = document.querySelector('.header__button-wishlist');
@@ -15,13 +16,11 @@ export default function Header() {
 
 	//handlers
 	function handleButtonWishlist(event) {
-		toggleWishlist();
-		//changeVisibilityOfPreviousWindow()
-		//closePreviousWindow();
+		renderHTML();
 	}
 
 	//functions
-	function toggleWishlist() {
+	function renderHTML() {
 		wishlist.classList.toggle('wishlist--visible');
 	}
 
@@ -41,9 +40,7 @@ export default function Header() {
 
 	//Hamburger menu
 
-	//variables
-	let visibleMenu = false;
-	let inactivePreviousWindow = true; 
+	//variables 
 
 	//query selectors
 	const menuButton = document.querySelector('.header__button-hamburgermenu');
@@ -57,8 +54,7 @@ export default function Header() {
 	function handleButtonMenu(event) {
 		changeVisibility();
 		changeVisibilityOfPreviousWindow()
-		toggleMenu();	
-		closePreviousWindow();
+		render();
 	}
 
 	//functions
@@ -67,26 +63,40 @@ export default function Header() {
 	}
 
 	function changeVisibilityOfPreviousWindow() {
-		inactivePreviousWindow = !inactivePreviousWindow; 
+		visibleWishlist = !visibleWishlist; 
 	}
 
-	function toggleMenu() {
+	//function toggleMenu() {
+	//	if (visibleMenu === true) {
+	//		headerMenu.classList.add('hamburger__menu--visible');
+	//	} 
+	//	else {
+	//		headerMenu.classList.remove('hamburger__menu--visible');
+	//	}
+	//}
+	
+	////close the wishlist if it's opened
+	//function closePreviousWindow() {
+	//	if (inactivePreviousWindow === true) {
+	//		wishlist.classList.add('aside__wishlist');
+	//	}
+	//	else {
+	//		wishlist.classList.remove('aside__wishlist');
+	//	}
+	//}
+
+	function render() {
 		if (visibleMenu === true) {
 			headerMenu.classList.add('hamburger__menu--visible');
-		} 
-		else {
+		} else {
 			headerMenu.classList.remove('hamburger__menu--visible');
 		}
-	}
-	
-	//close the wishlist if it's opened
-	function closePreviousWindow() {
-		if (inactivePreviousWindow === true) {
+
+		if (visibleWishlist === true) {
 			wishlist.classList.add('aside__wishlist');
-		}
-		else {
+		} else {
 			wishlist.classList.remove('aside__wishlist');
-		}
+		}	
 	}
 }	
 

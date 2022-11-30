@@ -7,23 +7,21 @@ export default function TextWithAnimation() {
 
 	function changeWord(event) {
 		increaseCurrentWordIndex();
-		updateWordHtml();
+		renderHTMLText();
 	}
 
 	function increaseCurrentWordIndex() {
 		if (currentWordIndex < myWords.length - 1) {
 			currentWordIndex += 1;
-			//console.log(currentWordIndex);
 		}
 
 		else {
 			currentWordIndex = -1;
 			clearInterval(changeWordInterval);	
-			//console.log(currentWordIndex)
 		}
 	}
 
-	function updateWordHtml() {
+	function renderHTMLText() {
 		if (currentWordIndex === -1) {
 			for (let index = 0; index < myWords.length; index += 1) {
 				myWords[index].classList.add('word--visible--displayLastTime');
