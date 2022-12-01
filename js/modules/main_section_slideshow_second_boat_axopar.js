@@ -69,9 +69,7 @@ export default function SlideshowSecondBoatAxopar() {
 
 		if (currentSlideIndexAxopar < boatAxoparSlides.length -1) {
 			currentSlideIndexAxopar += 1;
-		} else {
-			currentSlideIndexAxopar = 0;
-		}
+		} 
 	}
 
 	function visibleArrowsAxopar() {
@@ -102,7 +100,7 @@ export default function SlideshowSecondBoatAxopar() {
 
 		} else {
 			previousButtonAxopar.style.display = 'none';
-			nextButtonAxopar.style.display = 'none';;
+			nextButtonAxopar.style.display = 'none';
 		}
 	}
 	
