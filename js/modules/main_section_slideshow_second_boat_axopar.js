@@ -69,7 +69,9 @@ export default function SlideshowSecondBoatAxopar() {
 
 		if (currentSlideIndexAxopar < boatAxoparSlides.length -1) {
 			currentSlideIndexAxopar += 1;
-		} 
+		} else {
+			currentSlideIndexAxopar = 0;
+		}
 	}
 
 	function visibleArrowsAxopar() {

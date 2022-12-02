@@ -17,14 +17,12 @@ export default function Header() {
 	//handlers
 	function handleButtonWishlist(event) {
 		changeVisibilityWishlist();
-		//changeVisibilityMenu();
-		render();
+		renderWishlist();
 	}
 
 	function handleButtonMenu(event) {
 		changeVisibilityMenu();
-		//changeVisibilityWishlist();
-		render();
+		renderMenu();
 	}
 
 	function changeVisibilityWishlist() {
@@ -36,39 +34,24 @@ export default function Header() {
 		visibleMenu = !visibleMenu;
 	}
 
-	function render() {
+	function renderWishlist() {
 
 		if (visibleWishlist === true) {
+			(visibleMenu = false);
 			headerWishlist.classList.add('wishlist--visible');
-			visibleMenu === false;
+			headerMenu.classList.remove('hamburger__menu--visible');
 		} else {
 			headerWishlist.classList.remove('wishlist--visible');
 		}	
+	}
 
+	function renderMenu() {
 		if (visibleMenu === true) {
+			(visibleWishlist = false);
 			headerMenu.classList.add('hamburger__menu--visible');
-			visibleWishlist === false;
+			headerWishlist.classList.remove('wishlist--visible');
 		} else {
 			headerMenu.classList.remove('hamburger__menu--visible');
 		}
-	}
+	}	
 }	
-	///** 
-	// *	the job of this function is that, based on all variables from our "model",
-	// * we render the desired html (hence the name). i.e. this is the only function
-	// * that should alter DOM elements (think .classList, .innerText, .innerHTML)
-	// */
-	//function renderHTML() {
-	//	if (visibleMenu === true) {
-	//		headerMenu.classList.add('hamburger__menu--visible');
-	//	} else {
-	//		headerMenu.classList.remove('hamburger__menu--visible');
-	//	}
-
-	//	if (inactivePreviousWindow === true) {
-	//		wishlist.classList.add('wishlist');
-	//	} else {
-	//		wishlist.classList.remove('wishlist');
-	//	}
-		
-	//}

@@ -10,6 +10,7 @@
 	text-shadow: 0.1vw 0.1vw 1vw var(--boxShadowColor);
 	display: none;
 	transition: 0.5s;
+	z-index: 30;
 }
 
 .wishlist--visible {
