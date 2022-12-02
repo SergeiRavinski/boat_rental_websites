@@ -39,11 +39,33 @@ export default function TextWithAnimation() {
 		}
 	}	
 
-	//const text = document.querySelector('.movetext');
+	const text = document.querySelector('.movetext');
 
-	//document.addEventListener('scroll', handleScroll);
+	document.addEventListener('scroll', handleScroll);
+
+	let isPlayed = false;
+
+	function handleScroll() {
+		if (isPlayed === false) {
+			if (window.pageYOffset > 60) {
+				
+				console.log('omomomomom');
+				isPlayed = true;
+
+			}; 
+		}
+
+	}
 
 	//function handleScroll() {
-	//	text.style.display = '';
+	//	if (isPlayed === false) {
+	//		if (window.pageYOffset > 60) {
+				
+	//			console.log('omomomomom');
+	//			isPlayed = true;
+
+	//		}; 
+	//	}
 	//}
+
 }
