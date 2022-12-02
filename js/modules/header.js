@@ -64,5 +64,7 @@ export default function Header() {
 	function renderCloseAllMenus() {
 		headerWishlist.classList.remove('wishlist--visible');
 		headerMenu.classList.remove('hamburger__menu--visible');
+		(visibleMenu = false);
+		(visibleWishlist = false);
 	}
 }	
