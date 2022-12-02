@@ -38,4 +38,12 @@ export default function TextWithAnimation() {
 			myWords[currentWordIndex].classList.add('main__word--visible');
 		}
 	}	
+
+	//const text = document.querySelector('.movetext');
+
+	//document.addEventListener('scroll', handleScroll);
+
+	//function handleScroll() {
+	//	text.style.Math(100 - 0.2 * window.scrollY, 1) + "vw";
+	//}
 }
