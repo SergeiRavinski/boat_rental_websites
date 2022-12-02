@@ -44,6 +44,6 @@ export default function TextWithAnimation() {
 	//document.addEventListener('scroll', handleScroll);
 
 	//function handleScroll() {
-	//	text.style.Math(100 - 0.2 * window.scrollY, 1) + "vw";
+	//	text.style.display = '';
 	//}
 }
