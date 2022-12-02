@@ -50,6 +50,7 @@ export default function Wishlist() {
 	function handleButtonLikeJaktar(event) {
 		visibilityJaktar();
 		renderHTMLAddJaktar();
+		event.stopPropagation();
 	}
 
 	function visibilityJaktar() {
@@ -76,6 +77,7 @@ export default function Wishlist() {
 	function handleButtonLikeAxopar(event) {
 		visibilityAxopar();
 		renderHTMLAddAxopar();
+		event.stopPropagation();
 	}
 
 	function visibilityAxopar() {
@@ -101,6 +103,7 @@ export default function Wishlist() {
 	function handleButtonLikeHallbergRassy(event) {
 		visibilityHallbergRassy();
 		renderHTMLAddHallbergRassy();
+		event.stopPropagation();
 	}
 
 	function visibilityHallbergRassy() {
@@ -121,19 +124,22 @@ export default function Wishlist() {
 		}
 	}
 
-	function handleButtonLikeJaktarInsideWishlist() {
+	function handleButtonLikeJaktarInsideWishlist(event) {
+		event.stopPropagation();
 		boatJaktar.classList.add('aside__first-boat-jaktar-wishlist--active');
 		likeRedBoatJaktar.style.display = 'none';
 		likeBoatJaktar.style.display = 'block';
 	}
 
-	function handleButtonLikeAxoparInsideWishlist() {
+	function handleButtonLikeAxoparInsideWishlist(event) {
+		event.stopPropagation();
 		boatAxopar.classList.add('aside__second-boat-axopar-wishlist--active');
 		likeRedBoatAxopar.style.display = 'none';
 		likeBoatAxopar.style.display = 'block';
 	}
 
-	function handleButtonLikeHallbergRassyInsideWishlist() {
+	function handleButtonLikeHallbergRassyInsideWishlist(event) {
+		event.stopPropagation();
 		boatHallbergRassy.classList.add('aside__third-boat-hallbergrassy-wishlist--active');
 		likeRedBoatHallbergRassy.style.display = 'none';
 		likeBoatHallbergRassy.style.display = 'block';
