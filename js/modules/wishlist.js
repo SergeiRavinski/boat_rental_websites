@@ -8,6 +8,11 @@ export default function Wishlist() {
 	//query selectors
 
 	//boats
+	const boatJaktar = document.querySelector('.aside__first-boat-jaktar-wishlist--active');
+	const boatAxopar = document.querySelector('.aside__second-boat-axopar-wishlist--active');
+	const boatHallbergRassy = document.querySelector('.aside__third-boat-hallbergrassy-wishlist--active');
+
+	//button like
 	const buttonLikeJaktar = document.querySelector('.main__button-like-jaktar');
 	const buttonLikeAxopar = document.querySelector('.main__button-like-axopar');
 	const buttonLikeHallbergRassy = document.querySelector('.main__button-like-hallbergrassy');
@@ -16,11 +21,6 @@ export default function Wishlist() {
 	const buttonLikeJaktarInsideWishlist = document.querySelector('.aside__like-button-jaktar-wishlist');
 	const buttonLikeAxoparInsideWishlist = document.querySelector('.aside__like-button-axopar-wishlist');
 	const buttonLikeHallbergRassyInsideWishlist = document.querySelector('.aside__like-button-hallbergrassy-wishlist');
-
-	//boats
-	const boatJaktar = document.querySelector('.aside__first-boat-jaktar-wishlist--active');
-	const boatAxopar = document.querySelector('.aside__second-boat-axopar-wishlist--active');
-	const boatHallbergRassy = document.querySelector('.aside__third-boat-hallbergrassy-wishlist--active');
 
 	//images like
 	const likeBoatJaktar = document.querySelector('.main__image-like-jaktar');

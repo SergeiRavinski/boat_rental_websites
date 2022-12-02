@@ -9,10 +9,12 @@ export default function Header() {
 	const headerWishlist = document.querySelector('.aside__wishlist');
 	const menuButton = document.querySelector('.header__button-hamburgermenu');
 	const headerMenu = document.querySelector('.aside__hamburger-menu');
+	const mainSection = document.querySelector('.main__main-section');
 
 	//event listener
 	wishlistButton.addEventListener('click', handleButtonWishlist);
 	menuButton.addEventListener('click', handleButtonMenu);
+	mainSection.addEventListener('click', handleClickBackground);
 
 	//handlers
 	function handleButtonWishlist(event) {
@@ -25,11 +27,15 @@ export default function Header() {
 		renderMenu();
 	}
 
+	function handleClickBackground(event) {
+		renderCloseAllMenus();
+	}
+
+	//functions
 	function changeVisibilityWishlist() {
 		visibleWishlist = !visibleWishlist; 
 	}
 
-	//functions
 	function changeVisibilityMenu() {
 		visibleMenu = !visibleMenu;
 	}
@@ -54,4 +60,9 @@ export default function Header() {
 			headerMenu.classList.remove('hamburger__menu--visible');
 		}
 	}	
+
+	function renderCloseAllMenus() {
+		headerWishlist.classList.remove('wishlist--visible');
+		headerMenu.classList.remove('hamburger__menu--visible');
+	}
 }	
