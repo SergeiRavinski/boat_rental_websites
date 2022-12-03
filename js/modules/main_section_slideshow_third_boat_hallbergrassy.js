@@ -18,6 +18,7 @@ export default function SlideshowFirstBoatHallbergRassy() {
 	//event listeners 
 	previousButtonHallbergRassy.addEventListener('click', handlePreviousButtonHallbergRassy);
 	nextButtonHallbergRassy.addEventListener('click', handleNextButtonHallbergRassy);
+	window.addEventListener('keydown', handleKeydownHallbergRassy);
 	boatHallbergRassyVisibleArrows.addEventListener('mouseover', handleMouseOverHallbergRassy);
 	boatHallbergRassyHidenArrows.addEventListener('mouseleave', handleMouseLeaveHallbergRassy);
 	boatHallbergRassyVisiblePreviousArrowOverArrow.addEventListener('mouseover', handleMouseOverPreviousButtonHallbergRassy);
@@ -80,6 +81,19 @@ export default function SlideshowFirstBoatHallbergRassy() {
 
 	function visibleArrowsOverArrowsHallbergRassy() {
 		visibleButtonArrowHallbergRassy = !visibleButtonArrowHallbergRassy;
+	}
+
+	//change slides keyboard
+	function handleKeydownHallbergRassy(event) {
+	
+		if (event.key === 'Arrowleft') {
+			decreaseCurrentIndexHallbergRassy();
+			renderHTMLHallbergRassy();
+
+		} else if (event.key === 'Arrowright') {
+			decreaseCurrentIndexHallbergRassy();
+			renderHTMLHallbergRassy();
+		}
 	}
 
 	//render function

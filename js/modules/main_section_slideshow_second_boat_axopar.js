@@ -18,6 +18,7 @@ export default function SlideshowSecondBoatAxopar() {
 	//event listeners 
 	previousButtonAxopar.addEventListener('click', handlePreviousButtonAxopar);
 	nextButtonAxopar.addEventListener('click', handleNextButtonAxopar);
+	window.addEventListener('keyup', handleKeydownAxopar);
 	boatAxoparVisibleArrows.addEventListener('mouseover', handleMouseOverAxopar);
 	boatAxoparHidenArrows.addEventListener('mouseleave', handleMouseLeaveAxopar);
 	boatAxoparVisiblePreviousArrowOverArrow.addEventListener('mouseover', handleMouseOverPreviousButtonAxopar);
@@ -80,6 +81,19 @@ export default function SlideshowSecondBoatAxopar() {
 
 	function visibleArrowsOverArrowsAxopar() {
 		visibleButtonArrowAxopar = !visibleButtonArrowAxopar;
+	}
+
+	//change slides keyboard
+	function handleKeydownAxopar(event) {
+		
+		if (event.key === 'Arrowleft') {
+			decreaseCurrentIndexAxopar();
+			renderHTMLAxopar();
+
+		} else if (event.key === 'Arrowright') {
+			decreaseCurrentIndexAxopar();
+			renderHTMLAxopar();
+		}
 	}
 
 	//render function

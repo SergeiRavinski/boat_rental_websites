@@ -18,6 +18,7 @@ export default function SlideshowFirstBoatJaktar() {
 	//event listeners 
 	previousButton.addEventListener('click', handlePreviousButton);
 	nextButton.addEventListener('click', handleNextButton);
+	window.addEventListener('keydown', handleKeydownJaktar);
 	boatJaktarVisibleArrows.addEventListener('mouseover', handleMouseOverJaktar);
 	boatJaktarHidenArrows.addEventListener('mouseleave', handleMouseLeaveJaktar);
 	boatJaktarVisiblePreviousArrowOverArrow.addEventListener('mouseover', handleMouseOverPreviousButtonJaktar);
@@ -80,6 +81,19 @@ export default function SlideshowFirstBoatJaktar() {
 
 	function visibleArrowsOverArrows() {
 		visibleButtonArrowJaktar = !visibleButtonArrowJaktar;
+	}
+
+	//change slides keyboard
+	function handleKeydownJaktar(event) {
+
+		if (event.key === 'ArrowLeft') {
+			decreaseCurrentIndex();
+			renderHTMLJaktar();
+	
+		} else if (event.key === 'ArrowRight') {
+			increaseCurrentIndex();
+			renderHTMLJaktar();
+		}
 	}
 
 	//render function

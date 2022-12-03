@@ -258,17 +258,14 @@ button:hover, button:active {
 	filter: var(--hoverShadowColor);
 }
 
-/*.main__first-boat-jaktar-button-slideshow:hover .main__previous-button-jaktar {
-	transform: scale(2);
-}*/
 .parent {
 	flex-shrink: 0;
 	height: 50px;
 	animation: slide 1s linear;
-	/*display: none;*/
+	display: none;
 }
 
-.movetext {
+/*.movetext {
 	font-size: 2.5em;
 	font-weight: 100;
 	padding: 50px;
@@ -280,7 +277,7 @@ button:hover, button:active {
 	to {
 		-webkit-transform: translateY(-200%);
 	}
- }	
+ }	*/
 
 /*keyframes*/
 @keyframes fade {
