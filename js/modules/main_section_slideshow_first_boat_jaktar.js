@@ -120,6 +120,7 @@ export default function SlideshowFirstBoatJaktar() {
 		}
 	}	
 
+	//show buttons previous and next on hover
 	function renderHTMLArrowsJaktar() {
 		if (visibleButtonArrowJaktar === true) {
 			boatJaktarVisiblePreviousArrowOverArrow.style.display = 'block';

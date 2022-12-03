@@ -18,7 +18,7 @@ export default function SlideshowSecondBoatAxopar() {
 	//event listeners 
 	previousButtonAxopar.addEventListener('click', handlePreviousButtonAxopar);
 	nextButtonAxopar.addEventListener('click', handleNextButtonAxopar);
-	window.addEventListener('keyup', handleKeydownAxopar);
+	window.addEventListener('keydown', handleKeydownAxopar);
 	boatAxoparVisibleArrows.addEventListener('mouseover', handleMouseOverAxopar);
 	boatAxoparHidenArrows.addEventListener('mouseleave', handleMouseLeaveAxopar);
 	boatAxoparVisiblePreviousArrowOverArrow.addEventListener('mouseover', handleMouseOverPreviousButtonAxopar);
@@ -120,6 +120,7 @@ export default function SlideshowSecondBoatAxopar() {
 		}
 	}
 	
+	//show buttons previous and next on hover
 	function renderHTMLArrowsAxopar() {
 		if (visibleButtonArrowAxopar === true) {
 			boatAxoparVisiblePreviousArrowOverArrow.style.display = 'block';

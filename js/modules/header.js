@@ -17,17 +17,17 @@ export default function Header() {
 	mainSection.addEventListener('click', handleClickBackground);
 
 	//handlers
-	function handleButtonWishlist(event) {
+	function handleButtonWishlist() {
 		changeVisibilityWishlist();
 		renderWishlist();
 	}
 
-	function handleButtonMenu(event) {
+	function handleButtonMenu() {
 		changeVisibilityMenu();
 		renderMenu();
 	}
 
-	function handleClickBackground(event) {
+	function handleClickBackground() {
 		renderCloseAllMenus();
 	}
 
@@ -61,6 +61,7 @@ export default function Header() {
 		}
 	}	
 
+	//close all menus if click outside of menu
 	function renderCloseAllMenus() {
 		headerWishlist.classList.remove('wishlist--visible');
 		headerMenu.classList.remove('hamburger__menu--visible');

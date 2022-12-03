@@ -124,6 +124,7 @@ export default function Wishlist() {
 		}
 	}
 
+	//remove boats from the wishlist
 	function handleButtonLikeJaktarInsideWishlist(event) {
 		event.stopPropagation();
 		boatJaktar.classList.add('aside__first-boat-jaktar-wishlist--active');

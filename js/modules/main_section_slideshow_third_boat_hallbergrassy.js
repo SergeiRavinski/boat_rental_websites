@@ -120,6 +120,7 @@ export default function SlideshowFirstBoatHallbergRassy() {
 		}
 	}	
 
+	//show buttons previous and next on hover
 	function renderHTMLArrowsHallbergRassy() {
 		if (visibleButtonArrowHallbergRassy === true) {
 			boatHallbergRassyVisiblePreviousArrowOverArrow.style.display = 'block';
