@@ -39,33 +39,19 @@ export default function TextWithAnimation() {
 		}
 	}	
 
-	const text = document.querySelector('.movetext');
+	//function to move text if scroll
+	
+	//let isPlayed = false;
 
-	document.addEventListener('scroll', handleScroll);
+	//const text = document.querySelector('.parent');
 
-	let isPlayed = false;
-
-	function handleScroll() {
-		if (isPlayed === false) {
-			if (window.pageYOffset > 60) {
-				
-				console.log('omomomomom');
-				isPlayed = true;
-
-			}; 
-		}
-
-	}
+	//document.addEventListener('scroll', handleScroll);
 
 	//function handleScroll() {
 	//	if (isPlayed === false) {
-	//		if (window.pageYOffset > 60) {
-				
-	//			console.log('omomomomom');
-	//			isPlayed = true;
-
-	//		}; 
-	//	}
+	//		(text.scrollTop > 1000); 
+	//		console.log('hei');
+	//		}
+	//		isPlayed = true;
 	//}
-
 }
