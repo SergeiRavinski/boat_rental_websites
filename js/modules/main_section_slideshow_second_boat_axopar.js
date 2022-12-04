@@ -55,7 +55,7 @@ export default function SlideshowSecondBoatAxopar() {
 		renderHTMLArrowsAxopar();
 	}
 
-	//functions
+	//function to decrease current index
 	function decreaseCurrentIndexAxopar() {
 
 		if (currentSlideIndexAxopar > 0) {

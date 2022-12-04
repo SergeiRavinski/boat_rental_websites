@@ -55,7 +55,7 @@ export default function SlideshowFirstBoatHallbergRassy() {
 		renderHTMLArrowsHallbergRassy();
 	}
 
-	//functions
+	//function to decrease current index
 	function decreaseCurrentIndexHallbergRassy() {
 
 		if (currentSlideIndexHallbergRassy > 0) {

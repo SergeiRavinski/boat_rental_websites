@@ -55,7 +55,7 @@ export default function SlideshowFirstBoatJaktar() {
 		renderHTMLArrowsJaktar();
 	}
 
-	//functions
+	//function to decrease current index
 	function decreaseCurrentIndex() {
 
 		if (currentSlideIndexJaktar > 0) {

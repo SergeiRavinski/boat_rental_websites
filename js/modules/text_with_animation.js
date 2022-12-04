@@ -7,7 +7,7 @@ export default function TextWithAnimation() {
 	//query selectors
 	const myWords = document.querySelectorAll('.main__word');
 
-	function changeWord(event) {
+	function changeWord() {
 		increaseCurrentWordIndex();
 		renderHTMLText();
 	}
@@ -25,6 +25,7 @@ export default function TextWithAnimation() {
 
 	//render function
 	function renderHTMLText() {
+		
 		if (currentWordIndex === -1) {
 			for (let index = 0; index < myWords.length; index += 1) {
 				myWords[index].classList.add('word--visible--displayLastTime');
