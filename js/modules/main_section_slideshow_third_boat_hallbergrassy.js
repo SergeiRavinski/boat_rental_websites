@@ -25,32 +25,32 @@ export default function SlideshowFirstBoatHallbergRassy() {
 	boatHallbergRassyVisibleNextArrowOverArrow.addEventListener('mouseover', handleMouseOverNextButtonHallbergRassy);
 
 	//event handlers 
-	function handlePreviousButtonHallbergRassy(event) {
+	function handlePreviousButtonHallbergRassy() {
 		decreaseCurrentIndexHallbergRassy();
 		renderHTMLHallbergRassy();
 	}
 
-	function handleNextButtonHallbergRassy(event) {
+	function handleNextButtonHallbergRassy() {
 		increaseCurrentIndexHallbergRassy();
 		renderHTMLHallbergRassy();
 	}
 
-	function handleMouseOverHallbergRassy(event) {
+	function handleMouseOverHallbergRassy() {
 		visibleArrowsHallbergRassy();
 		renderHTMLHallbergRassy();
 	}
 
-	function handleMouseLeaveHallbergRassy(event) {
+	function handleMouseLeaveHallbergRassy() {
 		visibleArrowsHallbergRassy();
 		renderHTMLHallbergRassy();
 	}
 
-	function handleMouseOverPreviousButtonHallbergRassy(event) {
+	function handleMouseOverPreviousButtonHallbergRassy() {
 		visibleArrowsOverArrowsHallbergRassy();
 		renderHTMLArrowsHallbergRassy();
 	}
 
-	function handleMouseOverNextButtonHallbergRassy(event) {
+	function handleMouseOverNextButtonHallbergRassy() {
 		visibleArrowsOverArrowsHallbergRassy();
 		renderHTMLArrowsHallbergRassy();
 	}

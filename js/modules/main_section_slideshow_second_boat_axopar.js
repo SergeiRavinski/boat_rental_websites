@@ -25,32 +25,32 @@ export default function SlideshowSecondBoatAxopar() {
 	boatAxoparVisibleNextArrowOverArrow.addEventListener('mouseover', handleMouseOverNextButtonAxopar);
 
 	//event handlers 
-	function handlePreviousButtonAxopar(event) {
+	function handlePreviousButtonAxopar() {
 		decreaseCurrentIndexAxopar();
 		renderHTMLAxopar();
 	}
 
-	function handleNextButtonAxopar(event) {
+	function handleNextButtonAxopar() {
 		increaseCurrentIndexAxopar();
 		renderHTMLAxopar();
 	}
 
-	function handleMouseOverAxopar(event) {
+	function handleMouseOverAxopar() {
 		visibleArrowsAxopar();
 		renderHTMLAxopar();
 	}
 
-	function handleMouseLeaveAxopar(event) {
+	function handleMouseLeaveAxopar() {
 		visibleArrowsAxopar();
 		renderHTMLAxopar();
 	}
 
-	function handleMouseOverPreviousButtonAxopar(event) {
+	function handleMouseOverPreviousButtonAxopar() {
 		visibleArrowsOverArrowsAxopar();
 		renderHTMLArrowsAxopar();
 	}
 
-	function handleMouseOverNextButtonAxopar(event) {
+	function handleMouseOverNextButtonAxopar() {
 		visibleArrowsOverArrowsAxopar();
 		renderHTMLArrowsAxopar();
 	}
@@ -85,7 +85,7 @@ export default function SlideshowSecondBoatAxopar() {
 
 	//change slides keyboard
 	function handleKeydownAxopar(event) {
-		
+
 		if (event.key === 'Arrowleft') {
 			decreaseCurrentIndexAxopar();
 			renderHTMLAxopar();

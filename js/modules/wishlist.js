@@ -52,7 +52,6 @@ export default function Wishlist() {
 	
 	//event handlers 
 
-
 	function handleClickMenu(event) {
 		event.stopPropagation();
 	}
@@ -66,7 +65,6 @@ export default function Wishlist() {
 		event.stopPropagation();
 		visibilityJaktar();
 		renderHTMLAddJaktar();
-
 	}
 
 	function visibilityJaktar() {
@@ -141,6 +139,7 @@ export default function Wishlist() {
 	}
 
 	//remove boats from the wishlist
+
 	function handleButtonLikeJaktarInsideWishlist() {
 		boatJaktar.classList.add('aside__first-boat-jaktar-wishlist--active');
 		likeRedBoatJaktar.style.display = 'none';

@@ -4,6 +4,7 @@ export default function SlideshowFirstBoatJaktar() {
 	let currentSlideIndexJaktar = 0;
 	let removeButtonsJaktar = false;
 	let visibleButtonArrowJaktar = true;
+	let focusedBoatJaktar = true;
 
 	//query selectors
 	const previousButton = document.querySelector('.main__previous-button-jaktar');
@@ -25,34 +26,38 @@ export default function SlideshowFirstBoatJaktar() {
 	boatJaktarVisibleNextArrowOverArrow.addEventListener('mouseover', handleMouseOverNextButtonJaktar);
 
 	//event handlers 
-	function handlePreviousButton(event) {
+	function handlePreviousButton() {
 		decreaseCurrentIndex();
 		renderHTMLJaktar();
 	}
 
-	function handleNextButton(event) {
+	function handleNextButton() {
 		increaseCurrentIndex();
 		renderHTMLJaktar();
 	}
 
-	function handleMouseOverJaktar(event) {
+	function handleMouseOverJaktar() {
 		visibleArrows();
 		renderHTMLJaktar();
 	}
 
-	function handleMouseLeaveJaktar(event) {
+	function handleMouseLeaveJaktar() {
 		visibleArrows();
 		renderHTMLJaktar();
 	}
 
-	function handleMouseOverPreviousButtonJaktar(event) {
+	function handleMouseOverPreviousButtonJaktar() {
 		visibleArrowsOverArrows();
 		renderHTMLArrowsJaktar();
 	}
 
-	function handleMouseOverNextButtonJaktar(event) {
+	function handleMouseOverNextButtonJaktar() {
 		visibleArrowsOverArrows();
 		renderHTMLArrowsJaktar();
+	}
+
+	window.onfocus = function() {
+		focusedBoatJaktar = !focusedBoatJaktar;
 	}
 
 	//function to decrease current index
@@ -85,7 +90,7 @@ export default function SlideshowFirstBoatJaktar() {
 
 	//change slides keyboard
 	function handleKeydownJaktar(event) {
-
+		
 		if (event.key === 'ArrowLeft') {
 			decreaseCurrentIndex();
 			renderHTMLJaktar();

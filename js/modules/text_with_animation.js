@@ -50,7 +50,7 @@ export default function TextWithAnimation() {
 
 	//function handleScroll() {
 	//	if (isPlayed === false) {
-	//		(text.scrollTop > 1000); 
+	//		(text.scrollTop > 200); 
 	//		console.log('hei');
 	//		}
 	//		isPlayed = true;

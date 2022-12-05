@@ -270,6 +270,7 @@ button:hover, button:active {
 	font-weight: 100;
 	padding: 50px;
  }
+
  @keyframes slide {
 	from {
 		-webkit-transform: translateY(0);
