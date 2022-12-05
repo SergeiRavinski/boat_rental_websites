@@ -1,8 +1,4 @@
 export default function Wishlist() {
-	//const boats = [
-	//	{ name: "Jaktar XHT 20032", bookmarked: false },
-	//	{ name: "Jaktar XHT 20032", bookmarked: true }
-	//];
 	
 	//variables
 	let addedJaktarToWishlist = true;
@@ -55,6 +51,7 @@ export default function Wishlist() {
 	wishlistStopPropogation.addEventListener('click', handleClickWishlist);
 	
 	//event handlers 
+
 
 	function handleClickMenu(event) {
 		event.stopPropagation();
