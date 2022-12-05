@@ -116,7 +116,7 @@ export default function SlideshowFirstBoatJaktar() {
 
 		} else {
 			previousButton.style.display = 'none';
-			nextButton.style.display = 'none';;
+			nextButton.style.display = 'none';
 		}
 	}	
 

@@ -1,4 +1,8 @@
 export default function Wishlist() {
+	//const boats = [
+	//	{ name: "Jaktar XHT 20032", bookmarked: false },
+	//	{ name: "Jaktar XHT 20032", bookmarked: true }
+	//];
 	
 	//variables
 	let addedJaktarToWishlist = true;
@@ -32,6 +36,9 @@ export default function Wishlist() {
 	const likeRedBoatAxopar = document.querySelector('.main__image-like-red-axopar');
 	const likeRedBoatHallbergRassy = document.querySelector('.main__image-like-red-hallbergrassy');
 
+	const menuStopPropogation = document.querySelector('.aside__hamburger-menu');
+	const wishlistStopPropogation = document.querySelector('.aside__wishlist');
+
 	//event listeners 
 
 	//buttons
@@ -43,14 +50,26 @@ export default function Wishlist() {
 	buttonLikeJaktarInsideWishlist.addEventListener('click', handleButtonLikeJaktarInsideWishlist);
 	buttonLikeAxoparInsideWishlist.addEventListener('click', handleButtonLikeAxoparInsideWishlist);
 	buttonLikeHallbergRassyInsideWishlist.addEventListener('click', handleButtonLikeHallbergRassyInsideWishlist);
+
+	menuStopPropogation.addEventListener('click', handleClickMenu);
+	wishlistStopPropogation.addEventListener('click', handleClickWishlist);
 	
 	//event handlers 
 
+	function handleClickMenu(event) {
+		event.stopPropagation();
+	}
+
+	function handleClickWishlist(event) {
+		event.stopPropagation();
+	}
+
 	//Add the first boat Jaktar	
 	function handleButtonLikeJaktar(event) {
+		event.stopPropagation();
 		visibilityJaktar();
 		renderHTMLAddJaktar();
-		event.stopPropagation();
+
 	}
 
 	function visibilityJaktar() {
@@ -75,9 +94,9 @@ export default function Wishlist() {
 	//Add the second boat Axopar
 
 	function handleButtonLikeAxopar(event) {
+		event.stopPropagation();
 		visibilityAxopar();
 		renderHTMLAddAxopar();
-		event.stopPropagation();
 	}
 
 	function visibilityAxopar() {
@@ -101,9 +120,9 @@ export default function Wishlist() {
 	//Add the third boat Hallberg-Rassy
 
 	function handleButtonLikeHallbergRassy(event) {
+		event.stopPropagation();
 		visibilityHallbergRassy();
 		renderHTMLAddHallbergRassy();
-		event.stopPropagation();
 	}
 
 	function visibilityHallbergRassy() {
@@ -125,22 +144,19 @@ export default function Wishlist() {
 	}
 
 	//remove boats from the wishlist
-	function handleButtonLikeJaktarInsideWishlist(event) {
-		event.stopPropagation();
+	function handleButtonLikeJaktarInsideWishlist() {
 		boatJaktar.classList.add('aside__first-boat-jaktar-wishlist--active');
 		likeRedBoatJaktar.style.display = 'none';
 		likeBoatJaktar.style.display = 'block';
 	}
 
-	function handleButtonLikeAxoparInsideWishlist(event) {
-		event.stopPropagation();
+	function handleButtonLikeAxoparInsideWishlist() {
 		boatAxopar.classList.add('aside__second-boat-axopar-wishlist--active');
 		likeRedBoatAxopar.style.display = 'none';
 		likeBoatAxopar.style.display = 'block';
 	}
 
-	function handleButtonLikeHallbergRassyInsideWishlist(event) {
-		event.stopPropagation();
+	function handleButtonLikeHallbergRassyInsideWishlist() {
 		boatHallbergRassy.classList.add('aside__third-boat-hallbergrassy-wishlist--active');
 		likeRedBoatHallbergRassy.style.display = 'none';
 		likeBoatHallbergRassy.style.display = 'block';
