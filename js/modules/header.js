@@ -45,10 +45,12 @@ export default function Header() {
 		if (visibleWishlist === true) {
 			(visibleMenu = false);
 			headerWishlist.classList.add('wishlist--visible');
+			wishlistButton.classList.add('header__button-wishlist--active');
 			headerMenu.classList.remove('hamburger__menu--visible');
 			menuButton.classList.remove('open');
 		} else {
 			headerWishlist.classList.remove('wishlist--visible');
+			wishlistButton.classList.remove('header__button-wishlist--active');
 		}	
 	}
 
@@ -58,6 +60,7 @@ export default function Header() {
 			headerMenu.classList.add('hamburger__menu--visible');
 			menuButton.classList.add('open');
 			headerWishlist.classList.remove('wishlist--visible');
+			wishlistButton.classList.remove('header__button-wishlist--active');
 		} else {
 			headerMenu.classList.remove('hamburger__menu--visible');
 			menuButton.classList.remove('open');
@@ -69,6 +72,7 @@ export default function Header() {
 		headerWishlist.classList.remove('wishlist--visible');
 		headerMenu.classList.remove('hamburger__menu--visible');
 		menuButton.classList.remove('open');
+		wishlistButton.classList.remove('header__button-wishlist--active');
 		(visibleMenu = false);
 		(visibleWishlist = false);
 	}

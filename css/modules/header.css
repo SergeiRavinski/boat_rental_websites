@@ -157,6 +157,10 @@ input {
 	cursor: pointer;
 }
 
+.header__button-wishlist--active {
+	text-decoration: underline 0.5vh;
+}
+
 /*underline*/
 
 .underline {
@@ -275,7 +279,7 @@ ul {
 		font-size: 1.7vw;
 	}
 
-
+	/*button hamburgermenu*/
 
 	.header__button-hamburgermenu {
 		width: 1.3em;
@@ -299,11 +303,14 @@ ul {
 		top: 0.6em;
 	}
 
-
 	/*button wishlist*/
 
 	.header__button-wishlist {
 		margin: 0 1vw 0.6vh 0;
+	}
+
+	.header__button-wishlist--active {
+		text-decoration: underline 0.3vh;
 	}
 
 	/*underline*/
