@@ -2,28 +2,27 @@ export default function SlideshowFirstBoatJaktar() {
 
 	//variables
 	let currentSlideIndexJaktar = 0;
-	let removeButtonsJaktar = false;
-	let visibleButtonArrowJaktar = true;
-	let focusedBoatJaktar = true;
+	//let removeButtonsJaktar = false;
+	//let visibleButtonArrowJaktar = true;
 
 	//query selectors
 	const previousButton = document.querySelector('.main__previous-button-jaktar');
 	const nextButton = document.querySelector('.main__next-button-jaktar');
 	const boatJaktarSlides = document.querySelectorAll('.main__first-boat-jaktar-slides');
 	const dotsJaktar = document.querySelectorAll('.main__dot-jaktar');
-	const boatJaktarVisibleArrows = document.querySelector('.main__first-boat-jaktar-button-slideshow');
-	const boatJaktarHidenArrows = document.querySelector('.main__first-boat-jaktar-button-slideshow');
-	const boatJaktarVisiblePreviousArrowOverArrow = document.querySelector('.main__previous-button-jaktar');
-	const boatJaktarVisibleNextArrowOverArrow = document.querySelector('.main__next-button-jaktar');
+	//const boatJaktarVisibleArrows = document.querySelector('.main__first-boat-jaktar-button-slideshow');
+	//const boatJaktarHidenArrows = document.querySelector('.main__first-boat-jaktar-button-slideshow');
+	//const boatJaktarVisiblePreviousArrowOverArrow = document.querySelector('.main__previous-button-jaktar');
+	//const boatJaktarVisibleNextArrowOverArrow = document.querySelector('.main__next-button-jaktar');
 
 	//event listeners 
 	previousButton.addEventListener('click', handlePreviousButton);
 	nextButton.addEventListener('click', handleNextButton);
 	window.addEventListener('keydown', handleKeydownJaktar);
-	boatJaktarVisibleArrows.addEventListener('mouseover', handleMouseOverJaktar);
-	boatJaktarHidenArrows.addEventListener('mouseleave', handleMouseLeaveJaktar);
-	boatJaktarVisiblePreviousArrowOverArrow.addEventListener('mouseover', handleMouseOverPreviousButtonJaktar);
-	boatJaktarVisibleNextArrowOverArrow.addEventListener('mouseover', handleMouseOverNextButtonJaktar);
+	//boatJaktarVisibleArrows.addEventListener('mouseover', handleMouseOverJaktar);
+	//boatJaktarHidenArrows.addEventListener('mouseleave', handleMouseLeaveJaktar);
+	//boatJaktarVisiblePreviousArrowOverArrow.addEventListener('mouseover', handleMouseOverPreviousButtonJaktar);
+	//boatJaktarVisibleNextArrowOverArrow.addEventListener('mouseover', handleMouseOverNextButtonJaktar);
 
 	//event handlers 
 	function handlePreviousButton() {
@@ -36,25 +35,25 @@ export default function SlideshowFirstBoatJaktar() {
 		renderHTMLJaktar();
 	}
 
-	function handleMouseOverJaktar() {
-		visibleArrows();
-		renderHTMLJaktar();
-	}
+	//function handleMouseOverJaktar() {
+	//	visibleArrows();
+	//	renderHTMLJaktar();
+	//}
 
-	function handleMouseLeaveJaktar() {
-		visibleArrows();
-		renderHTMLJaktar();
-	}
+	//function handleMouseLeaveJaktar() {
+	//	visibleArrows();
+	//	renderHTMLJaktar();
+	//}
 
-	function handleMouseOverPreviousButtonJaktar() {
-		visibleArrowsOverArrows();
-		renderHTMLArrowsJaktar();
-	}
+	//function handleMouseOverPreviousButtonJaktar() {
+	//	visibleArrowsOverArrows();
+	//	renderHTMLArrowsJaktar();
+	//}
 
-	function handleMouseOverNextButtonJaktar() {
-		visibleArrowsOverArrows();
-		renderHTMLArrowsJaktar();
-	}
+	//function handleMouseOverNextButtonJaktar() {
+	//	visibleArrowsOverArrows();
+	//	renderHTMLArrowsJaktar();
+	//}
 
 	window.onfocus = function() {
 		focusedBoatJaktar = !focusedBoatJaktar;
@@ -80,13 +79,13 @@ export default function SlideshowFirstBoatJaktar() {
 		}
 	}
 
-	function visibleArrows() {
-		removeButtonsJaktar = !removeButtonsJaktar;
-	}
+	//function visibleArrows() {
+	//	removeButtonsJaktar = !removeButtonsJaktar;
+	//}
 
-	function visibleArrowsOverArrows() {
-		visibleButtonArrowJaktar = !visibleButtonArrowJaktar;
-	}
+	//function visibleArrowsOverArrows() {
+	//	visibleButtonArrowJaktar = !visibleButtonArrowJaktar;
+	//}
 
 	//change slides keyboard
 	function handleKeydownJaktar(event) {

@@ -2,27 +2,27 @@ export default function SlideshowSecondBoatAxopar() {
 
 	//variables
 	let currentSlideIndexAxopar = 0;
-	let removeButtonsAxopar = false;
-	let visibleButtonArrowAxopar = true;
+	//let removeButtonsAxopar = false;
+	//let visibleButtonArrowAxopar = true;
 
 	//query selectors
 	const previousButtonAxopar = document.querySelector('.main__previous-button-axopar');
 	const nextButtonAxopar = document.querySelector('.main__next-button-axopar');
 	const boatAxoparSlides = document.querySelectorAll('.main__second-boat-axopar-slides');
 	const dotsAxopar = document.querySelectorAll('.main__dot-axopar');
-	const boatAxoparVisibleArrows = document.querySelector('.main__second-boat-axopar-button-slideshow');
-	const boatAxoparHidenArrows = document.querySelector('.main__second-boat-axopar-button-slideshow');
-	const boatAxoparVisiblePreviousArrowOverArrow = document.querySelector('.main__previous-button-axopar');
-	const boatAxoparVisibleNextArrowOverArrow = document.querySelector('.main__next-button-axopar');
+	//const boatAxoparVisibleArrows = document.querySelector('.main__second-boat-axopar-button-slideshow');
+	//const boatAxoparHidenArrows = document.querySelector('.main__second-boat-axopar-button-slideshow');
+	//const boatAxoparVisiblePreviousArrowOverArrow = document.querySelector('.main__previous-button-axopar');
+	//const boatAxoparVisibleNextArrowOverArrow = document.querySelector('.main__next-button-axopar');
 
 	//event listeners 
 	previousButtonAxopar.addEventListener('click', handlePreviousButtonAxopar);
 	nextButtonAxopar.addEventListener('click', handleNextButtonAxopar);
 	window.addEventListener('keydown', handleKeydownAxopar);
-	boatAxoparVisibleArrows.addEventListener('mouseover', handleMouseOverAxopar);
-	boatAxoparHidenArrows.addEventListener('mouseleave', handleMouseLeaveAxopar);
-	boatAxoparVisiblePreviousArrowOverArrow.addEventListener('mouseover', handleMouseOverPreviousButtonAxopar);
-	boatAxoparVisibleNextArrowOverArrow.addEventListener('mouseover', handleMouseOverNextButtonAxopar);
+	//boatAxoparVisibleArrows.addEventListener('mouseover', handleMouseOverAxopar);
+	//boatAxoparHidenArrows.addEventListener('mouseleave', handleMouseLeaveAxopar);
+	//boatAxoparVisiblePreviousArrowOverArrow.addEventListener('mouseover', handleMouseOverPreviousButtonAxopar);
+	//boatAxoparVisibleNextArrowOverArrow.addEventListener('mouseover', handleMouseOverNextButtonAxopar);
 
 	//event handlers 
 	function handlePreviousButtonAxopar() {
@@ -35,25 +35,25 @@ export default function SlideshowSecondBoatAxopar() {
 		renderHTMLAxopar();
 	}
 
-	function handleMouseOverAxopar() {
-		visibleArrowsAxopar();
-		renderHTMLAxopar();
-	}
+	//function handleMouseOverAxopar() {
+	//	visibleArrowsAxopar();
+	//	renderHTMLAxopar();
+	//}
 
-	function handleMouseLeaveAxopar() {
-		visibleArrowsAxopar();
-		renderHTMLAxopar();
-	}
+	//function handleMouseLeaveAxopar() {
+	//	visibleArrowsAxopar();
+	//	renderHTMLAxopar();
+	//}
 
-	function handleMouseOverPreviousButtonAxopar() {
-		visibleArrowsOverArrowsAxopar();
-		renderHTMLArrowsAxopar();
-	}
+	//function handleMouseOverPreviousButtonAxopar() {
+	//	visibleArrowsOverArrowsAxopar();
+	//	renderHTMLArrowsAxopar();
+	//}
 
-	function handleMouseOverNextButtonAxopar() {
-		visibleArrowsOverArrowsAxopar();
-		renderHTMLArrowsAxopar();
-	}
+	//function handleMouseOverNextButtonAxopar() {
+	//	visibleArrowsOverArrowsAxopar();
+	//	renderHTMLArrowsAxopar();
+	//}
 
 	//function to decrease current index
 	function decreaseCurrentIndexAxopar() {
@@ -75,13 +75,13 @@ export default function SlideshowSecondBoatAxopar() {
 		}
 	}
 
-	function visibleArrowsAxopar() {
-		removeButtonsAxopar = !removeButtonsAxopar;
-	}
+	//function visibleArrowsAxopar() {
+	//	removeButtonsAxopar = !removeButtonsAxopar;
+	//}
 
-	function visibleArrowsOverArrowsAxopar() {
-		visibleButtonArrowAxopar = !visibleButtonArrowAxopar;
-	}
+	//function visibleArrowsOverArrowsAxopar() {
+	//	visibleButtonArrowAxopar = !visibleButtonArrowAxopar;
+	//}
 
 	//change slides keyboard
 	function handleKeydownAxopar(event) {
