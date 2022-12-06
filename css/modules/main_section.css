@@ -359,12 +359,16 @@ button:hover, button:active {
 		width: 2.5vh;
 		height: 2.5vh;
 	}
+
+	.main__previous-button-jaktar, .main__previous-button-axopar, .main__previous-button-hallbergrassy, .main__next-button-jaktar, .main__next-button-axopar, .main__next-button-hallbergrassy {
+		display: block;
+	}
 }	
 
 @media screen and (max-width: 390px) {
 
 	.main__main-section {
-		width: 90vw;
+		width: 95vw;
 	}
 
 	/*background*/
@@ -405,11 +409,6 @@ button:hover, button:active {
 		background-color: #003755;
 		margin: 0.5vh 0 0.5vh 0;
 	}
-
-	.main__first-underline {
-		background-color: #003755;
-		margin: 0.5vh 0 0.5vh 0;
-	}
 	
 	/*section with boats*/
 	
@@ -432,7 +431,6 @@ button:hover, button:active {
 		height: 30vh;
 		box-shadow: none;
 		display: none;
-		/*background: center cover no-repeat;*/
 	}
 	
 	.main__first-boat-jaktar-slides--visible, .main__second-boat-axopar-slides--visible, .main__third-boat-hallbergrassy-slides--visible {
@@ -458,28 +456,28 @@ button:hover, button:active {
 
 	.main__button-like-jaktar, .main__button-like-axopar, .main__button-like-hallbergrassy {
 		right: 3%;
-		width: 5.5vw;
-		height: 5.5vh;
+		width: 6.5vw;
+		height: 6.5vh;
 	}
 
 	.main__image-like-jaktar, .main__image-like-axopar, .main__image-like-hallbergrassy {
-		width: 5.5vw;
-		height: 5.5vh;
+		width: 6.5vw;
+		height: 6.5vh;
 	}
 
 	.main__image-like-red-jaktar, .main__image-like-red-axopar, .main__image-like-red-hallbergrassy {
-		width: 5.5vw;
-		height: 5.5vh;
+		width: 6.5vw;
+		height: 6.5vh;
 	}
 
 	.previous__button {
-		left: 1vw;
+		left: 2.5vw;
 		width: 6vw;
 		height: 6vh;
 	}
 	
 	.next__button {
-		right: 1vw;
+		right: 2.5vw;
 		width: 6vw;
 		height: 6vh;
 	}
@@ -493,7 +491,7 @@ button:hover, button:active {
 		justify-content: center;
 		color: var(--boxShadowColor);
 		gap: 3vw;
-		margin: 7vh 0 3vh 0;
+		margin: 3vh 0 3vh 0;
 	}
 
 	.main__button-instagram, .main__button-facebook {
@@ -509,7 +507,16 @@ button:hover, button:active {
 		height: 2.5vh;
 		margin-bottom: 2vh;
 	}
+	
+	.main__next-button-jaktar, .main__next-button-axopar, .main__next-button-hallbergrassy {
+		right: 2.5vw;
+	}
 
+	.main__previous-button-jaktar, .main__previous-button-axopar, .main__previous-button-hallbergrassy {
+		left: 2.5vw;
+	}
+
+	/*footer*/
 	.footer__text {
 		display: none;
 	}

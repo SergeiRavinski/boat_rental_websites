@@ -191,7 +191,7 @@
 	}
 
 	.aside__wishlist-elements {
-		margin: 1vh 15vw 1vh 15vw;
+		margin: 1vh 5vw 1vh 5vw;
 	}
 	
 	.aside__title-wishlist {
@@ -204,13 +204,13 @@
 	}
 	
 	.aside__image-like-jaktar-wishlist, .aside__image-like-axopar-wishlist, .aside__image-like-hallbergrassy-wishlist {
-		width: 4vw;
-		height: 4vh;
+		width: 5.5vw;
+		height: 5.5vh;
 	}
 
 	.aside__image-like-red-jaktar-wishlist, .aside__image-like-red-axopar-wishlist, .aside__image-like-red-hallbergrassy-wishlist {
-		width: 4vw;
-		height: 4vh;
+		width: 5.5vw;
+		height: 5.5vh;
 	}
 
 	.aside__like-button-jaktar-wishlist, .aside__like-button-axopar-wishlist, .aside__like-button-hallbergrassy-wishlist {
