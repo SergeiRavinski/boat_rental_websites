@@ -4,6 +4,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 	color: var(--fontcolor);
 	margin: 2vh 5vw 0.3vh 5vw;
 }
@@ -69,20 +70,90 @@ input {
 
 /*button hamburger menu*/
 
+.header__wishlist-hamburgermenu {
+	display: flex;
+	flex-direction: row;
+}
+
 .header__button-hamburgermenu {
+	margin-top: 0.3em;
+	width: 2.3em;
+	height: 2.3em;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
 	cursor: pointer;
 }
 
-.header__button-menu-image {
-	width: 2vw;
-	height: 2vh;
+.header__button-hamburgermenu span {
+	position: absolute;
+	height: 0.3em;
+	width: 2.3em;
+	background: #003755;
+	border-radius: 1em;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: 0.25s ease-in-out;
+	-moz-transition: 0.25s ease-in-out;
+	-o-transition: 0.25s ease-in-out;
+	transition: 0.25s ease-in-out;
+}
+
+.header__button-hamburgermenu span:nth-child(1) {
+	top: 0;
+}
+
+.header__button-hamburgermenu span:nth-child(2), .header__button-hamburgermenu span:nth-child(3) {
+	top: 0.7em;
+}
+
+.header__button-hamburgermenu span:nth-child(4) {
+	top: 1.4em;
+}
+
+.header__button-hamburgermenu.open span {
+	background: #003755;
+}
+
+.header__button-hamburgermenu.open span:nth-child(1) {
+	top: 0;
+	width: 0;
+	left: 50%;
+}
+
+.header__button-hamburgermenu.open span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.header__button-hamburgermenu.open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.header__button-hamburgermenu.open span:nth-child(4) {
+	top: 1.4em;
+	width: 0;
+	left: 50%;
 }
 
 /*button wishlist*/
 
 .header__button-wishlist {
 	font-size: 3vmin;
-	margin-right: 1rem;
+	margin-right: 2rem;
 	cursor: pointer;
 }
 
@@ -143,6 +214,29 @@ ul {
 /*breakepoints*/
 
 @media screen and (max-width: 768px) {
+
+	.header__button-hamburgermenu {
+		width: 1.8em;
+		height: 1.8em;
+	}
+	
+	.header__button-hamburgermenu span {
+		height: 0.5vh;
+		width: 1.8em;
+	}
+	
+	.header__button-hamburgermenu span:nth-child(2), .header__button-hamburgermenu span:nth-child(3) {
+		top: 0.5em;
+	}
+	
+	.header__button-hamburgermenu span:nth-child(4) {
+		top: 1em;
+	}
+	
+	.header__button-hamburgermenu.open span:nth-child(4) {
+		top: 1em;
+	}
+
 	.aside__hamburger-menu {
 		width: 50%;
 	}
@@ -181,11 +275,30 @@ ul {
 		font-size: 1.7vw;
 	}
 
-	.header__button-menu-image {
-		width: 3vw;
-		height: 3vh;
-		margin-bottom: -0.9vh;
+
+
+	.header__button-hamburgermenu {
+		width: 1.3em;
+		height: 1.3em;
 	}
+	
+	.header__button-hamburgermenu span {
+		height: 0.3vh;
+		width: 1.3em;
+	}
+	
+	.header__button-hamburgermenu span:nth-child(2), .header__button-hamburgermenu span:nth-child(3) {
+		top: 0.3em;
+	}
+	
+	.header__button-hamburgermenu span:nth-child(4) {
+		top: 0.6em;
+	}
+	
+	.header__button-hamburgermenu.open span:nth-child(4) {
+		top: 0.6em;
+	}
+
 
 	/*button wishlist*/
 

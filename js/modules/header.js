@@ -46,6 +46,7 @@ export default function Header() {
 			(visibleMenu = false);
 			headerWishlist.classList.add('wishlist--visible');
 			headerMenu.classList.remove('hamburger__menu--visible');
+			menuButton.classList.remove('open');
 		} else {
 			headerWishlist.classList.remove('wishlist--visible');
 		}	
@@ -55,9 +56,11 @@ export default function Header() {
 		if (visibleMenu === true) {
 			(visibleWishlist = false);
 			headerMenu.classList.add('hamburger__menu--visible');
+			menuButton.classList.add('open');
 			headerWishlist.classList.remove('wishlist--visible');
 		} else {
 			headerMenu.classList.remove('hamburger__menu--visible');
+			menuButton.classList.remove('open');
 		}
 	}	
 
@@ -65,6 +68,7 @@ export default function Header() {
 	function renderCloseAllMenus() {
 		headerWishlist.classList.remove('wishlist--visible');
 		headerMenu.classList.remove('hamburger__menu--visible');
+		menuButton.classList.remove('open');
 		(visibleMenu = false);
 		(visibleWishlist = false);
 	}
