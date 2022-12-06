@@ -110,21 +110,23 @@ export default function SlideshowSecondBoatAxopar() {
 		boatAxoparSlides[currentSlideIndexAxopar].classList.add('main__second-boat-axopar-slides--visible');
 		dotsAxopar[currentSlideIndexAxopar].classList.add('main__dot-axopar--active');	
 
-		if (removeButtonsAxopar === true) {
-			previousButtonAxopar.style.display = 'block';
-			nextButtonAxopar.style.display = 'block';
+		////show buttons previous and next on hover
+		//if (removeButtonsAxopar === true) {
+		//	previousButtonAxopar.style.display = 'block';
+		//	nextButtonAxopar.style.display = 'block';
 
-		} else {
-			previousButtonAxopar.style.display = 'none';
-			nextButtonAxopar.style.display = 'none';
-		}
+		//} else {
+		//	previousButtonAxopar.style.display = 'none';
+		//	nextButtonAxopar.style.display = 'none';
+		//}
 	}
 	
-	//show buttons previous and next on hover
-	function renderHTMLArrowsAxopar() {
-		if (visibleButtonArrowAxopar === true) {
-			boatAxoparVisiblePreviousArrowOverArrow.style.display = 'block';
-			boatAxoparVisibleNextArrowOverArrow.style.display = 'block';
-		} 
-	}
+	////show buttons previous and next on hover
+
+	//function renderHTMLArrowsAxopar() {
+	//	if (visibleButtonArrowAxopar === true) {
+	//		boatAxoparVisiblePreviousArrowOverArrow.style.display = 'block';
+	//		boatAxoparVisibleNextArrowOverArrow.style.display = 'block';
+	//	} 
+	//}
 }

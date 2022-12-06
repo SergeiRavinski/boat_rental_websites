@@ -115,23 +115,24 @@ export default function SlideshowFirstBoatJaktar() {
 		boatJaktarSlides[currentSlideIndexJaktar].classList.add('main__first-boat-jaktar-slides--visible');
 		dotsJaktar[currentSlideIndexJaktar].classList.add('main__dot-jaktar--active');
 		
-		if (removeButtonsJaktar === true) {
-			previousButton.style.display = 'block';
-			nextButton.style.display = 'block';
+		////show buttons previous and next on hover
+		//if (removeButtonsJaktar === true) {
+		//	previousButton.style.display = 'block';
+		//	nextButton.style.display = 'block';
 
-		} else {
-			previousButton.style.display = 'none';
-			nextButton.style.display = 'none';
-		}
+		//} else {
+		//	previousButton.style.display = 'none';
+		//	nextButton.style.display = 'none';
+		//}
 	}	
 
-	//show buttons previous and next on hover
-	function renderHTMLArrowsJaktar() {
-		if (visibleButtonArrowJaktar === true) {
-			boatJaktarVisiblePreviousArrowOverArrow.style.display = 'block';
-			boatJaktarVisibleNextArrowOverArrow.style.display = 'block';
-		} 
-	}
+	////show buttons previous and next on hover
+	//function renderHTMLArrowsJaktar() {
+	//	if (visibleButtonArrowJaktar === true) {
+	//		boatJaktarVisiblePreviousArrowOverArrow.style.display = 'block';
+	//		boatJaktarVisibleNextArrowOverArrow.style.display = 'block';
+	//	} 
+	//}
 }
 
 

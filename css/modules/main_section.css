@@ -199,6 +199,10 @@ p {
 	animation-duration: 0.5s;
 }
 
+.main__first-boat-jaktar:hover .main__next-button-jaktar, .main__first-boat-jaktar:hover .main__previous-button-jaktar, .main__second-boat-axopar:hover .main__next-button-axopar, .main__second-boat-axopar:hover .main__previous-button-axopar, .main__third-boat-hallbergrassy:hover .main__next-button-hallbergrassy, .main__third-boat-hallbergrassy:hover .main__previous-button-hallbergrassy {
+	display: block;
+}
+
 .main__first-boat-jaktar-elements, .main__second-boat-axopar-elements, .main__third-boat-hallbergrassy-elements {
 	position: relative;
 	margin-bottom: 0.7vh;
@@ -325,7 +329,6 @@ button:hover, button:active {
 	.main__boats {
 		display: flex;
 		flex-flow: column;
-		/*flex-wrap: nowrap;*/
 		color: var(--alternativeColor);
 		width: 50vw;
 		height: 69vh;
@@ -384,15 +387,15 @@ button:hover, button:active {
 	}
 	
 	h1 {
-		font-size: 2.7vw;
+		font-size: 3vw;
 	}
 	
 	h3 {
-		font-size: 2vw;
+		font-size: 2.5vw;
 	}
 	
 	.main__second-titel {
-		line-height: 1.5vh;
+		line-height: 2vh;
 	}
 	
 	h4 {
@@ -400,7 +403,7 @@ button:hover, button:active {
 	}
 	
 	p {
-		font-size: 1.3vw;
+		font-size: 1.7vw;
 	}
 	
 	/*Underline*/
@@ -415,7 +418,6 @@ button:hover, button:active {
 	.main__boats {
 		display: flex;
 		flex-flow: column;
-		/*flex-wrap: nowrap;*/
 		color: var(--fontcolor);
 		width: 100%;
 		height: 100%;

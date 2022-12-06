@@ -110,21 +110,22 @@ export default function SlideshowFirstBoatHallbergRassy() {
 		boatHallbergRassySlides[currentSlideIndexHallbergRassy].classList.add('main__third-boat-hallbergrassy-slides--visible');
 		dotsHallbergRassy[currentSlideIndexHallbergRassy].classList.add('main__dot-hallbergrassy--active');	
 
-		if (removeButtonsHallbergRassy === true) {
-			previousButtonHallbergRassy.style.display = 'block';
-			nextButtonHallbergRassy.style.display = 'block';
+		////show buttons previous and next on hover
+		//if (removeButtonsHallbergRassy === true) {
+		//	previousButtonHallbergRassy.style.display = 'block';
+		//	nextButtonHallbergRassy.style.display = 'block';
 
-		} else {
-			previousButtonHallbergRassy.style.display = 'none';
-			nextButtonHallbergRassy.style.display = 'none';;
-		}
+		//} else {
+		//	previousButtonHallbergRassy.style.display = 'none';
+		//	nextButtonHallbergRassy.style.display = 'none';;
+		//}
 	}	
 
-	//show buttons previous and next on hover
-	function renderHTMLArrowsHallbergRassy() {
-		if (visibleButtonArrowHallbergRassy === true) {
-			boatHallbergRassyVisiblePreviousArrowOverArrow.style.display = 'block';
-			boatHallbergRassyVisibleNextArrowOverArrow.style.display = 'block';
-		} 
-	}
+	////show buttons previous and next on hover
+	//function renderHTMLArrowsHallbergRassy() {
+	//	if (visibleButtonArrowHallbergRassy === true) {
+	//		boatHallbergRassyVisiblePreviousArrowOverArrow.style.display = 'block';
+	//		boatHallbergRassyVisibleNextArrowOverArrow.style.display = 'block';
+	//	} 
+	//}
 }
