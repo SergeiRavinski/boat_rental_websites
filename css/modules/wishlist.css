@@ -96,12 +96,6 @@
 	transform: translateY(-50%);
 }
 
-.aside__image-like-jaktar-wishlist, .aside__image-like-axopar-wishlist, .aside__image-like-hallbergrassy-wishlist {
-	/*width: 2.5vw;
-	height: 2.5vh;
-	cursor: pointer;*/
-}
-
 .aside__image-like-red-jaktar-wishlist, .aside__image-like-red-axopar-wishlist, .aside__image-like-red-hallbergrassy-wishlist {
 	width: 1.5vw;
 	height: 1.5vh;

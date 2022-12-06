@@ -90,7 +90,7 @@ input {
 	cursor: pointer;
 }
 
-.header__button-hamburgermenu span {
+.header__button-hamburgermenu div {
 	position: absolute;
 	height: 0.3em;
 	width: 2.3em;
@@ -107,43 +107,43 @@ input {
 	transition: 0.25s ease-in-out;
 }
 
-.header__button-hamburgermenu span:nth-child(1) {
+.header__button-hamburgermenu div:nth-child(1) {
 	top: 0;
 }
 
-.header__button-hamburgermenu span:nth-child(2), .header__button-hamburgermenu span:nth-child(3) {
+.header__button-hamburgermenu div:nth-child(2), .header__button-hamburgermenu div:nth-child(3) {
 	top: 0.7em;
 }
 
-.header__button-hamburgermenu span:nth-child(4) {
+.header__button-hamburgermenu div:nth-child(4) {
 	top: 1.4em;
 }
 
-.header__button-hamburgermenu.open span {
+.header__button-hamburgermenu.open div {
 	background: #003755;
 }
 
-.header__button-hamburgermenu.open span:nth-child(1) {
+.header__button-hamburgermenu.open div:nth-child(1) {
 	top: 0;
 	width: 0;
 	left: 50%;
 }
 
-.header__button-hamburgermenu.open span:nth-child(2) {
+.header__button-hamburgermenu.open div:nth-child(2) {
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
-.header__button-hamburgermenu.open span:nth-child(3) {
+.header__button-hamburgermenu.open div:nth-child(3) {
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
-.header__button-hamburgermenu.open span:nth-child(4) {
+.header__button-hamburgermenu.open div:nth-child(4) {
 	top: 1.4em;
 	width: 0;
 	left: 50%;

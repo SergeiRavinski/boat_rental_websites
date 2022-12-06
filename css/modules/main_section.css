@@ -265,21 +265,6 @@ button:hover, button:active {
 	display: none;
 }
 
-/*.movetext {
-	font-size: 2.5em;
-	font-weight: 100;
-	padding: 50px;
- }
-
- @keyframes slide {
-	from {
-		-webkit-transform: translateY(0);
-	}
-	to {
-		-webkit-transform: translateY(-200%);
-	}
- }	*/
-
 /*keyframes*/
 @keyframes fade {
 	from 	
