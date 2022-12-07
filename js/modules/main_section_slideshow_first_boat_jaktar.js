@@ -55,10 +55,6 @@ export default function SlideshowFirstBoatJaktar() {
 	//	renderHTMLArrowsJaktar();
 	//}
 
-	window.onfocus = function() {
-		focusedBoatJaktar = !focusedBoatJaktar;
-	}
-
 	//function to decrease current index
 	function decreaseCurrentIndex() {
 
