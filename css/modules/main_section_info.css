@@ -1,4 +1,16 @@
+.main__news-first-title {
+ margin-top: 20vh;
+}
+
 .main__link--youtube {
 	width: 100%;
 	height: 60vh;
+}
+
+.main__news-second-title {
+	margin-top: 2vh;
+}
+
+.main__news-text {
+	margin-top: 2vh;
 }
