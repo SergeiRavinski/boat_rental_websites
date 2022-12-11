@@ -1,17 +1,28 @@
 .main__news-first-title {
- margin-top: 20vh;
+	margin-top: 15vh;
+  }
+
+.main__news-main-section {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 2vh;
 }
 
-.main__link--youtube {
-	width: 100%;
-	height: 60vh;
+.main__link-youtube {
+	width: 50%;
+	height: 40vh;
 	border-radius: 0.5rem;
 }
 
 .main__news-second-title {
-	margin-top: 2vh;
+	margin-bottom: 2em;
 }
 
 .main__news-text {
-	margin-top: 2vh;
+	font-size: 1.5em;
+}
+
+.main__news-main-section-info {
+	width: 40%;
+	padding-left: 5vw;
 }

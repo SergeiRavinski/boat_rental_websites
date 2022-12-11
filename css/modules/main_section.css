@@ -232,6 +232,7 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: end;
+	padding: 1vh 10vw 1vh 0;
 	gap: 1vw;
 }
 
@@ -247,10 +248,22 @@ p {
 
 /*footer*/
 
+.footer__elements {
+	width: 100%;
+	left: 0;
+	position: absolute;
+	background: var(--fontcolor);
+	min-height: 10vh;
+}
+
 .footer__text {
+	width: 100%;
 	font-size: 0.8vw;
-	color: var(--fontcolor);
-	margin-top: 0.5vh 0 0.5vh 0;
+	color: white;
+	position: relative;
+	left: 9vw;
+	padding-left: 1vw;
+	padding-bottom: 1vh;
 }
 
 /*buttons*/
@@ -260,13 +273,6 @@ button:hover, button:active {
 	transition-duration: 300ms;
 	transition-timing-function: ease-in-out;
 	filter: var(--hoverShadowColor);
-}
-
-.parent {
-	flex-shrink: 0;
-	height: 50px;
-	animation: slide 1s linear;
-	display: none;
 }
 
 /*keyframes*/
