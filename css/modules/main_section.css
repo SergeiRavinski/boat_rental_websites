@@ -249,7 +249,7 @@ p {
 
 .footer__text {
 	font-size: 0.8vw;
-	color: var(--alternativeColor);
+	color: var(--fontcolor);
 	margin-top: 0.5vh 0 0.5vh 0;
 }
 
