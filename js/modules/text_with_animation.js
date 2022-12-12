@@ -40,19 +40,26 @@ export default function TextWithAnimation() {
 		}
 	}	
 
-	//function to move text if scroll
+	//function to move text when scrolling
 	
 	//let isPlayed = false;
 
-	//const text = document.querySelector('.parent');
+	//const text = document.querySelector('.main__news-main-section-info');
 
 	//document.addEventListener('scroll', handleScroll);
 
 	//function handleScroll() {
 	//	if (isPlayed === false) {
-	//		(text.scrollTop > 200); 
+	//		(text.scrollTop >= 400); 
 	//		console.log('hei');
 	//		}
 	//		isPlayed = true;
 	//}
+
+	const text = document.querySelector('.main__news-second-title');
+
+	window.onscroll = () => {
+		let pos = window.scrollX +800;
+		text.style.left = `${pos}px`;
+	}
 }

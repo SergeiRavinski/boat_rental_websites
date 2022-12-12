@@ -53,6 +53,7 @@ export default function Header() {
 		visibleMenu = !visibleMenu;
 	}
 
+	//show header when scrolling up
 	function toggleHeaderVisibility() {
 		const scrollY = window.scrollY;
 
