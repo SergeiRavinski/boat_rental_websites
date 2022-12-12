@@ -500,14 +500,15 @@ button:hover, button:active {
 		color: var(--boxShadowColor);
 		gap: 3vw;
 		margin: 3vh 0 3vh 0;
+		padding-right: 0;
 	}
 
 	.main__button-instagram, .main__button-facebook {
-		display: none;
+		display: block;
 	}
 
 	.main__button-instagram-mobile, .main__button-facebook-mobile {
-		display: block;
+		display: none;
 	}
 
 	.main__button-instagram-mobile, .main__button-facebook-mobile {
@@ -525,6 +526,11 @@ button:hover, button:active {
 	}
 
 	/*footer*/
+
+	.footer__elements {
+		height: 5vh;
+	}
+
 	.footer__text {
 		display: none;
 	}
