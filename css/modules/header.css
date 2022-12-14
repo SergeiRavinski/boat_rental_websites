@@ -12,8 +12,10 @@ header {
 	background-color: white;
 	z-index: 80;
 	height: 6vh;
-	border-radius: 0.2em;
+	border-radius: 0.4em;
 	transition: transform 0.3s ease;
+	padding-left: 0.4vw;
+	padding-right: 0.4vw;
 }
 
 .header--hidden {
