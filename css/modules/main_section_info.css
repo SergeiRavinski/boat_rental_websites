@@ -26,8 +26,13 @@
 }
 
 .main__news-text {
-	font-size: 1.6vmax;
+	font-size: 1.5vmax;
 	white-space: nowrap;
+}
+
+.main__news-text-under {
+	margin: 3vh 0 4vh 0;
+	font-size: 1.1vmax;
 }
 
 @media screen and (max-width: 768px) {
