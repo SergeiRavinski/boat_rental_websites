@@ -56,6 +56,8 @@ export default function TextWithAnimation() {
 	//		isPlayed = true;
 	//}
 
+	
+
 	const text = document.querySelector('.main__news-second-title');
 
 	window.onscroll = () => {
