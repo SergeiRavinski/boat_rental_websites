@@ -35,6 +35,15 @@
 	font-size: 1.12vmax;
 }
 
+.main__news-main-section-boats {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2vh;
+	row-gap: 2vh;
+	width: 50%;
+	/*height: 30vh;*/
+}
+
 @media screen and (max-width: 768px) {
 	.main__news-first-title {
 		margin-top: 12vh;
