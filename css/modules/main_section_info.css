@@ -41,6 +41,7 @@
 	margin-bottom: 2vh;
 	row-gap: 2vh;
 	width: 50%;
+	object-fit: contain;
 	/*height: 30vh;*/
 }
 
@@ -84,6 +85,10 @@
 	.main__news-main-section-info {
 		width: 100%;
 		padding-left: 0;
+	}
+
+	.main__news-main-section-boats {
+		width: 100%;
 	}
 }
 
