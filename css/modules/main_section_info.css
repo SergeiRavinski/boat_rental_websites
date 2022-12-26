@@ -44,6 +44,17 @@
 	/*height: 30vh;*/
 }
 
+.main__news-section-boats-text-comments {
+	font-style: oblique;
+	font-size: 0.9vmax;
+}
+
+.main__news-main-section-boats-underline {
+	height: 0.1vh;
+	width: 200%;
+	background-color: var(--fontcolor);
+}
+
 @media screen and (max-width: 768px) {
 	.main__news-first-title {
 		margin-top: 12vh;
