@@ -17,6 +17,7 @@
 .main__link-youtube {
 	width: 40vw;
 	height: 40vh;
+	object-fit: contain;
 	border-radius: 0.5rem;
 }
 
@@ -88,6 +89,10 @@
 	}
 
 	.main__news-main-section-boats {
+		width: 100%;
+	}
+
+	.main__news-main-section-boats-underline {
 		width: 100%;
 	}
 }
