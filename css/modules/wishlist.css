@@ -2,23 +2,26 @@
 	background-color: #33647F;
 	width: 35%;
 	height: 100vh;
-	position: absolute;
+	position: fixed;
 	top: 6.25vh;
 	right: 0;
 	color: var(--alternativeColor);
 	box-shadow: 0.5vw 0.5vw 1.5vw var(--boxShadowColor);
 	text-shadow: 0.1vw 0.1vw 1vw var(--boxShadowColor);
-	display: none;
-	transition: 0.5s;
 	z-index: 30;
 	overflow: scroll;
+	transform: translateX(120%);
 }
 
 .wishlist--visible {
 	display: block;
+	position: absolute;
 	z-index: 50;
 	animation-name: fade;
-	animation-duration: 0.7s;
+	animation-duration: 0.3s;
+	overflow-x: hidden;
+	transform: translateX(0%);
+	transition: 0.2s;
 }
 
 .aside__wishlist-elements {
