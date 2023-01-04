@@ -50,7 +50,7 @@ export default function TextWithAnimation() {
 	},
 	{
 		//threshold: 0.3
-		rootMargin: "-200px"
+		rootMargin: "-100px"
 	}
 	);
 
