@@ -40,6 +40,19 @@ export default function TextWithAnimation() {
 		}
 	}	
 
+
+
+	//const textFloat = document.querySelector('.main__text');
+
+	//textFloat.addEventListener('onload', handleFloatUp);
+
+
+	//function handleFloatUp() {
+	//	document.querySelector('.main__text').style.top = '15%';
+	//}
+
+
+
 	//function to move text when scrolling
 	
 	//let isPlayed = false;

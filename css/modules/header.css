@@ -16,6 +16,7 @@ header {
 	transition: transform 0.3s ease;
 	padding-left: 0.4vw;
 	padding-right: 0.4vw;
+	/*animation: navigation-load-header 400ms ease-in 200ms;*/
 }
 
 .header--hidden {
@@ -227,11 +228,24 @@ ul {
 /*Animation*/
 
 @keyframes fade {
-	from 	
-	{opacity: 0;};
-	to 
-	{opacity: 1;}
+	from 	{
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
+
+/*@keyframes navigation-load-header {
+	0% {
+		transform: translateY(-100%);
+		opacity: 0;;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}*/
 
 /*breakepoints*/
 

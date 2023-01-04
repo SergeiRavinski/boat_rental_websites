@@ -39,6 +39,27 @@ main::before {
 	margin: 15% 40% 7% 0;
 }
 
+.main__text-first-float {
+	animation: float-text-up 300ms ease-in;
+	transform: translateY(-25%);
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+.main__text-second-float {
+	animation: float-text-up 300ms ease-in 200ms;
+	transform: translateY(-25%);
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+.main__text-third-float {
+	animation: float-text-up 300ms ease-in 400ms;
+	transform: translateY(-25%);
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+
+
 h1 {
 	font-size: 2vw;
 	margin-bottom: 1vh;
@@ -282,6 +303,17 @@ button:hover, button:active {
 	{opacity: 0.4;};
 	to 
 	{opacity: 1;}
+}
+
+@keyframes float-text-up {
+	0%	{
+		transform: translateY(-25%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 /*breakepoints*/
