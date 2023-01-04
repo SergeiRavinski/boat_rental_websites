@@ -70,15 +70,16 @@
 	animation-fill-mode: forwards;
 }
 
-
 @keyframes float-text-down-news {
 	0%	{
 		transform: translateX(-10%);
 		opacity: 0;
+		filter: blur(5px);
 	}
 	100% {
 		transform: translateX(0);
 		opacity: 1;
+		filter: blur(0);
 	}
 }
 
