@@ -41,6 +41,21 @@ export default function TextWithAnimation() {
 	}	
 
 
+	//let isMovedText = false;
+
+	const moveTitle = document.querySelector('.main__news-second-title');
+	 
+	moveTitle.addEventListener('scroll', handleMoveTextWhenScroll);
+
+	function handleMoveTextWhenScroll() {
+		if  (scrollTop >= 200) {
+		
+		}
+		console.log('Hei')
+	}
+
+
+
 
 	//const textFloat = document.querySelector('.main__text');
 

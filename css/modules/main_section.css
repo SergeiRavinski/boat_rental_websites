@@ -26,6 +26,7 @@ main::before {
 	opacity: 0.7;
 	z-index: -10;
 	-webkit-mask-image: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 10%);
+	background-attachment: fixed;
 }
 
 .main__main-section {
@@ -40,25 +41,23 @@ main::before {
 }
 
 .main__text-first-float {
-	animation: float-text-up 300ms ease-in;
+	animation: float-text-down 300ms ease-in;
 	transform: translateY(-25%);
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
 .main__text-second-float {
-	animation: float-text-up 300ms ease-in 200ms;
+	animation: float-text-down 300ms ease-in 200ms;
 	transform: translateY(-25%);
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
 .main__text-third-float {
-	animation: float-text-up 300ms ease-in 400ms;
+	animation: float-text-down 300ms ease-in 400ms;
 	transform: translateY(-25%);
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
-
-
 
 h1 {
 	font-size: 2vw;
@@ -104,8 +103,28 @@ p {
 	height: 30vh;
 }
 
-.main__first-boat-jaktar, .main__second-boat-axopar, .main__third-boat-hallbergrassy {
+.main__first-boat-jaktar {
 	text-align: justify;
+	animation: float-cards-down 300ms ease-in 500ms;
+	transform: translateY(-10%);
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+.main__second-boat-axopar {
+	text-align: justify;
+	animation: float-cards-down 300ms ease-in 600ms;
+	transform: translateY(-10%);
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+.main__third-boat-hallbergrassy {
+	text-align: justify;
+	animation: float-cards-down 300ms ease-in 700ms;
+	transform: translateY(-10%);
+	opacity: 0;
+	animation-fill-mode: forwards;
 }
 
 .main__first-boat-jaktar-slides, .main__second-boat-axopar-slides, .main__third-boat-hallbergrassy-slides {
@@ -305,9 +324,20 @@ button:hover, button:active {
 	{opacity: 1;}
 }
 
-@keyframes float-text-up {
+@keyframes float-text-down {
 	0%	{
 		transform: translateY(-25%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes float-cards-down {
+	0%	{
+		transform: translateY(-10%);
 		opacity: 0;
 	}
 	100% {

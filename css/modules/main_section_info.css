@@ -24,6 +24,11 @@
 .main__news-second-title {
 	margin-bottom: 2em;
 	font-size: 2vmax;
+
+	animation: float-text-down-news 300ms ease-in;
+	transform: translateY(-25%);
+	opacity: 0;
+	animation-fill-mode: forwards;
 }
 
 .main__news-text {
@@ -55,6 +60,17 @@
 	height: 0.1vh;
 	width: 200%;
 	background-color: var(--fontcolor);
+}
+
+@keyframes float-text-down-news {
+	0%	{
+		transform: translateY(-25%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 @media screen and (max-width: 768px) {
