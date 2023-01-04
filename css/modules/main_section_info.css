@@ -46,6 +46,13 @@
 	/*height: 30vh;*/
 }
 
+.main__news-main-section-boats p {
+	columns: 2 200px;
+	column-gap: 1vw;
+	column-rule: 0.08vw solid var(--fontcolor);
+	break-inside: avoid;
+}
+
 .main__news-section-boats-text-comments {
 	font-style: oblique;
 	font-size: 0.9vmax;
@@ -59,27 +66,26 @@
 
 .hidden {
 	opacity: 0;
-	transition: all 3s;
 }
 
 .show {
 	opacity: 1;
-	animation: float-text-down-news 400ms ease-in 200ms;
-	transform: translateX(-10%);
+	animation: float-text-up-news 400ms ease-in;
+	transform: translateY(+4vh);
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
 
-@keyframes float-text-down-news {
+@keyframes float-text-up-news {
 	0%	{
-		transform: translateX(-10%);
+		transform: translateY(+4vh);
 		opacity: 0;
-		filter: blur(5px);
+		/*filter: blur(5px);*/
 	}
 	100% {
-		transform: translateX(0);
+		transform: translateY(0);
 		opacity: 1;
-		filter: blur(0);
+		/*filter: blur(0);*/
 	}
 }
 

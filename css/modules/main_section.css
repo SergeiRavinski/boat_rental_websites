@@ -41,19 +41,19 @@ main::before {
 }
 
 .main__text-first-float {
-	animation: float-text-down 300ms ease-in;
+	animation: float-text-up 300ms ease-in;
 	transform: translateY(-25%);
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
 .main__text-second-float {
-	animation: float-text-down 300ms ease-in 200ms;
+	animation: float-text-up 300ms ease-in 150ms;
 	transform: translateY(-25%);
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
 .main__text-third-float {
-	animation: float-text-down 300ms ease-in 400ms;
+	animation: float-text-up 300ms ease-in 300ms;
 	transform: translateY(-25%);
 	opacity: 0;
 	animation-fill-mode: forwards;
@@ -105,24 +105,24 @@ p {
 
 .main__first-boat-jaktar {
 	text-align: justify;
-	animation: float-cards-down 300ms ease-in 500ms;
-	transform: translateY(-10%);
+	animation: float-cards-up 300ms ease-in 500ms;
+	transform: translateY(-4vh);
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
 
 .main__second-boat-axopar {
 	text-align: justify;
-	animation: float-cards-down 300ms ease-in 600ms;
-	transform: translateY(-10%);
+	animation: float-cards-up 300ms ease-in 650ms;
+	transform: translateY(-4vh);
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
 
 .main__third-boat-hallbergrassy {
 	text-align: justify;
-	animation: float-cards-down 300ms ease-in 700ms;
-	transform: translateY(-10%);
+	animation: float-cards-up 300ms ease-in 800ms;
+	transform: translateY(-4vh);
 	opacity: 0;
 	animation-fill-mode: forwards;
 }
@@ -324,9 +324,9 @@ button:hover, button:active {
 	{opacity: 1;}
 }
 
-@keyframes float-text-down {
+@keyframes float-text-up {
 	0%	{
-		transform: translateY(-25%);
+		transform: translateY(+4vh);
 		opacity: 0;
 	}
 	100% {
@@ -335,9 +335,9 @@ button:hover, button:active {
 	}
 }
 
-@keyframes float-cards-down {
+@keyframes float-cards-up {
 	0%	{
-		transform: translateY(-10%);
+		transform: translateY(+4vh);
 		opacity: 0;
 	}
 	100% {

@@ -47,7 +47,12 @@ export default function TextWithAnimation() {
 				entry.target.classList.add('show');
 			}
 		});
-	})
+	},
+	{
+		//threshold: 0.3
+		rootMargin: "-200px"
+	}
+	);
 
 	const hiddenElements = document.querySelectorAll('.hidden');
 	hiddenElements.forEach((el) => observer.observe(el));
