@@ -2,27 +2,17 @@ export default function SlideshowSecondBoatAxopar() {
 
 	//variables
 	let currentSlideIndexAxopar = 0;
-	//let removeButtonsAxopar = false;
-	//let visibleButtonArrowAxopar = true;
 
 	//query selectors
 	const previousButtonAxopar = document.querySelector('.main__previous-button-axopar');
 	const nextButtonAxopar = document.querySelector('.main__next-button-axopar');
 	const boatAxoparSlides = document.querySelectorAll('.main__second-boat-axopar-slides');
 	const dotsAxopar = document.querySelectorAll('.main__dot-axopar');
-	//const boatAxoparVisibleArrows = document.querySelector('.main__second-boat-axopar-button-slideshow');
-	//const boatAxoparHidenArrows = document.querySelector('.main__second-boat-axopar-button-slideshow');
-	//const boatAxoparVisiblePreviousArrowOverArrow = document.querySelector('.main__previous-button-axopar');
-	//const boatAxoparVisibleNextArrowOverArrow = document.querySelector('.main__next-button-axopar');
 
 	//event listeners 
 	previousButtonAxopar.addEventListener('click', handlePreviousButtonAxopar);
 	nextButtonAxopar.addEventListener('click', handleNextButtonAxopar);
 	window.addEventListener('keydown', handleKeydownAxopar);
-	//boatAxoparVisibleArrows.addEventListener('mouseover', handleMouseOverAxopar);
-	//boatAxoparHidenArrows.addEventListener('mouseleave', handleMouseLeaveAxopar);
-	//boatAxoparVisiblePreviousArrowOverArrow.addEventListener('mouseover', handleMouseOverPreviousButtonAxopar);
-	//boatAxoparVisibleNextArrowOverArrow.addEventListener('mouseover', handleMouseOverNextButtonAxopar);
 
 	//event handlers 
 	function handlePreviousButtonAxopar() {
@@ -34,26 +24,6 @@ export default function SlideshowSecondBoatAxopar() {
 		increaseCurrentIndexAxopar();
 		renderHTMLAxopar();
 	}
-
-	//function handleMouseOverAxopar() {
-	//	visibleArrowsAxopar();
-	//	renderHTMLAxopar();
-	//}
-
-	//function handleMouseLeaveAxopar() {
-	//	visibleArrowsAxopar();
-	//	renderHTMLAxopar();
-	//}
-
-	//function handleMouseOverPreviousButtonAxopar() {
-	//	visibleArrowsOverArrowsAxopar();
-	//	renderHTMLArrowsAxopar();
-	//}
-
-	//function handleMouseOverNextButtonAxopar() {
-	//	visibleArrowsOverArrowsAxopar();
-	//	renderHTMLArrowsAxopar();
-	//}
 
 	//function to decrease current index
 	function decreaseCurrentIndexAxopar() {
@@ -74,14 +44,6 @@ export default function SlideshowSecondBoatAxopar() {
 			currentSlideIndexAxopar = 0;
 		}
 	}
-
-	//function visibleArrowsAxopar() {
-	//	removeButtonsAxopar = !removeButtonsAxopar;
-	//}
-
-	//function visibleArrowsOverArrowsAxopar() {
-	//	visibleButtonArrowAxopar = !visibleButtonArrowAxopar;
-	//}
 
 	//change slides keyboard
 	function handleKeydownAxopar(event) {
@@ -109,24 +71,5 @@ export default function SlideshowSecondBoatAxopar() {
 	
 		boatAxoparSlides[currentSlideIndexAxopar].classList.add('main__second-boat-axopar-slides--visible');
 		dotsAxopar[currentSlideIndexAxopar].classList.add('main__dot-axopar--active');	
-
-		////show buttons previous and next on hover
-		//if (removeButtonsAxopar === true) {
-		//	previousButtonAxopar.style.display = 'block';
-		//	nextButtonAxopar.style.display = 'block';
-
-		//} else {
-		//	previousButtonAxopar.style.display = 'none';
-		//	nextButtonAxopar.style.display = 'none';
-		//}
 	}
-	
-	////show buttons previous and next on hover
-
-	//function renderHTMLArrowsAxopar() {
-	//	if (visibleButtonArrowAxopar === true) {
-	//		boatAxoparVisiblePreviousArrowOverArrow.style.display = 'block';
-	//		boatAxoparVisibleNextArrowOverArrow.style.display = 'block';
-	//	} 
-	//}
 }

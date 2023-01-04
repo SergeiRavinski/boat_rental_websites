@@ -2,27 +2,17 @@ export default function SlideshowFirstBoatJaktar() {
 
 	//variables
 	let currentSlideIndexJaktar = 0;
-	//let removeButtonsJaktar = false;
-	//let visibleButtonArrowJaktar = true;
 
 	//query selectors
 	const previousButton = document.querySelector('.main__previous-button-jaktar');
 	const nextButton = document.querySelector('.main__next-button-jaktar');
 	const boatJaktarSlides = document.querySelectorAll('.main__first-boat-jaktar-slides');
 	const dotsJaktar = document.querySelectorAll('.main__dot-jaktar');
-	//const boatJaktarVisibleArrows = document.querySelector('.main__first-boat-jaktar-button-slideshow');
-	//const boatJaktarHidenArrows = document.querySelector('.main__first-boat-jaktar-button-slideshow');
-	//const boatJaktarVisiblePreviousArrowOverArrow = document.querySelector('.main__previous-button-jaktar');
-	//const boatJaktarVisibleNextArrowOverArrow = document.querySelector('.main__next-button-jaktar');
 
 	//event listeners 
 	previousButton.addEventListener('click', handlePreviousButton);
 	nextButton.addEventListener('click', handleNextButton);
 	window.addEventListener('keydown', handleKeydownJaktar);
-	//boatJaktarVisibleArrows.addEventListener('mouseover', handleMouseOverJaktar);
-	//boatJaktarHidenArrows.addEventListener('mouseleave', handleMouseLeaveJaktar);
-	//boatJaktarVisiblePreviousArrowOverArrow.addEventListener('mouseover', handleMouseOverPreviousButtonJaktar);
-	//boatJaktarVisibleNextArrowOverArrow.addEventListener('mouseover', handleMouseOverNextButtonJaktar);
 
 	//event handlers 
 	function handlePreviousButton() {
@@ -34,26 +24,6 @@ export default function SlideshowFirstBoatJaktar() {
 		increaseCurrentIndex();
 		renderHTMLJaktar();
 	}
-
-	//function handleMouseOverJaktar() {
-	//	visibleArrows();
-	//	renderHTMLJaktar();
-	//}
-
-	//function handleMouseLeaveJaktar() {
-	//	visibleArrows();
-	//	renderHTMLJaktar();
-	//}
-
-	//function handleMouseOverPreviousButtonJaktar() {
-	//	visibleArrowsOverArrows();
-	//	renderHTMLArrowsJaktar();
-	//}
-
-	//function handleMouseOverNextButtonJaktar() {
-	//	visibleArrowsOverArrows();
-	//	renderHTMLArrowsJaktar();
-	//}
 
 	//function to decrease current index
 	function decreaseCurrentIndex() {
@@ -74,14 +44,6 @@ export default function SlideshowFirstBoatJaktar() {
 			currentSlideIndexJaktar = 0;
 		}
 	}
-
-	//function visibleArrows() {
-	//	removeButtonsJaktar = !removeButtonsJaktar;
-	//}
-
-	//function visibleArrowsOverArrows() {
-	//	visibleButtonArrowJaktar = !visibleButtonArrowJaktar;
-	//}
 
 	//change slides keyboard
 	function handleKeydownJaktar(event) {
@@ -109,25 +71,7 @@ export default function SlideshowFirstBoatJaktar() {
 	
 		boatJaktarSlides[currentSlideIndexJaktar].classList.add('main__first-boat-jaktar-slides--visible');
 		dotsJaktar[currentSlideIndexJaktar].classList.add('main__dot-jaktar--active');
-		
-		////show buttons previous and next on hover
-		//if (removeButtonsJaktar === true) {
-		//	previousButton.style.display = 'block';
-		//	nextButton.style.display = 'block';
-
-		//} else {
-		//	previousButton.style.display = 'none';
-		//	nextButton.style.display = 'none';
-		//}
 	}	
-
-	////show buttons previous and next on hover
-	//function renderHTMLArrowsJaktar() {
-	//	if (visibleButtonArrowJaktar === true) {
-	//		boatJaktarVisiblePreviousArrowOverArrow.style.display = 'block';
-	//		boatJaktarVisibleNextArrowOverArrow.style.display = 'block';
-	//	} 
-	//}
 }
 
 

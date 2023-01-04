@@ -51,41 +51,4 @@ export default function TextWithAnimation() {
 
 	const hiddenElements = document.querySelectorAll('.hidden');
 	hiddenElements.forEach((el) => observer.observe(el));
-
-
-
-
-
-
-
-
-
-
-
-	//const textFloat = document.querySelector('.main__text');
-
-	//textFloat.addEventListener('onload', handleFloatUp);
-
-
-	//function handleFloatUp() {
-	//	document.querySelector('.main__text').style.top = '15%';
-	//}
-
-
-
-	//function to move text when scrolling
-	
-	//let isPlayed = false;
-
-	//const text = document.querySelector('.main__news-main-section-info');
-
-	//document.addEventListener('scroll', handleScroll);
-
-	//function handleScroll() {
-	//	if (isPlayed === false) {
-	//		(text.scrollTop >= 400); 
-	//		console.log('hei');
-	//		}
-	//		isPlayed = true;
-	//}
 }
