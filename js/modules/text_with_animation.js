@@ -40,19 +40,24 @@ export default function TextWithAnimation() {
 		}
 	}	
 
+//to move elements when scroll
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('show');
+			}
+		});
+	})
 
-	//let isMovedText = false;
+	const hiddenElements = document.querySelectorAll('.hidden');
+	hiddenElements.forEach((el) => observer.observe(el));
 
-	const moveTitle = document.querySelector('.main__news-second-title');
-	 
-	moveTitle.addEventListener('scroll', handleMoveTextWhenScroll);
 
-	function handleMoveTextWhenScroll() {
-		if  (scrollTop >= 200) {
-		
-		}
-		console.log('Hei')
-	}
+
+
+
+
+
 
 
 

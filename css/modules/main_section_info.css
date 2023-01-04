@@ -24,11 +24,6 @@
 .main__news-second-title {
 	margin-bottom: 2em;
 	font-size: 2vmax;
-
-	animation: float-text-down-news 300ms ease-in;
-	transform: translateY(-25%);
-	opacity: 0;
-	animation-fill-mode: forwards;
 }
 
 .main__news-text {
@@ -62,13 +57,27 @@
 	background-color: var(--fontcolor);
 }
 
+.hidden {
+	opacity: 0;
+	transition: all 3s;
+}
+
+.show {
+	opacity: 1;
+	animation: float-text-down-news 400ms ease-in 200ms;
+	transform: translateX(-10%);
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+
 @keyframes float-text-down-news {
 	0%	{
-		transform: translateY(-25%);
+		transform: translateX(-10%);
 		opacity: 0;
 	}
 	100% {
-		transform: translateY(0);
+		transform: translateX(0);
 		opacity: 1;
 	}
 }
