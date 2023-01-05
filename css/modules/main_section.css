@@ -528,35 +528,35 @@ button:hover, button:active {
 
 	.main__button-like-jaktar, .main__button-like-axopar, .main__button-like-hallbergrassy {
 		right: 3%;
-		width: 6.5vw;
-		height: 6.5vh;
+		width: 7vw;
+		height: 7vh;
 	}
 
 	.main__image-like-jaktar, .main__image-like-axopar, .main__image-like-hallbergrassy {
-		width: 6.5vw;
-		height: 6.5vh;
+		width: 7vw;
+		height: 7vh;
 	}
 
 	.main__image-like-red-jaktar, .main__image-like-red-axopar, .main__image-like-red-hallbergrassy {
-		width: 8vw;
-		height: 8vh;
+		width: 7vw;
+		height: 7vh;
 	}
 
 	.previous__button {
 		left: 2.5vw;
-		width: 6vw;
-		height: 6vh;
+		width: 7vw;
+		height: 7vh;
 	}
 	
 	.next__button {
 		right: 2.5vw;
-		width: 6vw;
-		height: 6vh;
+		width: 7vw;
+		height: 7vh;
 	}
 	
 	.main__image-arrow-left, .main__image-arrow-right {
-		width: 8vw;
-		height: 8vh;
+		width: 7vw;
+		height: 7vh;
 	}
 
 	.main__social-media-links {
