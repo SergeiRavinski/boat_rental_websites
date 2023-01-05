@@ -35,6 +35,8 @@ export default function Wishlist() {
 	const menuStopPropogation = document.querySelector('.aside__hamburger-menu');
 	const wishlistStopPropogation = document.querySelector('.aside__wishlist');
 
+	const windowAddedWishlist = document.querySelector('.main__window-addded-wishlist');
+
 	//event listeners 
 
 	//buttons
@@ -71,18 +73,36 @@ export default function Wishlist() {
 		addedJaktarToWishlist = !addedJaktarToWishlist; 
 	}
 
+
+	//let visibilityAddedToWishlist = setInterval(showAddedToWishlist, 3000);
+
+	//function showAddedToWishlist() {
+	//	renderHTMLAddJaktar();
+
+	//}
+
 	function renderHTMLAddJaktar() {
 
 		if (addedJaktarToWishlist === true) {
 			boatJaktar.classList.add('aside__first-boat-jaktar-wishlist--active');
 			likeRedBoatJaktar.style.display = 'none';
 			likeBoatJaktar.style.display = 'block';
+			windowAddedWishlist.style.display = 'block';
+			windowAddedWishlist.innerHTML = 'Removed from wishlist';
+			setTimeout(() => {
+				windowAddedWishlist.style.display = 'none';
+			}, 4000);
 		} 
 
 		else {
 			boatJaktar.classList.remove('aside__first-boat-jaktar-wishlist--active');
 			likeRedBoatJaktar.style.display = 'block';
 			likeBoatJaktar.style.display = 'none';
+			windowAddedWishlist.style.display = 'block';
+			windowAddedWishlist.innerHTML = 'Added to wishlist';
+			setTimeout(() => {
+				windowAddedWishlist.style.display = 'none';
+			}, 4000);
 		}
 	}
 
@@ -104,11 +124,21 @@ export default function Wishlist() {
 			boatAxopar.classList.add('aside__second-boat-axopar-wishlist--active');
 			likeRedBoatAxopar.style.display = 'none';
 			likeBoatAxopar.style.display = 'block';
+			windowAddedWishlist.style.display = 'block';
+			windowAddedWishlist.innerHTML = 'Removed from wishlist';
+			setTimeout(() => {
+				windowAddedWishlist.style.display = 'none';
+			}, 4000);
 		} 
 		else {
 			boatAxopar.classList.remove('aside__second-boat-axopar-wishlist--active');
 			likeRedBoatAxopar.style.display = 'block';
 			likeBoatAxopar.style.display = 'none';
+			windowAddedWishlist.style.display = 'block';
+			windowAddedWishlist.innerHTML = 'Added to wishlist';
+			setTimeout(() => {
+				windowAddedWishlist.style.display = 'none';
+			}, 4000);
 		}
 	}
 
@@ -130,11 +160,23 @@ export default function Wishlist() {
 			boatHallbergRassy.classList.add('aside__third-boat-hallbergrassy-wishlist--active');
 			likeRedBoatHallbergRassy.style.display = 'none';
 			likeBoatHallbergRassy.style.display = 'block';
+			windowAddedWishlist.style.display = 'block';
+			windowAddedWishlist.innerHTML = 'Removed from wishlist';
+			setTimeout(() => {
+				windowAddedWishlist.style.display = 'none';
+			}, 4000);
+			
+			
 		} 
 		else {
 			boatHallbergRassy.classList.remove('aside__third-boat-hallbergrassy-wishlist--active');
 			likeRedBoatHallbergRassy.style.display = 'block';
 			likeBoatHallbergRassy.style.display = 'none';
+			windowAddedWishlist.style.display = 'block';
+			windowAddedWishlist.innerHTML = 'Added to wishlist';
+			setTimeout(() => {
+				windowAddedWishlist.style.display = 'none';
+			}, 4000);
 		}
 	}
 
@@ -144,17 +186,32 @@ export default function Wishlist() {
 		boatJaktar.classList.add('aside__first-boat-jaktar-wishlist--active');
 		likeRedBoatJaktar.style.display = 'none';
 		likeBoatJaktar.style.display = 'block';
+		windowAddedWishlist.style.display = 'block';
+		windowAddedWishlist.innerHTML = 'Removed from wishlist';
+		setTimeout(() => {
+			windowAddedWishlist.style.display = 'none';
+		}, 4000);
 	}
 
 	function handleButtonLikeAxoparInsideWishlist() {
 		boatAxopar.classList.add('aside__second-boat-axopar-wishlist--active');
 		likeRedBoatAxopar.style.display = 'none';
 		likeBoatAxopar.style.display = 'block';
+		windowAddedWishlist.style.display = 'block';
+		windowAddedWishlist.innerHTML = 'Removed from wishlist';
+		setTimeout(() => {
+			windowAddedWishlist.style.display = 'none';
+		}, 4000);
 	}
 
 	function handleButtonLikeHallbergRassyInsideWishlist() {
 		boatHallbergRassy.classList.add('aside__third-boat-hallbergrassy-wishlist--active');
 		likeRedBoatHallbergRassy.style.display = 'none';
 		likeBoatHallbergRassy.style.display = 'block';
+		windowAddedWishlist.style.display = 'block';
+		windowAddedWishlist.innerHTML = 'Removed from wishlist';
+		setTimeout(() => {
+			windowAddedWishlist.style.display = 'none';
+		}, 4000);
 	}
 }	
