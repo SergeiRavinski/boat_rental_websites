@@ -322,7 +322,6 @@ button:hover, button:active {
 }
 
 .main__window-addded-wishlist {
-	background-color: red;
 	padding: 1.5vh 1.5vw 1.5vh 1.5vw;
 	width: 20%;
 	text-align: center;
@@ -398,11 +397,11 @@ button:hover, button:active {
 	}
 	
 	h3 {
-		font-size: 1.3vw;
+		font-size: 2vw;
 	}
 	
 	.main__second-titel {
-		line-height: 3vh;
+		line-height: 3.5vh;
 	}
 	
 	h4 {
@@ -410,7 +409,7 @@ button:hover, button:active {
 	}
 	
 	p {
-		font-size: 1vw;
+		font-size: 1.3vw;
 	}
 	
 	/*Underline*/
@@ -509,7 +508,15 @@ button:hover, button:active {
 	}
 	
 	p {
-		font-size: 2.7vw;
+		font-size: 2.5vw;
+	}
+
+	.main__first-boat-jaktar-description h4, .main__second-boat-axopar-description h4, .main__third-boat-hallbergrassy-description h4 {
+		font-size: 4.3vw;
+	}
+
+	.main__first-boat-jaktar-description h5, .main__second-boat-axopar-description h5, .main__third-boat-hallbergrassy-description h5 {
+		font-size: 3.3vw;
 	}
 	
 	/*Underline*/
@@ -633,5 +640,19 @@ button:hover, button:active {
 
 	.footer__text {
 		display: none;
+	}
+
+	.main__window-added-wishlist--visible {
+		display: block;
+		font-size: 3vw;
+	}
+
+	.main__window-addded-wishlist {
+		padding: 1vh 1vw 1vh 1vw;
+		width: 50vw;
+		bottom: 1.7vh;
+		left: 50%;
+		border-radius: 0.3em;
+		margin-left: -25vw;
 	}
 }	

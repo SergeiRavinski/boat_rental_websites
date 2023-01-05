@@ -127,6 +127,10 @@
 	.main__news-main-section-boats-underline {
 		width: 100%;
 	}
+
+	.main__news-section-boats-text-comments {
+		font-size: 1em;
+	}
 }
 
 @media screen and (max-width: 390px) {
