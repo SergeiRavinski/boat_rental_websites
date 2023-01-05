@@ -129,12 +129,16 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 390px) {
 	.main__news-first-title {
 		margin-top: 5vh;
 	  }
 	
 	.main__link-youtube {
 		width: 100%;
+	}
+
+	.main__news-section-boats-text-comments {
+		font-size: 2.5vw;
 	}
 }

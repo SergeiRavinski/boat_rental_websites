@@ -456,7 +456,7 @@ button:hover, button:active {
 	}
 	
 	h1 {
-		font-size: 3vw;
+		font-size: 4vw;
 	}
 	
 	h3 {
@@ -464,15 +464,16 @@ button:hover, button:active {
 	}
 	
 	.main__second-titel {
-		line-height: 2vh;
+		line-height: 4vh;
+		font-size: 2.9vw;
 	}
 	
 	h4 {
-		font-size: 1.5vw;
+		font-size: 2.5vw;
 	}
 	
 	p {
-		font-size: 1.7vw;
+		font-size: 2.7vw;
 	}
 	
 	/*Underline*/
@@ -515,12 +516,12 @@ button:hover, button:active {
 	}
 
 	.main__first-boat-jaktar-description h4, .main__second-boat-axopar-description h4, .main__third-boat-hallbergrassy-description h4 {
-		font-size: 3vw;
+		font-size: 3.3vw;
 		margin-top: -1vh;
 	}
 
 	.main__first-boat-jaktar-description h5, .main__second-boat-axopar-description h5, .main__third-boat-hallbergrassy-description h5 {
-		font-size: 2vw;
+		font-size: 2.5vw;
 	}
 
 	/*like images*/
@@ -537,8 +538,8 @@ button:hover, button:active {
 	}
 
 	.main__image-like-red-jaktar, .main__image-like-red-axopar, .main__image-like-red-hallbergrassy {
-		width: 6.5vw;
-		height: 6.5vh;
+		width: 8vw;
+		height: 8vh;
 	}
 
 	.previous__button {
@@ -554,8 +555,8 @@ button:hover, button:active {
 	}
 	
 	.main__image-arrow-left, .main__image-arrow-right {
-		width: 6vw;
-		height: 6vh;
+		width: 8vw;
+		height: 8vh;
 	}
 
 	.main__social-media-links {
