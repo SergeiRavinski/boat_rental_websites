@@ -326,8 +326,9 @@ button:hover, button:active {
 	width: 20%;
 	text-align: center;
 	position: fixed;
-	left: 3vw;
-	bottom: 3vh;
+	left: 50%;
+	margin-left: -10%;
+	bottom: 2vh;
 	color: white;
 	background-color: #33647F;
 	border-radius: 0.5em;
