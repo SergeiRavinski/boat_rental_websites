@@ -34,10 +34,43 @@ main::before {
 	color: var(--fontcolor);
 }
 
+/*counter*/
+
+.main__main-section-counter {
+	display: flex;
+	margin: 3vh auto 0 auto;	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main__main-section-counter-elements-title {
+	font-size: 2rem;
+	margin-bottom: 2vh;
+}
+
+.main__main-section-counter-elements-countdown {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/*gap: 5px;*/
+	justify-content: space-between;
+}
+
+.main__main-section-counter-elements-countdown-day-days,
+.main__main-section-counter-elements-countdown-day-hours,
+.main__main-section-counter-elements-countdown-day-minutes,
+.main__main-section-counter-elements-countdown-day-seconds {
+	font-size: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 /*text*/
 
 .main__text {
-	margin: 15% 40% 7% 0;
+	margin: 7% 40% 7% 0;
 }
 
 .main__text-first-float {
@@ -322,7 +355,7 @@ button:hover, button:active {
 }
 
 .main__window-addded-wishlist {
-	padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+	padding: 1vh 1.5vw 1.5vh 1vw;
 	width: 20%;
 	text-align: center;
 	position: fixed;
@@ -332,7 +365,7 @@ button:hover, button:active {
 	color: white;
 	background-color: #33647F;
 	border-radius: 0.5em;
-	box-shadow: 0.5vw 0.5vw 1.5vw var(--boxShadowColor);
+	box-shadow: 0.2vw 0.2vw 1.5vw var(--boxShadowColor);
 	animation: window-added-wishlist 300ms ease-in 300ms;
 	transform: translateY(-25%);
 	opacity: 0;
