@@ -7,7 +7,7 @@ header {
 	align-items: center;
 	color: var(--fontcolor);
 	margin: 2vh 5vw 0.3vh 5vw;
-	/*position: sticky;*/
+	position: sticky;
 	top: 0.5vh;
 	background-color: white;
 	z-index: 80;

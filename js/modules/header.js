@@ -4,7 +4,7 @@ export default function Header() {
 	let visibleMenu = false;
 	let visibleWishlist = false;
 
-	const headerVisibleThreshold = 100;
+	const headerVisibleThreshold = 0;
 	let currentScrollDirection = null; // "up" / "down"
 	let previousScrollPosition = 0;
 

@@ -480,6 +480,7 @@ button:hover, button:active {
 	
 	.main__first-boat-jaktar, .main__second-boat-axopar, .main__third-boat-hallbergrassy {
 		text-align: justify;		
+		scroll-snap-align: start;
 	}
 	
 	.main__first-boat-jaktar-slides, .main__second-boat-axopar-slides, .main__third-boat-hallbergrassy-slides {
@@ -610,7 +611,8 @@ button:hover, button:active {
 	}
 	
 	.main__first-boat-jaktar, .main__second-boat-axopar, .main__third-boat-hallbergrassy {
-		text-align: justify;		
+		text-align: justify;	
+		scroll-snap-align: start;	
 	}
 	
 	.main__first-boat-jaktar-slides, .main__second-boat-axopar-slides, .main__third-boat-hallbergrassy-slides {
