@@ -19,3 +19,7 @@ h3 {
 p {
 	margin: 0;
 }
+
+.header__date-input {
+	background: none;
+}

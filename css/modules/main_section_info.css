@@ -6,6 +6,7 @@
 .main__news-first-title {
 	margin-top: 15vh;
 	font-size: 2.3vmax;
+	scroll-snap-align: start;
   }
 
 .main__news-main-section {
@@ -43,7 +44,14 @@
 	row-gap: 2vh;
 	width: 50%;
 	object-fit: contain;
-	/*height: 30vh;*/
+}
+
+.main__news-main-section-boats-firstboat,
+.main__news-main-section-boats-secondboat,
+.main__news-main-section-boats-thirdboat,
+.main__news-main-section-boats-fourthboat,
+.main__news-main-section-boats-fifthboat {
+	scroll-snap-align: start;
 }
 
 .main__news-main-section-boats p {

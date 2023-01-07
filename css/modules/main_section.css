@@ -13,6 +13,9 @@ main {
 	height: 93.9vh;
 	display: flex;
 	justify-content: center;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+	height: 100vh;
 }
 
 main::before {
@@ -32,6 +35,7 @@ main::before {
 .main__main-section {
 	width: 80vw;
 	color: var(--fontcolor);
+	scroll-snap-align: start;
 }
 
 /*counter*/
@@ -327,6 +331,7 @@ p {
 	position: absolute;
 	background: #33647F;
 	min-height: 10vh;
+	scroll-snap-align: start;
 }
 
 .footer__text {
@@ -351,6 +356,7 @@ button:hover, button:active {
 .main__window-added-wishlist--visible {
 	display: block;
 	font-size: 1.3vw;
+	z-index: 100;
 }
 
 .main__window-addded-wishlist {
@@ -565,8 +571,8 @@ button:hover, button:active {
 	}
 	
 	.main__second-titel {
-		line-height: 4vh;
-		font-size: 2.9vw;
+		line-height: 3vh;
+		font-size: 2.7vw;
 	}
 	
 	h4 {
