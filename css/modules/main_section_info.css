@@ -72,15 +72,98 @@
 	background-color: var(--fontcolor);
 }
 
+.main__news-main-section-boats-svg {
+	display: flex;
+	justify-content: space-between;
+	width: 200%;
+}
+
+.main__news-main-section-boats-svg-sailboat,
+.main__news-main-section-boats-svg-waves,
+.main__news-main-section-boats-svg-mountains,
+.main__news-main-section-boats-svg-lighthouse {
+	flex-direction: column;
+	width: 2.4vw;	
+	-webkit-box-reflect: below 0 linear-gradient(rgba(255, 255, 255, 0.01),
+	rgba(255, 255, 255, 0.3));
+	margin-top: -2vh;
+}
+
+.main__news-main-section-boats-svg-sea {
+	display: flex;
+	flex-direction: column;
+}
+
+.main__news-main-section-boats-svg-sea-waves {
+	display: flex;
+	flex-direction: row;
+	opacity: 0.5;
+}
+.main__news-main-section-boats-svg-waves {
+	-webkit-box-reflect: unset;
+}
+
+.main__news-main-section-boats-svg-mountains, .main__news-main-section-boats-svg-lighthouse {
+	margin-bottom: 3vh;
+}
+
+.main__news-main-section-boats-svg-light {
+	width: 10px;
+	/*bottom: 1vh;*/
+	justify-items: flex-start;
+}
+
 .hidden {
 	opacity: 0;
 }
 
+.main__news-main-section-boats-svg-sailboat {
+	animation: moved-sailboat-svg 25s linear infinite;
+	margin-bottom: 1vh;
+}
+
+@keyframes moved-sailboat-svg {
+	0%	{
+		transform: translateX(0) rotate(0) translateY(0.5vh);
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+		transform: translateX(6.7vw) rotate(-10deg) translateY(0);
+	}
+	20% {
+		transform: translateX(13.4vw) rotate(5deg) translateY(0.5vh);
+	}
+	30% {
+		transform: translateX(20.1vw) rotate(-10deg) translateY(0);
+	}
+	40% {
+		transform: translateX(26.8vw) rotate(5deg) translateY(0.5vh);
+	}
+	50% {
+		transform: translateX(33.5vw) rotate(-10deg) translateY(0);
+	}
+	60% {
+		transform: translateX(40.2vw) rotate(5deg) translateY(0.5vh);
+	}
+	70% {
+		transform: translateX(46.9vw) rotate(-10deg) translateY(0);
+	}
+	80% {
+		transform: translateX(53.6vw) rotate(5deg) translateY(0.5vh);
+	}
+	90% {
+		transform: translateX(60.3vw) rotate(-10deg) translateY(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(67vw) rotate(0) translateY(0.5vh);
+		opacity: 0;
+	}
+}
+
 .show {
-	opacity: 1;
 	animation: float-text-up-news 400ms ease-in;
-	transform: translateY(+4vh);
-	opacity: 0;
 	animation-fill-mode: forwards;
 }
 
@@ -88,12 +171,10 @@
 	0%	{
 		transform: translateY(+4vh);
 		opacity: 0;
-		/*filter: blur(5px);*/
 	}
 	100% {
 		transform: translateY(0);
 		opacity: 1;
-		/*filter: blur(0);*/
 	}
 }
 
