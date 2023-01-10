@@ -107,10 +107,25 @@
 	margin-bottom: 3vh;
 }
 
+.main__news-main-section-boats-svg-lighthouse {
+	margin-left: -0.5vw;
+}
+
 .main__news-main-section-boats-svg-light {
-	width: 10px;
-	/*bottom: 1vh;*/
-	justify-items: flex-start;
+	display: flex;
+	width: 1.2vw;
+	align-self: flex-start;
+	animation: lighthouse-light 1.5s infinite;
+	margin-top: -2.3vh;
+}
+
+@keyframes lighthouse-light {
+	0%	{
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .hidden {
@@ -127,37 +142,67 @@
 		transform: translateX(0) rotate(0) translateY(0.5vh);
 		opacity: 0;
 	}
-	10% {
+	5% {
 		opacity: 1;
-		transform: translateX(6.7vw) rotate(-10deg) translateY(0);
+		transform: translateX(3.6vw) rotate(-10deg) translateY(0);
+	}
+	10% {
+		transform: translateX(7.2vw) rotate(5deg) translateY(0.5vh);
+	}
+	15% {
+		transform: translateX(10.8vw) rotate(-10deg) translateY(0);
 	}
 	20% {
-		transform: translateX(13.4vw) rotate(5deg) translateY(0.5vh);
+		transform: translateX(14.4vw) rotate(5deg) translateY(0.5vh);
+	}
+	25% {
+		transform: translateX(18vw) rotate(-10deg) translateY(0);
 	}
 	30% {
-		transform: translateX(20.1vw) rotate(-10deg) translateY(0);
+		transform: translateX(21.6vw) rotate(5deg) translateY(0.5vh);
+	}
+	35% {
+		transform: translateX(25.2vw) rotate(-10deg) translateY(0);
 	}
 	40% {
-		transform: translateX(26.8vw) rotate(5deg) translateY(0.5vh);
+		transform: translateX(28.8vw) rotate(5deg) translateY(0.5vh);
+	}
+	45% {
+		transform: translateX(32.4vw) rotate(-10deg) translateY(0);
 	}
 	50% {
-		transform: translateX(33.5vw) rotate(-10deg) translateY(0);
+		transform: translateX(36vw) rotate(5deg) translateY(0.5vh);
+	}
+	55% {
+		transform: translateX(39.6vw) rotate(-10deg) translateY(0);
 	}
 	60% {
-		transform: translateX(40.2vw) rotate(5deg) translateY(0.5vh);
+		transform: translateX(43.2vw) rotate(5deg) translateY(0.5vh);
+	}
+	65% {
+		transform: translateX(46.8vw) rotate(-10deg) translateY(0);
 	}
 	70% {
-		transform: translateX(46.9vw) rotate(-10deg) translateY(0);
+		transform: translateX(50.4vw) rotate(5deg) translateY(0.5vh);
+	}
+	75% {
+		transform: translateX(54vw) rotate(-10deg) translateY(0);
 	}
 	80% {
-		transform: translateX(53.6vw) rotate(5deg) translateY(0.5vh);
+		transform: translateX(57.6vw) rotate(5deg) translateY(0.5vh);
+	}
+	85% {
+		transform: translateX(61.2vw) rotate(-10deg) translateY(0);
 	}
 	90% {
-		transform: translateX(60.3vw) rotate(-10deg) translateY(0);
+		transform: translateX(64.8vw) rotate(5deg) translateY(0.5vh);
+	}
+	95% {
+		transform: translateX(68.4vw) rotate(-10deg) translateY(0);
 		opacity: 1;
 	}
 	100% {
-		transform: translateX(67vw) rotate(0) translateY(0.5vh);
+		transform: translateX(72vw) rotate(0) translateY(0.5vh);
 		opacity: 0;
 	}
 }
@@ -219,6 +264,10 @@
 
 	.main__news-section-boats-text-comments {
 		font-size: 1em;
+	}
+
+	.main__news-main-section-boats-svg {
+		width: 100%;
 	}
 }
 
