@@ -81,7 +81,10 @@
 .main__news-main-section-boats-svg-sailboat,
 .main__news-main-section-boats-svg-waves,
 .main__news-main-section-boats-svg-mountains,
-.main__news-main-section-boats-svg-lighthouse {
+.main__news-main-section-boats-svg-lighthouse,
+.main__news-main-section-boats-svg-mountains-center,
+.main__news-main-section-boats-svg-mountains-center,
+.main__news-main-section-boats-svg-waves-first {
 	flex-direction: column;
 	width: 2.4vw;	
 	-webkit-box-reflect: below 0 linear-gradient(rgba(255, 255, 255, 0.01),
@@ -97,13 +100,15 @@
 .main__news-main-section-boats-svg-sea-waves {
 	display: flex;
 	flex-direction: row;
-	opacity: 0.5;
 }
-.main__news-main-section-boats-svg-waves {
+.main__news-main-section-boats-svg-waves,
+.main__news-main-section-boats-svg-waves-first {
 	-webkit-box-reflect: unset;
 }
 
-.main__news-main-section-boats-svg-mountains, .main__news-main-section-boats-svg-lighthouse {
+.main__news-main-section-boats-svg-mountains, 
+.main__news-main-section-boats-svg-lighthouse,
+.main__news-main-section-boats-svg-mountains-center {
 	margin-bottom: 3vh;
 }
 
@@ -117,6 +122,13 @@
 	align-self: flex-start;
 	animation: lighthouse-light 1.5s infinite;
 	margin-top: -2.3vh;
+}
+
+.main__news-main-section-boats-svg-mountains-center {
+	position: relative;
+	bottom: 3vh;
+	left: 65%;
+	opacity: 0.35;
 }
 
 @keyframes lighthouse-light {
@@ -135,6 +147,10 @@
 .main__news-main-section-boats-svg-sailboat {
 	animation: moved-sailboat-svg 25s linear infinite;
 	margin-bottom: 1vh;
+}
+
+.main__news-main-section-boats-svg-waves-first {
+	margin-left: -2vw;
 }
 
 @keyframes moved-sailboat-svg {
@@ -268,6 +284,58 @@
 
 	.main__news-main-section-boats-svg {
 		width: 100%;
+	}
+
+	
+	.main__news-main-section-boats-svg-sailboat,
+	.main__news-main-section-boats-svg-waves,
+	.main__news-main-section-boats-svg-mountains,
+	.main__news-main-section-boats-svg-lighthouse,
+	.main__news-main-section-boats-svg-mountains-center,
+	.main__news-main-section-boats-svg-mountains-center {
+		flex-direction: column;
+		width: 3.5vw;	
+		-webkit-box-reflect: below 0 linear-gradient(rgba(255, 255, 255, 0.01),
+		rgba(255, 255, 255, 0.3));
+		margin-top: -2vh;
+	}
+	
+	.main__news-main-section-boats-svg-sea {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.main__news-main-section-boats-svg-sea-waves {
+		display: flex;
+		flex-direction: row;
+	}
+	.main__news-main-section-boats-svg-waves {
+		-webkit-box-reflect: unset;
+	}
+	
+	.main__news-main-section-boats-svg-mountains, 
+	.main__news-main-section-boats-svg-lighthouse,
+	.main__news-main-section-boats-svg-mountains-center {
+		margin-bottom: 3vh;
+	}
+	
+	.main__news-main-section-boats-svg-lighthouse {
+		margin-left: -0.5vw;
+	}
+	
+	.main__news-main-section-boats-svg-light {
+		display: flex;
+		width: 1.2vw;
+		align-self: flex-start;
+		animation: lighthouse-light 1.5s infinite;
+		margin-top: -2.3vh;
+	}
+	
+	.main__news-main-section-boats-svg-mountains-center {
+		position: relative;
+		bottom: 3vh;
+		left: 65%;
+		opacity: 0.35;
 	}
 }
 
