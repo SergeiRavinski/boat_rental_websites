@@ -100,10 +100,48 @@
 .main__news-main-section-boats-svg-sea-waves {
 	display: flex;
 	flex-direction: row;
+	animation: waves 15s linear infinite;
 }
+
 .main__news-main-section-boats-svg-waves,
 .main__news-main-section-boats-svg-waves-first {
 	-webkit-box-reflect: unset;
+}
+
+@keyframes waves {
+	0% {
+		transform: translateX(0);
+	}
+	10% {
+		transform: translateY(0.2vh);
+	}
+	20% {
+		transform: scale(1.01);
+	}
+	30% {
+		transform: translateX(0.3vw);
+	}
+	40% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: scale(1);
+	}
+	60% {
+		transform: translateX(0);
+	}
+	70% {
+		transform: translateY(0.2vh);
+	}
+	80% {
+		transform: scale(1.01);
+	}
+	90% {
+		transform: translateX(0.3vw);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .main__news-main-section-boats-svg-mountains, 
