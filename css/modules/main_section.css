@@ -14,7 +14,7 @@ main {
 	display: flex;
 	justify-content: center;
 	overflow-y: scroll;
-	scroll-snap-type: y mandatory;
+	/*scroll-snap-type: y mandatory;*/
 	height: 100vh;
 }
 
