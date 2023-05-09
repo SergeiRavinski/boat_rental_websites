@@ -4,9 +4,9 @@ export default function Header() {
 	let visibleMenu = false;
 	let visibleWishlist = false;
 
-	const headerVisibleThreshold = 0;
-	let currentScrollDirection = null; // "up" / "down"
-	let previousScrollPosition = 0;
+	//const headerVisibleThreshold = 0;
+	//let currentScrollDirection = null; // "up" / "down"
+	//let previousScrollPosition = 0;
 
 	//query selectors
 	const wishlistButton = document.querySelector('.header__button-wishlist');
@@ -21,9 +21,9 @@ export default function Header() {
 	menuButton.addEventListener('click', handleButtonMenu);
 	mainSection.addEventListener('click', handleClickBackground);
 
-	if (header !== null) {
-		window.addEventListener('scroll', handleWindowScroll);
-	}
+	//if (header !== null) {
+	//	window.addEventListener('scroll', handleWindowScroll);
+	//}
 
 	//handlers
 	function handleButtonWishlist() {
@@ -40,9 +40,9 @@ export default function Header() {
 		renderCloseAllMenus();
 	}
 
-	function handleWindowScroll(event) {
-		toggleHeaderVisibility();
-	}
+	//function handleWindowScroll(event) {
+	//	toggleHeaderVisibility();
+	//}
 
 	//functions
 	function changeVisibilityWishlist() {
@@ -54,23 +54,23 @@ export default function Header() {
 	}
 
 	//show header when scrolling up
-	function toggleHeaderVisibility() {
-		const scrollY = window.scrollY;
+	//function toggleHeaderVisibility() {
+	//	const scrollY = window.scrollY;
 
-		if (scrollY > previousScrollPosition) {
-			currentScrollDirection = 'down';
-		} else {
-			currentScrollDirection = 'up';
-		}
+	//	if (scrollY > previousScrollPosition) {
+	//		currentScrollDirection = 'down';
+	//	} else {
+	//		currentScrollDirection = 'up';
+	//	}
 
-		if (currentScrollDirection === 'down' && scrollY >= headerVisibleThreshold) {
-			header.classList.add('header--hidden');
-		} else {
-			header.classList.remove('header--hidden');
-		}
+	//	if (currentScrollDirection === 'down' && scrollY >= headerVisibleThreshold) {
+	//		header.classList.add('header--hidden');
+	//	} else {
+	//		header.classList.remove('header--hidden');
+	//	}
 
-		previousScrollPosition = scrollY;
-	}
+	//	previousScrollPosition = scrollY;
+	//}
 
 	function renderWishlist() {
 
