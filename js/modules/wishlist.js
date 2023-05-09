@@ -73,23 +73,17 @@ export default function Wishlist() {
 		addedJaktarToWishlist = !addedJaktarToWishlist; 
 	}
 
-
-	//let visibilityAddedToWishlist = setInterval(showAddedToWishlist, 3000);
-
-	//function showAddedToWishlist() {
-	//	renderHTMLAddJaktar();
-
-	//}
-
 	function renderHTMLAddJaktar() {
 
+		let removeFirst;
+		let removeSecond;
 		if (addedJaktarToWishlist === true) {
 			boatJaktar.classList.add('aside__first-boat-jaktar-wishlist--active');
 			likeRedBoatJaktar.style.display = 'none';
 			likeBoatJaktar.style.display = 'block';
 			windowAddedWishlist.style.display = 'block';
 			windowAddedWishlist.innerHTML = 'Removed from wishlist';
-			setTimeout(() => {
+			removeFirst = setTimeout(() => {
 				windowAddedWishlist.style.display = 'none';
 			}, 4000);
 		} 
@@ -100,7 +94,7 @@ export default function Wishlist() {
 			likeBoatJaktar.style.display = 'none';
 			windowAddedWishlist.style.display = 'block';
 			windowAddedWishlist.innerHTML = 'Added to wishlist';
-			setTimeout(() => {
+			removeSecond = setTimeout(() => {
 				windowAddedWishlist.style.display = 'none';
 			}, 4000);
 		}
